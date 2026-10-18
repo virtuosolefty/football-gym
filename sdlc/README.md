@@ -13,7 +13,7 @@ This project follows the plan → review → build → regression QA → release
 | `evaluation/phase-2026-10-18/` | Versioned findings and benchmark reports |
 | `test-results/phase-2026-10-18/` | Ignored generated video copies and raw test artifacts |
 
-Local source control now has a frozen `main` baseline and development branch `phase/validation-sdlc`. The isolated dashboard uses this development branch as its base, so future task worktrees include the tested integration. `AV_digitalTwin`, player data, model binaries and runtime records are excluded from commits. No remote repository has been configured or published.
+Local source control has a frozen `main` baseline and development branch `phase/validation-sdlc`. The isolated dashboard uses this development branch as its base, so future task worktrees include the tested integration. `AV_digitalTwin`, player data, model binaries and runtime records are excluded from commits. The remote is [virtuosolefty/football-gym](https://github.com/virtuosolefty/football-gym); see [GitHub Actions](https://github.com/virtuosolefty/football-gym/actions) for hosted CI results.
 
 ## Run the isolated tool
 
