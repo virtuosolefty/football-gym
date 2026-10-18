@@ -1,0 +1,81 @@
+{
+  "diagnostic_only": true,
+  "independent_labels": false,
+  "description": "Six consecutive 10 Hz frames per clip, fixed initial-seed centre; 5 native crop sizes, local YOLOX nano. Counts mean nonempty detector outputs, not correct detections. Timing includes crop/pre/postprocessing and is one run on this machine.",
+  "cases": [
+    {
+      "id": "rain",
+      "sha256": "30783a1392fcc554eb459bfa0ff2556cce44de4fd4c6a2298daa144eb1b0f969",
+      "start": 4,
+      "scales": [
+        {
+          "native_side": 128,
+          "frames_with_candidates": 1,
+          "frames": 6,
+          "median_inference_ms": 332.1
+        },
+        {
+          "native_side": 192,
+          "frames_with_candidates": 2,
+          "frames": 6,
+          "median_inference_ms": 287.6
+        },
+        {
+          "native_side": 256,
+          "frames_with_candidates": 3,
+          "frames": 6,
+          "median_inference_ms": 292.5
+        },
+        {
+          "native_side": 384,
+          "frames_with_candidates": 2,
+          "frames": 6,
+          "median_inference_ms": 295.8
+        },
+        {
+          "native_side": 512,
+          "frames_with_candidates": 0,
+          "frames": 6,
+          "median_inference_ms": 276.8
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+      "start": 34,
+      "scales": [
+        {
+          "native_side": 128,
+          "frames_with_candidates": 0,
+          "frames": 6,
+          "median_inference_ms": 251.1
+        },
+        {
+          "native_side": 192,
+          "frames_with_candidates": 3,
+          "frames": 6,
+          "median_inference_ms": 241.2
+        },
+        {
+          "native_side": 256,
+          "frames_with_candidates": 6,
+          "frames": 6,
+          "median_inference_ms": 254.7
+        },
+        {
+          "native_side": 384,
+          "frames_with_candidates": 6,
+          "frames": 6,
+          "median_inference_ms": 251.0
+        },
+        {
+          "native_side": 512,
+          "frames_with_candidates": 6,
+          "frames": 6,
+          "median_inference_ms": 268.6
+        }
+      ]
+    }
+  ]
+}
