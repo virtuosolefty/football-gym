@@ -13,7 +13,8 @@ async function main(){
       const server=spawn(process.env.PYTHON||'python',['-u','app.py','--port','0','--data-dir',data],{cwd:root,stdio:['ignore','pipe','pipe'],windowsHide:true});
       let output='';server.stderr.on('data',chunk=>output+=chunk);
       const exited=new Promise(resolve=>server.once('exit',resolve));
-      const context=await browser.newContext({viewport:{width:1440,height:1100}});let page;
+      const context=await browser.newContext({viewport:{width:1440,height:1100}});let page;const failedRequests=[];
+      context.on('requestfailed',request=>failedRequests.push({method:request.method(),url:request.url(),error:request.failure()?.errorText}));
       try{
         const baseURL=await new Promise((resolve,reject)=>{let stdout='';const timer=setTimeout(()=>reject(new Error('Test server startup timed out: '+output)),15000);server.once('error',error=>{clearTimeout(timer);reject(error);});server.once('exit',()=>{clearTimeout(timer);reject(new Error('Test server exited: '+output));});server.stdout.on('data',chunk=>{stdout+=chunk;const match=stdout.match(/Football Helper is running at (http:\/\/127\.0\.0\.1:\d+)\r?\n/);if(match){clearTimeout(timer);resolve(match[1]);}});});
         page=await context.newPage();page.setDefaultTimeout(20000);
@@ -22,6 +23,9 @@ async function main(){
         const callback=vm.runInNewContext(fs.readFileSync(path.join(__dirname,file),'utf8'),{console,setTimeout,clearTimeout,Buffer,BASE_URL:baseURL},{filename:file});
         console.log(file,JSON.stringify(await callback(page)));
       }catch(error){
+        const diagnostics={serverStderr:output,failedRequests};
+        fs.writeFileSync(path.join(root,'test-results',file+'-diagnostics.json'),JSON.stringify(diagnostics,null,2));
+        console.error(diagnostics);
         if(page){console.error(await page.evaluate(()=>({status:document.querySelector('#lab-status')?.textContent,error:document.querySelector('#lab-error')?.textContent,videos:Array.from(document.querySelectorAll('video'),v=>({id:v.id,readyState:v.readyState,src:v.currentSrc,error:v.error?.message,time:v.currentTime}))})));await page.screenshot({path:path.join(root,'test-results',file+'-failure.png'),fullPage:true});}
         throw error;
       }finally{
