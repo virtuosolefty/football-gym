@@ -1,0 +1,43 @@
+{
+  "format": "football-worker-benchmark-1",
+  "diagnosticOnly": true,
+  "notes": "One sequential 300-sample run; detector and pose each use a dedicated worker. A 50 ms main-thread heartbeat measures responsiveness. Fixed native 300 px centre crop, one inference per sample, pose on every sample of the looped clip. Includes decoded-frame copy/pre/post-processing in model timing. Does not measure tracking accuracy, fallback crop cost, UI throughput or natural 30-second juggling.",
+  "results": [
+    {
+      "id": "looped-30s-worker-with-pose",
+      "file": "test-results/validation-2026-10-14/footage/benchmark-volley-loop-30s.mp4",
+      "sha256": "2bada961790fe99f04d87198a2d5be0ad1862ed3f2aae0b17c7b1496e57ad9d8",
+      "width": 720,
+      "height": 1366,
+      "start": 0,
+      "window_seconds": 30,
+      "samples": 300,
+      "elapsed_ms": 114520.5,
+      "heartbeat_ticks": 2290,
+      "max_heartbeat_gap_ms": 90.10000002384186,
+      "detector_load_ms": 1665.5,
+      "pose_load_ms": 847.2000000476837,
+      "stages": {
+        "decode": {
+          "count": 300,
+          "total_ms": 1979.6999996900558,
+          "median_ms": 5,
+          "p95_ms": 12.600000023841858
+        },
+        "detector": {
+          "count": 300,
+          "total_ms": 69516.89999961853,
+          "median_ms": 210.70000004768372,
+          "p95_ms": 372.3000000715256
+        },
+        "pose": {
+          "count": 300,
+          "total_ms": 43020.30000066757,
+          "median_ms": 127.40000009536743,
+          "p95_ms": 241.70000004768372
+        }
+      }
+    }
+  ],
+  "browserErrors": []
+}

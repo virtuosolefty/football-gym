@@ -24,4 +24,4 @@ Reproduce: `python -m unittest discover -s tests -v`, `npm test`, `npm run test:
 
 Independent human labels and multiple natural full-window clips per condition are still needed before correctness thresholds can be calibrated. Studio contact misses, rain/small-ball recall and total processing time remain unresolved. This focused phase extends the [prior five-collection evaluation](../priorities-2026-10-18/REPORT.md); it does not claim five complete independently labelled datasets.
 
-Release: development branch only; no merge or deployment. Hosted CI result to be recorded after push.
+Release: development branch only; no merge or deployment. Implementation commit `43caec16132f27297efa4dad90a3d1886488e715` passed both Linux and Windows jobs in [GitHub Actions run 39166942159](https://github.com/virtuosolefty/football-gym/actions/runs/39166942159). The follow-up documentation commit does not change the tested implementation.

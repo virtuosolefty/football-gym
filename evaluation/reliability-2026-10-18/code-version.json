@@ -1,0 +1,18 @@
+{
+  "implementationCommit": "43caec16132f27297efa4dad90a3d1886488e715",
+  "ciRun": "https://github.com/virtuosolefty/football-gym/actions/runs/39166942159",
+  "linux": "success",
+  "windows": "success",
+  "sourceFiles": {
+    "web/detector.js": "d593c24560f253909a7e5cc60901ec8e471c3cb6e1a05bf1cf5057eefacbf9b5",
+    "web/detector-worker.js": "f29fcf43b020ee541130350f7236a2c32a11fba65da963f8dbf112ad49cb6ac9",
+    "web/video-lab.js": "2303a1b15f98fa526fa90c37f64af13c4209184dd8b77cda615c9d617b4590ed",
+    "football/video.py": "9500ac98f8cdbbd1db7427a602d8ba830ba3468d49d66816ba55bff3266e4a17"
+  },
+  "sdlc": {
+    "id": "e71ad723",
+    "verdict": "couldnt_run",
+    "reason": "QA agent could not drive the flow: You've hit your monthly spend limit \u00b7 raise it at claude.ai/settings/usage?from=cc_cli_limit_message \u00b7 your session limit resets 7pm (America/Toronto)"
+  },
+  "visualFallback": "direct Playwright, visually inspected by implementer; not independent labels"
+}

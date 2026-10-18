@@ -1,5 +1,7 @@
 # Validation record — October 18, 2026
 
+Historical record of the initial integration phase. Later remote CI and visual QA supersede its release-status paragraph: see the [priorities report](../evaluation/priorities-2026-10-18/REPORT.md) and [latest reliability report](../evaluation/reliability-2026-10-18/REPORT.md).
+
 Scope and authorization: [PLAN.md](PLAN.md). Reference process: `D:\SDLC\README.md`. This record covers a manually executed plan/review/build/test cycle in this coding session. No separate model reviewer, independent human reviewer or automated SDLC plan/build/QA stage is claimed.
 
 ## Delivered
