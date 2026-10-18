@@ -1,0 +1,97 @@
+{
+  "format": "football-stage-benchmark-1",
+  "diagnosticOnly": true,
+  "notes": "One sequential run per clip; same browser session (model warm after first clip). Fixed native 300 px centre crop, one inference per sample, pose on every sample of the looped clip. Includes decoded-frame copy/pre/post-processing in model timing. Does not measure tracking accuracy, fallback crop cost, UI throughput or natural 30-second juggling.",
+  "results": [
+    {
+      "id": "u17-original",
+      "file": "test-results/conditions-footage/footage/u17.webm",
+      "sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+      "width": 1280,
+      "height": 720,
+      "start": 34,
+      "window_seconds": 3,
+      "samples": 30,
+      "elapsed_ms": 9288.399999976158,
+      "detector_load_ms": 1495.7000000476837,
+      "pose_load_ms": null,
+      "stages": {
+        "decode": {
+          "count": 30,
+          "total_ms": 2396.4999999403954,
+          "median_ms": 76.59999996423721,
+          "p95_ms": 199
+        },
+        "detector": {
+          "count": 30,
+          "total_ms": 6891.100000023842,
+          "median_ms": 221.5,
+          "p95_ms": 289.9000000357628
+        },
+        "pose": null
+      }
+    },
+    {
+      "id": "u17-normalized",
+      "file": "test-results/phase-2026-10-18/u17-normalized.mp4",
+      "sha256": "2d1b4beb2fecaf59c1196e4caf6eb3fdb7e913ab46ac09c82403373d95307f12",
+      "width": 1280,
+      "height": 720,
+      "start": 34,
+      "window_seconds": 3,
+      "samples": 30,
+      "elapsed_ms": 5843,
+      "detector_load_ms": 0,
+      "pose_load_ms": null,
+      "stages": {
+        "decode": {
+          "count": 30,
+          "total_ms": 200.39999985694885,
+          "median_ms": 5.899999976158142,
+          "p95_ms": 13.100000023841858
+        },
+        "detector": {
+          "count": 30,
+          "total_ms": 5641.900000154972,
+          "median_ms": 186.80000001192093,
+          "p95_ms": 210.9000000357628
+        },
+        "pose": null
+      }
+    },
+    {
+      "id": "looped-30s-with-pose",
+      "file": "test-results/validation-2026-10-14/footage/benchmark-volley-loop-30s.mp4",
+      "sha256": "2bada961790fe99f04d87198a2d5be0ad1862ed3f2aae0b17c7b1496e57ad9d8",
+      "width": 720,
+      "height": 1366,
+      "start": 0,
+      "window_seconds": 30,
+      "samples": 300,
+      "elapsed_ms": 106598.5,
+      "detector_load_ms": 0,
+      "pose_load_ms": 970.5,
+      "stages": {
+        "decode": {
+          "count": 300,
+          "total_ms": 1698.1999990344048,
+          "median_ms": 5.099999964237213,
+          "p95_ms": 8.699999988079071
+        },
+        "detector": {
+          "count": 300,
+          "total_ms": 62573.400000452995,
+          "median_ms": 202.5,
+          "p95_ms": 266.4000000357628
+        },
+        "pose": {
+          "count": 300,
+          "total_ms": 42323.30000066757,
+          "median_ms": 132.9000000357628,
+          "p95_ms": 201.10000002384186
+        }
+      }
+    }
+  ],
+  "browserErrors": []
+}

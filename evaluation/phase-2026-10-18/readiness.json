@@ -1,0 +1,185 @@
+{
+  "ready_for_calibration_and_validation": false,
+  "note": "Evidence readiness only; not an accuracy certification. Review records and identities require human verification.",
+  "required_distinct_videos_per_condition_per_split": 3,
+  "coverage": {
+    "calibration": {
+      "night": 0,
+      "rain": 0,
+      "small": 0,
+      "fast": 0,
+      "juggling-30s": 0
+    },
+    "held-out": {
+      "night": 0,
+      "rain": 0,
+      "small": 0,
+      "fast": 0,
+      "juggling-30s": 0
+    }
+  },
+  "blockers": [
+    "calibration: night needs 3 more eligible distinct videos (minimum 3)",
+    "calibration: rain needs 3 more eligible distinct videos (minimum 3)",
+    "calibration: small needs 3 more eligible distinct videos (minimum 3)",
+    "calibration: fast needs 3 more eligible distinct videos (minimum 3)",
+    "calibration: juggling-30s needs 3 more eligible distinct videos (minimum 3)",
+    "held-out: night needs 3 more eligible distinct videos (minimum 3)",
+    "held-out: rain needs 3 more eligible distinct videos (minimum 3)",
+    "held-out: small needs 3 more eligible distinct videos (minimum 3)",
+    "held-out: fast needs 3 more eligible distinct videos (minimum 3)",
+    "held-out: juggling-30s needs 3 more eligible distinct videos (minimum 3)"
+  ],
+  "clips": [
+    {
+      "id": "dribble_Top_10_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    },
+    {
+      "id": "dribble_Training_2_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    },
+    {
+      "id": "Game_1_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Game_2_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    },
+    {
+      "id": "Game_3_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Game_4_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Pass_Training_1_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Pass_Training_2_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Seven_Air_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    },
+    {
+      "id": "Seven_Audience_1_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping"
+      ]
+    },
+    {
+      "id": "Seven_Audience_2_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    },
+    {
+      "id": "shot_Training_1_1",
+      "split": "diagnostic",
+      "eligible": false,
+      "issues": [
+        "No independent coach/second-annotator declaration",
+        "Contacts not reviewed over the full window",
+        "Frame/label alignment not reviewed",
+        "No recorded blind annotation review",
+        "Unknown player grouping",
+        "Incomplete 10 Hz frame labels"
+      ]
+    }
+  ]
+}

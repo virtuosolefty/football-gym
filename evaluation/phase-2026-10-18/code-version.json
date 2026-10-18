@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.3",
+  "browser_channel": "msedge",
+  "baseline_commit": "c42e14e",
+  "source_sha256": {
+    "tools/evaluate_tracks.py": "2244df3a9f17b198ca28cda645ba8ea65444012d70843b8673be597ab58e65f1",
+    "tools/audit_corpus.py": "92ad6d9636fad60f7f54d1f58e69f3694165a63a1b82b384066794ed2f8fb45e",
+    "tests/browser_stage_benchmark.js": "6cdcb3c04dec99091ddfc817b48ce0c674b0e9812d32c2c9ece8b601bb317ab5",
+    "sdlc/bootstrap.py": "b657cf6b15cf608ed56ba72f9f2f2d7a42b29d4da795de12f89485f4505ad427",
+    "sdlc/run_app.py": "d9be678d269c012d3c157820cb0594cc68db42c08ddaf7f3626bfb1cf09e10f8",
+    "sdlc/sdlc.config.json": "e896e1aeff4f6ab73d7cc9b081ccb89b674fc0264785e0c140d2619700a8d95f",
+    "sdlc/smoke.mjs": "427caff6a750d960fa247fb04ff890342fb6f75be782e1dca4ed8ff0c35a52ea",
+    "web/detector.js": "1f323f1fa94917fe99c7ee008fda88471d3ecc0cd9094252604f5add7581bad3",
+    "web/pose.js": "6a168a4d417a0d0a6c9439e73403690cd28ee46718b6b194dff6ea45dcde37ae",
+    "web/pose-worker.js": "10c7370a08d37bd90dac1fd85cc84ec5cdcb06f453db78e6080188eea51e4e17",
+    "web/video-lab.js": "ce0a1ed7770f3deec5414f08cdd91826df104f561a3977ccc70587cb407a5205",
+    "web/tracker.js": "ca760fe69cd439c01138af0c438a615381c548eda4e769442942be7c05f17b0c",
+    "web/models/yolox_nano.onnx": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+    "web/models/pose_landmarker_lite.task": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+  }
+}

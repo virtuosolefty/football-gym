@@ -1,6 +1,6 @@
 # Verification
 
-Verified October 17, 2026 on Windows / Python 3.11 / Node / Edge. The backend has 61 passing tests; tracker, detector and video orchestration have 47 passing JavaScript tests. Seven isolated browser callbacks passed with zero JavaScript errors. These are software checks, not football accuracy validation.
+Verified October 18, 2026 on Windows / Python 3.11 / Node / Edge. The Python suite has 73 passing tests; tracker, detector and video orchestration have 47 passing JavaScript tests. Seven isolated browser callbacks passed with zero JavaScript errors. These are software checks, not football accuracy validation.
 
 ```powershell
 python -m unittest discover -s tests -v
@@ -22,7 +22,7 @@ npm run test:browser
 
 `tests/run_browser.js` starts a fresh temporary server on an OS-assigned ephemeral port for each callback, closes its browser context and server, and removes only its own checked temporary directory. It never accesses `.data`. Run from the project root. Set `PYTHON` for another Python executable or `BROWSER_CHANNEL=msedge` to use Edge. The runner returns a model 404 in the synthetic test browser without moving installed assets. `TEST_DETECTOR=1` enables exploratory installed-model runs; these are not deterministic CI checks.
 
-`.github/workflows/test.yml` runs backend tests, JavaScript tests, syntax checks and all browser callbacks on push and pull request, and uploads screenshots on failure. Hosted CI has not run here. This workspace currently has no Git repository.
+`.github/workflows/test.yml` defines Linux and Windows jobs for backend tests, JavaScript tests, syntax checks and all default browser callbacks on push and pull request, with separate artifact uploads. Local git is initialized; no remote is configured, so hosted CI has not run here.
 
 - `browser_startup_race.js`: navigate and open profile before the first state response.
 - `browser_workflow.js`: 15 groups covering onboarding, plans, feedback/rest, library, fixture WebM uploads/playback, immutable corrections, comparisons, invalid-quality exclusion, five protocols, offline chat, knowledge review, export, mobile layout and deletion.
@@ -57,3 +57,8 @@ Additional browser callbacks: `browser_scene_cut.js` tests the real generated de
 The installed MediaPipe model passed `browser_pose_model.js` on a blank frame with cancellation and no page errors. `TEST_DETECTOR=1 BROWSER_CHANNEL=msedge node tests/run_browser.js browser_real_regressions.js` (set environment variables using your shell syntax) replays the local October 14 footage. Bottle/cone/floor-ball windows emitted no points in their previously identified decoy intervals. The studio replay retained nine frames with real left/right foot landmarks but still produced zero contact proposals because the track was lost early. See [replay evidence and limitations](evaluation/revision-2026-10-17/REPORT.md).
 
 `tools/normalize_video.py` completed a real WebM-to-H.264 encode. Unit checks cover existing-output refusal, failed-encode cleanup and a concurrent output-file creation. No original-codec speed comparison or calibrated contact accuracy is claimed. Contact evaluation now requires explicit `contacts_reviewed: true`; legacy label files do not silently assert zero contacts.
+## October 18 SDLC validation phase
+
+The local checks passed: 73 Python tests, 47 JavaScript tests, all seven default browser workflows, 15 isolated SDLC tests, and `node sdlc/smoke.mjs`. The Python suite includes contact-matching counterexamples, side abstentions/body contacts, invalid and duplicate detections, corpus split leakage, review-hash invalidation and SDLC source/data isolation. Review also checked the existing label-tool schema and corrected compatibility issues before the final run.
+
+CI now defines Linux and Windows jobs with separate browser artifacts. Hosted runs remain pending a remote repository; local results are not a hosted CI pass. The optional actual-model stage benchmark is outside default CI because its downloaded footage and model files are not committed. See [phase evidence](evaluation/phase-2026-10-18/README.md) and [SDLC validation](sdlc/VALIDATION.md).

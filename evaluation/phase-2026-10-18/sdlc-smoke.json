@@ -1,0 +1,10 @@
+{
+  "dashboard": "passed",
+  "preview": "passed",
+  "readiness_rejects_403": true,
+  "reference_source_hashes_unchanged": true,
+  "project": "D:\\football helper",
+  "appData": "D:\\football helper\\sdlc\\app-data\\8871",
+  "backlogTasks": 3,
+  "automated_model_plan_build_qa": "not run; this phase uses the documented manual lifecycle"
+}

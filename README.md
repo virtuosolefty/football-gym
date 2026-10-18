@@ -96,3 +96,7 @@ Tests use temporary directories and an ephemeral local HTTP server. They cover p
 The shared conversation includes later-stage research and deployment proposals. This version implements the local training system and video-assisted feedback prototype. It ships optional general-purpose ball and pose models (not validated on football) and does **not** ship validated automatic rep counts, technique diagnoses, benchmark cohorts, mobile native apps, remote coach accounts, full-match tactics, subscriptions, commercial dataset ingestion, fine-tuning, cloud OAuth/CLI authentication or API billing. These require validated models, rights-cleared/coach-reviewed resources, supported provider integration and further product work. No fabricated output stands in for them.
 
 FIFA and England Football links in the knowledge pack are research references only. Their content and media have not been scraped, imported, or presented as licensed training material.
+
+## Development lifecycle
+
+The project-specific [SDLC integration](sdlc/README.md) uses an isolated copy of `D:\SDLC`. Its records, preview data and worktrees stay separate from the original tool and the player's workspace. See the [validation readiness workflow](evaluation/phase-2026-10-18/README.md) before calibrating correctness thresholds.

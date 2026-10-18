@@ -1,0 +1,10 @@
+{
+  "project": {"name": "Football Helper", "repoPath": "../..", "baseBranch": "phase/validation-sdlc"},
+  "app": {"startCommand": "python sdlc/run_app.py", "previewPort": 8871, "productionPort": 8872, "portEnvVar": "PORT", "readyTimeoutMs": 20000},
+  "models": {"planner": "opus", "reviewer": "sonnet", "builder": "opus", "qa": "sonnet", "monitor": "opus"},
+  "review": {"maxRounds": 4, "requireHumanApproval": true},
+  "qa": {"browser": "msedge", "headless": true, "maxBudgetUsdPerRun": 3, "exploratoryOnEveryPr": true},
+  "signals": {"logFiles": [], "httpEndpoints": [], "maxLinesPerSource": 400},
+  "monitor": {"intervalMinutes": 0, "maxTasksPerRun": 3},
+  "server": {"port": 8870}
+}

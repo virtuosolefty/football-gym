@@ -10,6 +10,7 @@ Approved scope: the user's October 18 instruction to continue the next build pha
 4. Repair evaluation before tuning the tracker: reject ambiguous sample records; match contacts one-to-one in chronological order with maximum matches and minimum timing error; report precision, recall, timing error and foot-side accuracy separately.
 5. Audit a corpus manifest for independently reviewed labels, complete contact review, condition coverage, full 30-second windows, and separation by source, player and video hash. Unknown provenance and public imported labels must not qualify for calibration or held-out validation.
 6. Inventory the downloaded clips as diagnostic material, retaining their original labels and provenance. Record the unresolved Seven_Air_1 alignment issue. Never manufacture coach labels, climate conditions or successful validation.
+7. Add an optional compute benchmark using existing footage: original versus normalized decode timing and a full 300-sample looped fixture with detector and pose stage timing. Keep compute measurements separate from football accuracy claims.
 
 ## Acceptance checks
 

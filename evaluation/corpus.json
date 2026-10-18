@@ -1,0 +1,125 @@
+{
+  "format": "football-corpus-1",
+  "clips": [
+    {
+      "id": "dribble_Top_10_1",
+      "labels": "public-football-2026-10-17/labels/dribble_Top_10_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "dribble_Training_2_1",
+      "labels": "public-football-2026-10-17/labels/dribble_Training_2_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Game_1_1",
+      "labels": "public-football-2026-10-17/labels/Game_1_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Game_2_1",
+      "labels": "public-football-2026-10-17/labels/Game_2_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Game_3_1",
+      "labels": "public-football-2026-10-17/labels/Game_3_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Game_4_1",
+      "labels": "public-football-2026-10-17/labels/Game_4_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Pass_Training_1_1",
+      "labels": "public-football-2026-10-17/labels/Pass_Training_1_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Pass_Training_2_1",
+      "labels": "public-football-2026-10-17/labels/Pass_Training_2_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Seven_Air_1",
+      "labels": "public-football-2026-10-17/labels/Seven_Air_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Seven_Audience_1_1",
+      "labels": "public-football-2026-10-17/labels/Seven_Audience_1_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "Seven_Audience_2_1",
+      "labels": "public-football-2026-10-17/labels/Seven_Audience_2_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    },
+    {
+      "id": "shot_Training_1_1",
+      "labels": "public-football-2026-10-17/labels/shot_Training_1_1.json",
+      "split": "diagnostic",
+      "source_id": "Zou-Liu-public-football",
+      "player_ids": [],
+      "alignment_reviewed": false,
+      "blind_review": {},
+      "notes": "External published labels; unverified blind protocol. Seven_Air_1 has a known alignment concern."
+    }
+  ]
+}
