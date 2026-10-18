@@ -1,0 +1,2477 @@
+{
+  "label": "benchmark",
+  "loss_policy": "At each loss prompt choose Skip remaining track in this direction. No automatic or unreviewed reseeds.",
+  "page_errors": [],
+  "clips": [
+    {
+      "id": "benchmark-volley-loop-30s",
+      "kind": "COMPUTE BENCHMARK ONLY: first 4 seconds of new volleyball source looped and re-encoded with frequent keyframes; not a natural 30-second juggling clip or independent accuracy sample",
+      "window": [
+        0,
+        30
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 85%). Radius set to 28 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 50772,
+      "error": "",
+      "analysis": {
+        "id": "f1329a4d7e514aae997caf683163191f",
+        "created": "2026-10-14T11:21:06.709282+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "cb37304704c94daa86187cc6144330e5",
+        "duration": 30.24,
+        "start": 0,
+        "end": 30,
+        "width": 720,
+        "height": 1366,
+        "samples": [
+          {
+            "time": 0,
+            "found": true,
+            "x": 0.42925,
+            "y": 0.459089,
+            "score": 0.801,
+            "segment": 0
+          },
+          {
+            "time": 0.1,
+            "found": true,
+            "x": 0.427528,
+            "y": 0.459464,
+            "score": 0.761,
+            "segment": 0
+          },
+          {
+            "time": 0.2,
+            "found": true,
+            "x": 0.42788,
+            "y": 0.459701,
+            "score": 0.769,
+            "segment": 0
+          },
+          {
+            "time": 0.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 0.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 5,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 5.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 5.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 5.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 5.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 5.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 5.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 5.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 5.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 6,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 6.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 6.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 6.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 6.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 6.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 6.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 6.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 6.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 6.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 7,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 7.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 7.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 7.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 7.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 7.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 7.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 7.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 7.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 7.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 8,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 8.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 8.2,
+            "found": true,
+            "x": 0.429562,
+            "y": 0.459676,
+            "score": 0.766,
+            "segment": 0
+          },
+          {
+            "time": 8.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 8.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 8.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 8.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 8.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 8.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 8.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 9,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 9.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 9.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 9.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 9.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 9.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 9.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 9.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 9.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 10,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 10.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 10.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 10.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 10.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 10.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 10.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 10.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 10.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 10.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 11,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 11.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 11.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 11.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 11.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 11.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 11.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 11.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 11.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 11.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 12,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 12.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 12.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 12.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 12.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 12.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 12.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 12.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 12.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 12.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 13,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 13.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 13.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 13.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 13.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 13.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 13.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 13.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 13.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 14,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 14.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 14.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 14.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 14.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 14.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 14.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 14.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 14.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 14.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 15,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 15.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 15.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 15.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 15.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 15.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 15.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 15.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 15.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 15.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 16,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 16.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 16.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 16.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 16.4,
+            "found": true,
+            "x": 0.427634,
+            "y": 0.45788,
+            "score": 0.787,
+            "segment": 0
+          },
+          {
+            "time": 16.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 16.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 16.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 16.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 16.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 17,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 17.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 17.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 17.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 17.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 17.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 17.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 17.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 17.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 18,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 18.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 18.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 18.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 18.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 18.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 18.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 18.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 18.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 18.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 19,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 19.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 19.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 19.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 19.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 19.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 19.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 19.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 19.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 19.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 20,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 20.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 20.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 20.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 20.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 20.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 20.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 20.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 20.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 20.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 21,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 21.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 21.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 21.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 21.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 21.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 21.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 21.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 21.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 22,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 22.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 22.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 22.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 22.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 22.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 22.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 22.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 22.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 22.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 23,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 23.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 23.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 23.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 23.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 23.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 23.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 23.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 23.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 23.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 24,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 24.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 24.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 24.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 24.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 24.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 24.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 24.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 24.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 24.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 25,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 25.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 25.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 25.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 25.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 25.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 25.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 25.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 25.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          },
+          {
+            "time": 26,
+            "found": true,
+            "x": 0.334815,
+            "y": 0.475366,
+            "score": 0.726,
+            "segment": 0
+          },
+          {
+            "time": 26.1,
+            "found": true,
+            "x": 0.328761,
+            "y": 0.469868,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 26.2,
+            "found": true,
+            "x": 0.327613,
+            "y": 0.456007,
+            "score": 0.48,
+            "segment": 0
+          },
+          {
+            "time": 26.3,
+            "found": true,
+            "x": 0.335843,
+            "y": 0.447237,
+            "score": 0.847,
+            "segment": 0
+          },
+          {
+            "time": 26.4,
+            "found": true,
+            "x": 0.359436,
+            "y": 0.429561,
+            "score": 0.622,
+            "segment": 0
+          },
+          {
+            "time": 26.5,
+            "found": true,
+            "x": 0.386996,
+            "y": 0.425994,
+            "score": 0.806,
+            "segment": 0
+          },
+          {
+            "time": 26.6,
+            "found": true,
+            "x": 0.451363,
+            "y": 0.419008,
+            "score": 0.667,
+            "segment": 0
+          },
+          {
+            "time": 26.7,
+            "found": true,
+            "x": 0.498126,
+            "y": 0.416854,
+            "score": 0.745,
+            "segment": 0
+          },
+          {
+            "time": 26.8,
+            "found": true,
+            "x": 0.591404,
+            "y": 0.423715,
+            "score": 0.555,
+            "segment": 0
+          },
+          {
+            "time": 26.9,
+            "found": true,
+            "x": 0.636327,
+            "y": 0.428318,
+            "score": 0.75,
+            "segment": 0
+          },
+          {
+            "time": 27,
+            "found": true,
+            "x": 0.651132,
+            "y": 0.420058,
+            "score": 0.747,
+            "segment": 0
+          },
+          {
+            "time": 27.1,
+            "found": true,
+            "x": 0.667255,
+            "y": 0.420294,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 27.2,
+            "found": true,
+            "x": 0.673424,
+            "y": 0.420357,
+            "score": 0.394,
+            "segment": 0
+          },
+          {
+            "time": 27.3,
+            "found": true,
+            "x": 0.69754,
+            "y": 0.423525,
+            "score": 0.468,
+            "segment": 0
+          },
+          {
+            "time": 27.4,
+            "found": true,
+            "x": 0.709761,
+            "y": 0.428989,
+            "score": 0.834,
+            "segment": 0
+          },
+          {
+            "time": 27.5,
+            "found": true,
+            "x": 0.742908,
+            "y": 0.433477,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 27.6,
+            "found": true,
+            "x": 0.749075,
+            "y": 0.440215,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 27.7,
+            "found": true,
+            "x": 0.754725,
+            "y": 0.444952,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 27.8,
+            "found": true,
+            "x": 0.774877,
+            "y": 0.452761,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 27.9,
+            "found": true,
+            "x": 0.784692,
+            "y": 0.451926,
+            "score": 0.915,
+            "segment": 0
+          },
+          {
+            "time": 28,
+            "found": true,
+            "x": 0.42769,
+            "y": 0.45822,
+            "score": 0.693,
+            "segment": 0
+          },
+          {
+            "time": 28.1,
+            "found": true,
+            "x": 0.431739,
+            "y": 0.459384,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 28.2,
+            "found": true,
+            "x": 0.42921,
+            "y": 0.459519,
+            "score": 0.765,
+            "segment": 0
+          },
+          {
+            "time": 28.3,
+            "found": true,
+            "x": 0.428761,
+            "y": 0.458877,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 28.4,
+            "found": true,
+            "x": 0.427894,
+            "y": 0.457706,
+            "score": 0.785,
+            "segment": 0
+          },
+          {
+            "time": 28.5,
+            "found": true,
+            "x": 0.424323,
+            "y": 0.457673,
+            "score": 0.738,
+            "segment": 0
+          },
+          {
+            "time": 28.6,
+            "found": true,
+            "x": 0.430271,
+            "y": 0.458047,
+            "score": 0.832,
+            "segment": 0
+          },
+          {
+            "time": 28.7,
+            "found": true,
+            "x": 0.426093,
+            "y": 0.458369,
+            "score": 0.826,
+            "segment": 0
+          },
+          {
+            "time": 28.8,
+            "found": true,
+            "x": 0.424194,
+            "y": 0.457972,
+            "score": 0.827,
+            "segment": 0
+          },
+          {
+            "time": 28.9,
+            "found": true,
+            "x": 0.423546,
+            "y": 0.45726,
+            "score": 0.794,
+            "segment": 0
+          },
+          {
+            "time": 29,
+            "found": true,
+            "x": 0.417771,
+            "y": 0.456214,
+            "score": 0.754,
+            "segment": 0
+          },
+          {
+            "time": 29.1,
+            "found": true,
+            "x": 0.413656,
+            "y": 0.458102,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 29.2,
+            "found": true,
+            "x": 0.405977,
+            "y": 0.461869,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 29.3,
+            "found": true,
+            "x": 0.402278,
+            "y": 0.467542,
+            "score": 0.867,
+            "segment": 0
+          },
+          {
+            "time": 29.4,
+            "found": true,
+            "x": 0.395525,
+            "y": 0.473558,
+            "score": 0.874,
+            "segment": 0
+          },
+          {
+            "time": 29.5,
+            "found": true,
+            "x": 0.38964,
+            "y": 0.477751,
+            "score": 0.803,
+            "segment": 0
+          },
+          {
+            "time": 29.6,
+            "found": true,
+            "x": 0.384142,
+            "y": 0.483512,
+            "score": 0.292,
+            "segment": 0
+          },
+          {
+            "time": 29.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.8,
+            "found": true,
+            "x": 0.357707,
+            "y": 0.484042,
+            "score": 0.339,
+            "segment": 0
+          },
+          {
+            "time": 29.9,
+            "found": true,
+            "x": 0.344631,
+            "y": 0.480892,
+            "score": 0.465,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.431335,
+            "y": 0.45947,
+            "radius": 28,
+            "time": 0
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "SUSPECT",
+          "coverage": 0.973,
+          "max_gap_seconds": 0.2,
+          "reasons": [
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.292,
+              "mean_score": 0.7248,
+              "scored_detections": 292,
+              "found_detections": 292,
+              "max_speed": 3.572,
+              "max_stationary_seconds": 0.1
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 300
+        },
+        "candidates": [],
+        "media_sha256": "2bada961790fe99f04d87198a2d5be0ad1862ed3f2aae0b17c7b1496e57ad9d8",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    }
+  ]
+}

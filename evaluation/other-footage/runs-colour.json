@@ -1,0 +1,425 @@
+{
+ "label": "colour",
+ "page_errors": [],
+ "clips": [
+  {
+   "id": "aerial",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  },
+  {
+   "id": "training",
+   "selection": {
+    "status": "Colour patch selected. The local ball detector is not installed. Run: python tools/fetch_detector.py Review its size, then start tracking.",
+    "error": ""
+   },
+   "elapsed_ms": 15919,
+   "analysis": {
+    "id": "88c23876ff2d4e9084bf7ae505d8216c",
+    "created": "2026-10-14T02:29:46.207662+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "96fe33e7edb74c6b8a374767f0cf3669",
+    "duration": 9.18,
+    "start": 7.4,
+    "end": 9.1,
+    "width": 1920,
+    "height": 1080,
+    "samples": [
+     {
+      "time": 7.4,
+      "found": true,
+      "x": 0.451458,
+      "y": 0.582963
+     },
+     {
+      "time": 7.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.8,
+      "found": true,
+      "x": 0.329112,
+      "y": 0.304386
+     },
+     {
+      "time": 7.9,
+      "found": true,
+      "x": 0.315,
+      "y": 0.311852
+     },
+     {
+      "time": 8,
+      "found": true,
+      "x": 0.294973,
+      "y": 0.297343
+     },
+     {
+      "time": 8.1,
+      "found": true,
+      "x": 0.292535,
+      "y": 0.296914
+     },
+     {
+      "time": 8.2,
+      "found": true,
+      "x": 0.285577,
+      "y": 0.296154
+     },
+     {
+      "time": 8.3,
+      "found": true,
+      "x": 0.27114,
+      "y": 0.286275
+     },
+     {
+      "time": 8.4,
+      "found": true,
+      "x": 0.2125,
+      "y": 0.276984
+     },
+     {
+      "time": 8.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 8.6,
+      "found": true,
+      "x": 0.194196,
+      "y": 0.274603
+     },
+     {
+      "time": 8.7,
+      "found": true,
+      "x": 0.197344,
+      "y": 0.268056
+     },
+     {
+      "time": 8.8,
+      "found": true,
+      "x": 0.197344,
+      "y": 0.268056
+     },
+     {
+      "time": 8.9,
+      "found": true,
+      "x": 0.197344,
+      "y": 0.268056
+     },
+     {
+      "time": 9,
+      "found": true,
+      "x": 0.197344,
+      "y": 0.268056
+     }
+    ],
+    "version": "contrast-ball-2",
+    "configuration": {
+     "seed": {
+      "x": 0.451,
+      "y": 0.5852,
+      "radius": 4,
+      "colour": [
+       176,
+       176,
+       153
+      ],
+      "time": 7.4
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "colour"
+    },
+    "report": {
+     "status": "UNMEASURABLE",
+     "coverage": 0.765,
+     "max_gap_seconds": 0.4,
+     "reasons": [
+      "Too few sampled frames for track suggestions.",
+      "The selected ball was missing or ambiguous in too many frames.",
+      "Track gaps are too long; review the clip manually."
+     ],
+     "sample_count": 17
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  },
+  {
+   "id": "tennis",
+   "selection": {
+    "status": "Colour patch selected. The local ball detector is not installed. Run: python tools/fetch_detector.py Review its size, then start tracking.",
+    "error": ""
+   },
+   "elapsed_ms": 5570,
+   "analysis": {
+    "id": "3ef2ee30d9b14a2aa846650bee26bd3b",
+    "created": "2026-10-14T02:29:53.241917+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "dcd63aa0d3e64a11814a4d3a51830862",
+    "duration": 200.295,
+    "start": 5,
+    "end": 8,
+    "width": 1920,
+    "height": 1080,
+    "samples": [
+     {
+      "time": 5,
+      "found": true,
+      "x": 0.65709,
+      "y": 0.330348
+     },
+     {
+      "time": 5.1,
+      "found": true,
+      "x": 0.680483,
+      "y": 0.259853
+     },
+     {
+      "time": 5.2,
+      "found": true,
+      "x": 0.693892,
+      "y": 0.234722
+     },
+     {
+      "time": 5.3,
+      "found": true,
+      "x": 0.733694,
+      "y": 0.224573
+     },
+     {
+      "time": 5.4,
+      "found": true,
+      "x": 0.756981,
+      "y": 0.237589
+     },
+     {
+      "time": 5.5,
+      "found": true,
+      "x": 0.817596,
+      "y": 0.314013
+     },
+     {
+      "time": 5.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 5.7,
+      "found": true,
+      "x": 0.951587,
+      "y": 0.179156
+     },
+     {
+      "time": 5.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 5.9,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.4,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.9,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.4,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 7.9,
+      "found": false,
+      "x": null,
+      "y": null
+     }
+    ],
+    "version": "contrast-ball-2",
+    "configuration": {
+     "seed": {
+      "x": 0.6583,
+      "y": 0.3241,
+      "radius": 6,
+      "colour": [
+       42,
+       40,
+       20
+      ],
+      "time": 5
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "colour"
+    },
+    "report": {
+     "status": "UNMEASURABLE",
+     "coverage": 0.233,
+     "max_gap_seconds": 2.3,
+     "reasons": [
+      "The selected ball was missing or ambiguous in too many frames.",
+      "Track gaps are too long; review the clip manually."
+     ],
+     "sample_count": 30
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  },
+  {
+   "id": "topdown",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  },
+  {
+   "id": "improvised",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  },
+  {
+   "id": "tournament",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  }
+ ]
+}

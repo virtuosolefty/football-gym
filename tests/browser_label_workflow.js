@@ -1,0 +1,31 @@
+async (page) => {
+  const assert=(value,message)=>{if(!value)throw new Error(message);},errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(BASE_URL);await page.goto(BASE_URL+'/label.html');
+  await page.getByLabel('Local evaluation video').setInputFiles('tests/fixtures/contrast-ball.webm');
+  await page.waitForFunction(()=>document.querySelector('#label-video').readyState>=2 && document.querySelector('#label-id').value);
+  await page.getByLabel('Window end').fill('1');await page.getByLabel('Annotator name or ID').fill('Coach QA');
+  await page.getByLabel('Annotator role').selectOption('coach');await page.getByLabel('I did not implement').check();await page.getByLabel('Indoor',{exact:true}).check();
+  await page.getByLabel('Advance after each frame label').uncheck();
+  await page.getByRole('button',{name:'Start window'}).click();
+  const canvas=page.locator('#label-frame'),rect=await canvas.boundingBox();
+  await canvas.click({position:{x:rect.width*.5,y:rect.height*.775}});
+  await page.getByText('0.000 s · visible',{exact:true}).waitFor();
+  await page.getByRole('button',{name:'Next sample'}).click();await page.getByText('0.100 s · unlabelled',{exact:true}).waitFor();
+  await page.getByRole('button',{name:'Ball absent',exact:true}).click();
+  await page.getByRole('button',{name:'Next sample'}).click();await page.getByText('0.200 s · unlabelled',{exact:true}).waitFor();
+  await page.getByRole('button',{name:'Ball occluded / uncertain'}).click();
+  await page.getByLabel('Contact body part').selectOption('left');await page.getByRole('button',{name:'Mark clear contact'}).click();
+  await page.getByLabel('I reviewed the entire window for contacts').check();
+  const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'Export evaluation labels'}).click()]);
+  await download.saveAs('test-results/evaluation-labels.json');
+  await page.getByRole('button',{name:'Clear this frame label'}).click();
+  await page.getByLabel('Resume exported labels').setInputFiles('test-results/evaluation-labels.json');
+  await page.getByText('3 frame labels · 1 contacts',{exact:true}).waitFor();
+  assert(await page.getByLabel('I reviewed the entire window for contacts').isChecked(),'Contact review completeness must survive export/import.');
+  assert(await page.getByLabel('Annotator name or ID').inputValue()==='Coach QA','Imported provenance must survive.');
+  assert(await page.locator('script[src*=detector]').count()===0,'Blind annotation must not load predictions.');
+  await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Labelling page must fit mobile.');
+  await page.screenshot({path:'test-results/labels-mobile.png',fullPage:true});
+  assert(!errors.length,errors.join('; '));return {result:'PASS',frameLabels:3,contacts:1,blind:true,browserErrors:errors};
+}

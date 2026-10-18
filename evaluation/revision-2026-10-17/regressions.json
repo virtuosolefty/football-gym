@@ -1,0 +1,77 @@
+{
+  "independent": false,
+  "cases": [
+    {
+      "case": "bottle",
+      "analysis_sha256": "3e898004e5c115d2bcb58c5b5d4b6b5f3e5e6ef61f4a4d772fe9d961337f7a40",
+      "video_sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+      "version": "detector-ball-3",
+      "coverage": 0.7,
+      "found": 21,
+      "status": "UNMEASURABLE",
+      "losses": [
+        {
+          "time": 36.3,
+          "reason": "gap"
+        }
+      ],
+      "pose_frames": 0,
+      "contact_proposals": 0,
+      "no_emissions_at_or_after": 36.3
+    },
+    {
+      "case": "cone",
+      "analysis_sha256": "747ad9ed66b1c97dbd5942a099c23bcc6b23331dee52599392a38be635e62c47",
+      "video_sha256": "29a725e817e9a2ce70213c3a232b893a07dd0191a78446e2c16325452b76a680",
+      "version": "detector-ball-3",
+      "coverage": 0.233,
+      "found": 7,
+      "status": "UNMEASURABLE",
+      "losses": [
+        {
+          "time": 5.8,
+          "reason": "scene_change"
+        }
+      ],
+      "pose_frames": 0,
+      "contact_proposals": 0,
+      "no_emissions_at_or_after": 5.8
+    },
+    {
+      "case": "floor-ball",
+      "analysis_sha256": "57c9dbdf745bf4c64bbc125262f1c2902c521823ed0ca67093de11e72e3019e0",
+      "video_sha256": "b96283c5d1ccd7f55513406af8777bbe53f7e215b7e01d17b526004eb103e1f7",
+      "version": "detector-ball-3",
+      "coverage": 0.4,
+      "found": 16,
+      "status": "UNMEASURABLE",
+      "losses": [
+        {
+          "time": 2.8,
+          "reason": "gap"
+        }
+      ],
+      "pose_frames": 0,
+      "contact_proposals": 0,
+      "no_emissions_at_or_after": 3.4
+    },
+    {
+      "case": "studio-pose",
+      "analysis_sha256": "4cb33c8de4a192dae9d42bd27dc45fa0b68e355a48440b41e2d483f275d5c12a",
+      "video_sha256": "4456a12f04d24c738ea53c87a027a43ee5393aa3e3a2c5bc74a5fe587e1286dc",
+      "version": "detector-ball-3",
+      "coverage": 0.18,
+      "found": 9,
+      "status": "UNMEASURABLE",
+      "losses": [
+        {
+          "time": 1,
+          "reason": "gap"
+        }
+      ],
+      "pose_frames": 9,
+      "contact_proposals": 0,
+      "no_emissions_at_or_after": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "method": "Follow-up single-reviewer visual audit of every emitted detection in its corresponding raw frame. This complements the independently pre-recorded uniform spot checks; it is not a coach-labelled validation dataset. Correct means the predicted centre lies on or very close to the active ball. No model output was used to define an athlete score.",
+  "clips": [
+    {"id":"daylight","detections":[[0,"wrong"],[0.1,"wrong"],[0.4,"wrong"],[0.5,"wrong"],[0.6,"wrong"],[0.7,"wrong"],[1.1,"wrong"],[1.2,"wrong"],[1.3,"wrong"],[1.5,"wrong"],[1.6,"wrong"],[1.7,"wrong"]],"note":"All detections are in the upper scene/background, while the active ball remains near the bottom or beyond the side edge. No airborne juggling occurs in the excerpt."},
+    {"id":"indoor","detections":[[0.1,"wrong"],[0.3,"wrong"],[0.4,"wrong"],[0.7,"correct"],[0.9,"wrong"],[1.6,"wrong"],[1.7,"wrong"],[1.9,"wrong"],[2.2,"wrong"],[2.3,"wrong"],[2.4,"wrong"],[2.5,"wrong"],[2.6,"wrong"],[2.7,"wrong"]],"note":"Most centres fall on the jersey/torso. At 0.7 s the centre is on the active ball near the feet."},
+    {"id":"strobe","detections":[[0.2,"correct"],[0.5,"wrong"],[0.8,"unknown"],[1,"wrong"],[2.5,"wrong"],[2.6,"wrong"]],"note":"At 0.2 s a detected patch is on the active ball. Other clearly lit detections select body/clothing. The 0.8 s frame is too dark to classify confidently and is excluded from precision."}
+  ]
+}

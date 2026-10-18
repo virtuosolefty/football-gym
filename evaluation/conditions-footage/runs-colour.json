@@ -1,0 +1,723 @@
+{
+ "label": "colour",
+ "page_errors": [],
+ "clips": [
+  {
+   "id": "beach",
+   "selection": {
+    "status": "Colour patch selected. The local ball detector is not installed. Run: python tools/fetch_detector.py Review its size, then start tracking.",
+    "error": ""
+   },
+   "elapsed_ms": 3836,
+   "analysis": {
+    "id": "7f77cbfaaf8a41fb9f190112a7422d9a",
+    "created": "2026-10-14T03:16:56.370177+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "3769aec81a4d4801b478560414e75ce9",
+    "duration": 10.008,
+    "start": 0.5,
+    "end": 3.5,
+    "width": 1920,
+    "height": 1080,
+    "samples": [
+     {
+      "time": 0.5,
+      "found": true,
+      "x": 0.246696,
+      "y": 0.956825
+     },
+     {
+      "time": 0.6,
+      "found": true,
+      "x": 0.24761,
+      "y": 0.931046
+     },
+     {
+      "time": 0.7,
+      "found": true,
+      "x": 0.253437,
+      "y": 0.883611
+     },
+     {
+      "time": 0.8,
+      "found": true,
+      "x": 0.255343,
+      "y": 0.873656
+     },
+     {
+      "time": 0.9,
+      "found": true,
+      "x": 0.24707,
+      "y": 0.844444
+     },
+     {
+      "time": 1,
+      "found": true,
+      "x": 0.241016,
+      "y": 0.838542
+     },
+     {
+      "time": 1.1,
+      "found": true,
+      "x": 0.23256,
+      "y": 0.838351
+     },
+     {
+      "time": 1.2,
+      "found": true,
+      "x": 0.231743,
+      "y": 0.830409
+     },
+     {
+      "time": 1.3,
+      "found": true,
+      "x": 0.226125,
+      "y": 0.833556
+     },
+     {
+      "time": 1.4,
+      "found": true,
+      "x": 0.222135,
+      "y": 0.833565
+     },
+     {
+      "time": 1.5,
+      "found": true,
+      "x": 0.209007,
+      "y": 0.825163
+     },
+     {
+      "time": 1.6,
+      "found": true,
+      "x": 0.204018,
+      "y": 0.827778
+     },
+     {
+      "time": 1.7,
+      "found": true,
+      "x": 0.198047,
+      "y": 0.822917
+     },
+     {
+      "time": 1.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 1.9,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.4,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 2.9,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 3.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 3.2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 3.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 3.4,
+      "found": false,
+      "x": null,
+      "y": null
+     }
+    ],
+    "version": "contrast-ball-2",
+    "configuration": {
+     "seed": {
+      "x": 0.2479,
+      "y": 0.963,
+      "radius": 4,
+      "colour": [
+       255,
+       180,
+       152
+      ],
+      "time": 0.5
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "colour"
+    },
+    "report": {
+     "status": "UNMEASURABLE",
+     "coverage": 0.433,
+     "max_gap_seconds": 1.8,
+     "reasons": [
+      "The selected ball was missing or ambiguous in too many frames.",
+      "Track gaps are too long; review the clip manually."
+     ],
+     "sample_count": 30
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  },
+  {
+   "id": "futsal",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  },
+  {
+   "id": "u17",
+   "selection": {
+    "status": "Colour patch selected. The local ball detector is not installed. Run: python tools/fetch_detector.py Review its size, then start tracking.",
+    "error": ""
+   },
+   "elapsed_ms": 3131,
+   "analysis": {
+    "id": "9536494c58664aef84228845db868631",
+    "created": "2026-10-14T03:16:59.997809+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "bd5c96382d574ed0ae14a6c85427177f",
+    "duration": 37.544,
+    "start": 34,
+    "end": 37,
+    "width": 1280,
+    "height": 720,
+    "samples": [
+     {
+      "time": 34,
+      "found": true,
+      "x": 0.539063,
+      "y": 0.617593
+     },
+     {
+      "time": 34.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 34.2,
+      "found": true,
+      "x": 0.498011,
+      "y": 0.623737
+     },
+     {
+      "time": 34.3,
+      "found": true,
+      "x": 0.465,
+      "y": 0.621667
+     },
+     {
+      "time": 34.4,
+      "found": true,
+      "x": 0.45,
+      "y": 0.625309
+     },
+     {
+      "time": 34.5,
+      "found": true,
+      "x": 0.460491,
+      "y": 0.618254
+     },
+     {
+      "time": 34.6,
+      "found": true,
+      "x": 0.48602,
+      "y": 0.62076
+     },
+     {
+      "time": 34.7,
+      "found": true,
+      "x": 0.52352,
+      "y": 0.619298
+     },
+     {
+      "time": 34.8,
+      "found": true,
+      "x": 0.573611,
+      "y": 0.613272
+     },
+     {
+      "time": 34.9,
+      "found": true,
+      "x": 0.614583,
+      "y": 0.607407
+     },
+     {
+      "time": 35,
+      "found": true,
+      "x": 0.630147,
+      "y": 0.603595
+     },
+     {
+      "time": 35.1,
+      "found": true,
+      "x": 0.627951,
+      "y": 0.604321
+     },
+     {
+      "time": 35.2,
+      "found": true,
+      "x": 0.61875,
+      "y": 0.602288
+     },
+     {
+      "time": 35.3,
+      "found": true,
+      "x": 0.638368,
+      "y": 0.586728
+     },
+     {
+      "time": 35.4,
+      "found": true,
+      "x": 0.687344,
+      "y": 0.571111
+     },
+     {
+      "time": 35.5,
+      "found": true,
+      "x": 0.737364,
+      "y": 0.562802
+     },
+     {
+      "time": 35.6,
+      "found": true,
+      "x": 0.774219,
+      "y": 0.558611
+     },
+     {
+      "time": 35.7,
+      "found": true,
+      "x": 0.804219,
+      "y": 0.554444
+     },
+     {
+      "time": 35.8,
+      "found": true,
+      "x": 0.838542,
+      "y": 0.559524
+     },
+     {
+      "time": 35.9,
+      "found": true,
+      "x": 0.875446,
+      "y": 0.562169
+     },
+     {
+      "time": 36,
+      "found": true,
+      "x": 0.9125,
+      "y": 0.575362
+     },
+     {
+      "time": 36.1,
+      "found": true,
+      "x": 0.95788,
+      "y": 0.593237
+     },
+     {
+      "time": 36.2,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.4,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 36.9,
+      "found": false,
+      "x": null,
+      "y": null
+     }
+    ],
+    "version": "contrast-ball-2",
+    "configuration": {
+     "seed": {
+      "x": 0.5391,
+      "y": 0.6222,
+      "radius": 3,
+      "colour": [
+       251,
+       239,
+       235
+      ],
+      "time": 34
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "colour"
+    },
+    "report": {
+     "status": "UNMEASURABLE",
+     "coverage": 0.7,
+     "max_gap_seconds": 0.9,
+     "reasons": [
+      "The selected ball was missing or ambiguous in too many frames.",
+      "Track gaps are too long; review the clip manually."
+     ],
+     "sample_count": 30
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  },
+  {
+   "id": "street",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  },
+  {
+   "id": "latvia",
+   "selection": {
+    "status": "Colour patch selected. The local ball detector is not installed. Run: python tools/fetch_detector.py Review its size, then start tracking.",
+    "error": ""
+   },
+   "elapsed_ms": 77411,
+   "analysis": {
+    "id": "609deaecaf4642d7ae5d0f10a7a2d017",
+    "created": "2026-10-14T03:18:19.553952+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "f646fec8cd564657a47dff03be0c57b8",
+    "duration": 16.903,
+    "start": 11,
+    "end": 14,
+    "width": 1920,
+    "height": 1080,
+    "samples": [
+     {
+      "time": 11,
+      "found": true,
+      "x": 0.405445,
+      "y": 0.321801
+     },
+     {
+      "time": 11.1,
+      "found": true,
+      "x": 0.42418,
+      "y": 0.324863
+     },
+     {
+      "time": 11.2,
+      "found": true,
+      "x": 0.441731,
+      "y": 0.327094
+     },
+     {
+      "time": 11.3,
+      "found": true,
+      "x": 0.457764,
+      "y": 0.329861
+     },
+     {
+      "time": 11.4,
+      "found": true,
+      "x": 0.474798,
+      "y": 0.33172
+     },
+     {
+      "time": 11.5,
+      "found": true,
+      "x": 0.489703,
+      "y": 0.335155
+     },
+     {
+      "time": 11.6,
+      "found": true,
+      "x": 0.505938,
+      "y": 0.33713
+     },
+     {
+      "time": 11.7,
+      "found": true,
+      "x": 0.521289,
+      "y": 0.3375
+     },
+     {
+      "time": 11.8,
+      "found": true,
+      "x": 0.537705,
+      "y": 0.340801
+     },
+     {
+      "time": 11.9,
+      "found": true,
+      "x": 0.553637,
+      "y": 0.341985
+     },
+     {
+      "time": 12,
+      "found": true,
+      "x": 0.570793,
+      "y": 0.347222
+     },
+     {
+      "time": 12.1,
+      "found": true,
+      "x": 0.582959,
+      "y": 0.346962
+     },
+     {
+      "time": 12.2,
+      "found": true,
+      "x": 0.596927,
+      "y": 0.346296
+     },
+     {
+      "time": 12.3,
+      "found": true,
+      "x": 0.610863,
+      "y": 0.347354
+     },
+     {
+      "time": 12.4,
+      "found": true,
+      "x": 0.624206,
+      "y": 0.35
+     },
+     {
+      "time": 12.5,
+      "found": true,
+      "x": 0.637019,
+      "y": 0.351453
+     },
+     {
+      "time": 12.6,
+      "found": true,
+      "x": 0.648242,
+      "y": 0.352517
+     },
+     {
+      "time": 12.7,
+      "found": true,
+      "x": 0.660837,
+      "y": 0.353763
+     },
+     {
+      "time": 12.8,
+      "found": true,
+      "x": 0.671577,
+      "y": 0.353527
+     },
+     {
+      "time": 12.9,
+      "found": true,
+      "x": 0.682589,
+      "y": 0.355379
+     },
+     {
+      "time": 13,
+      "found": true,
+      "x": 0.69251,
+      "y": 0.357848
+     },
+     {
+      "time": 13.1,
+      "found": true,
+      "x": 0.701719,
+      "y": 0.357593
+     },
+     {
+      "time": 13.2,
+      "found": true,
+      "x": 0.710156,
+      "y": 0.358767
+     },
+     {
+      "time": 13.3,
+      "found": true,
+      "x": 0.718462,
+      "y": 0.360855
+     },
+     {
+      "time": 13.4,
+      "found": true,
+      "x": 0.724531,
+      "y": 0.362685
+     },
+     {
+      "time": 13.5,
+      "found": true,
+      "x": 0.732422,
+      "y": 0.365972
+     },
+     {
+      "time": 13.6,
+      "found": true,
+      "x": 0.739062,
+      "y": 0.368369
+     },
+     {
+      "time": 13.7,
+      "found": true,
+      "x": 0.744385,
+      "y": 0.370399
+     },
+     {
+      "time": 13.8,
+      "found": true,
+      "x": 0.750202,
+      "y": 0.376075
+     },
+     {
+      "time": 13.9,
+      "found": true,
+      "x": 0.754457,
+      "y": 0.379144
+     }
+    ],
+    "version": "contrast-ball-2",
+    "configuration": {
+     "seed": {
+      "x": 0.4073,
+      "y": 0.3259,
+      "radius": 5,
+      "colour": [
+       175,
+       187,
+       180
+      ],
+      "time": 11
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "colour"
+    },
+    "report": {
+     "status": "REVIEW_REQUIRED",
+     "coverage": 1,
+     "max_gap_seconds": 0.1,
+     "reasons": [],
+     "sample_count": 30
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  },
+  {
+   "id": "wc2022",
+   "selection": {
+    "status": "Select the ball in a paused frame to begin.",
+    "error": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+   },
+   "analysis": null
+  }
+ ]
+}

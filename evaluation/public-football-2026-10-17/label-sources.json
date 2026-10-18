@@ -1,0 +1,2602 @@
+{
+  "label_revision": "c6992050c74d6e3f6992bac0e314e7b378a0f51c",
+  "source": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/",
+  "contacts_reviewed": false,
+  "independent_blind_labels": false,
+  "files": [
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_0.txt",
+      "sha256": "2e0d3a618b6b55277b8ba1d537f01d203623530d7f5c6a7972bb1cef5aa99ac1"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_3.txt",
+      "sha256": "fbb386e4734a9fb038f8cc18624e3d5eec6a53832fa290085f21d2e7dd94de93"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_6.txt",
+      "sha256": "498bd8e8b6706850ab00e82a944b8c992c457ae2a989dbf66ccf1009981a0aeb"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_9.txt",
+      "sha256": "68db45e48c6af235e35c68d973e7b386f1b0ea12789fc0fd9225d6632659c2c2"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_12.txt",
+      "sha256": "52983ddb65102c5a923af9b02f06a5b28d0b6b1e217da9ad5d8ab8965d7d221b"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_15.txt",
+      "sha256": "bc14c18fd6dbec29c388ec12a664c09c69895f478461f96bcc45075ed01f8b80"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_18.txt",
+      "sha256": "151216143502633503f556dfaec2b58b2277290b79899483196bf022b3b7d3a0"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_21.txt",
+      "sha256": "46a872f5536a34d4714d04c5a313648e1b31a470a5be7ca4f02b7b1721f17bfe"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_24.txt",
+      "sha256": "8a46d2e2251f6375493ed6cf85fff40905568ab086ed3444e527504173efa6e4"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_27.txt",
+      "sha256": "3474a772cc4e4697777288bc195e4e37ed3a64117ec40b9a081883af22db2859"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_30.txt",
+      "sha256": "cf3f18810ba850cb98f4f9bd71c0475f0d8175dcdfaf908b184453797b5ab76a"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_33.txt",
+      "sha256": "efd63cd8f5742649fbca1407b8acbd728c65836ac5aa03b2ee7c6e9da2ad94b7"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_36.txt",
+      "sha256": "c84778fb2a3eb25ee649cff4094d08729842e7b1d1aeeb0266125cf342bffb97"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_39.txt",
+      "sha256": "8f3e58089f74f9f1a14008b1dfa96a72ac1abc30b9a200f8148d36aa9520f7c3"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_42.txt",
+      "sha256": "b38e72bd71ca1e64a4be5c37a6a1dc025b73573469e538cae737773e9510ec1c"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_45.txt",
+      "sha256": "b2286dc2b8010a75ff32a7dfc9787becbea63ef2b1c4fe0f649e859bb12faf09"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_48.txt",
+      "sha256": "7a427016b5e8c7e48716d40091927dd63d0ae33dfe0a0c8d06603c1492181145"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_51.txt",
+      "sha256": "fde2b493d5adbd815ce28949d5ed99b6a55536768ecf5d47343beb15d9bb4a3e"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_54.txt",
+      "sha256": "993cb4de38f4994b33795f9abcf49e9dc28fe689f9f164f34cb762feb56338ee"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_57.txt",
+      "sha256": "e9740a854a62efbd2ec77bbf4496362b9383d5f62504cbdf6579bbc6ec72d75f"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_60.txt",
+      "sha256": "0ea7026cd743e07e78cca4c455fc2b3c9bebc64dfe26a26d39dc8ea172527348"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_63.txt",
+      "sha256": "4d72f1bceb7794ad6fd5c4c6b880cdd6da3cf979c20e136d9986ddba2bd5dc38"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_66.txt",
+      "sha256": "ef2c74c98966325a50b12ed817e3292645bb087e303308f18f2b14469decf78c"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_69.txt",
+      "sha256": "1b4f361b5db0dc98e222bebfcf1704160f016df24a9ca092d1a9e390f7490f2d"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_72.txt",
+      "sha256": "7e8b124b57cb2d9412f78bf64f0b70abba03fe020e5a5810a2d7ece724911f27"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_75.txt",
+      "sha256": "d484c0a4b25d623b51d900699033234c0d88eef96bc50ea13e58d2e9d2cc44ed"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_78.txt",
+      "sha256": "416a3ebe5f6ea97aa6690a5e320ca7fab68ce531d1110d3153f2745b04834c78"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_81.txt",
+      "sha256": "bf44a4d1cd40c9bd37bc4756b0cfb6a37317d9f8a3650e6d3cd8c20fea0329ca"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_84.txt",
+      "sha256": "ece562821aadc291b26b4d2b30b5cb1cec5265ba4132eafbb54175d316a6db01"
+    },
+    {
+      "path": "footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Juven_Udinese_Boardcast_1/Game_Juven_Udinese_Boardcast_1_87.txt",
+      "sha256": "772988cbcae161386781a4dc07d33d4356a04d93f783e36a9cbc9f4760056cd6"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_0.txt",
+      "sha256": "f3a5b5303d0ce398d2c11739f4a369a88f6416285b93dca4b419910c35104002"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_3.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_6.txt",
+      "sha256": "250ff5ee5cd66c0b2c66126526bd20e618a33c906f922eba80ed3562659c82a5"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_9.txt",
+      "sha256": "4e925adf4e8dc0af1e16fdb36ea7e509ce3e5e439906a5c29531e10915d8786c"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_12.txt",
+      "sha256": "ae3883b3e1f5e43cdca989acbfedd64f499796c14063bc6dc2e5c47c90b8dc9b"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_15.txt",
+      "sha256": "64f855466c3b0eb0a9727533fc981eb0120f24898b9ba2f5368605029008bd85"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_18.txt",
+      "sha256": "f2024fd03f0f80117dcf826c920bef88c2d30e99a0a336a1022556c77297161d"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_21.txt",
+      "sha256": "c37d45cb527d175a3c5d6cb6391421963d316257d07d73a577d15c6d9c53307a"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_24.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_27.txt",
+      "sha256": "5093be10e810040abf7070a01f82d6f8a5699206ff0ff7dfbab53716c7e38f5f"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_30.txt",
+      "sha256": "50359f158ccfbcae2f59723cc6ba7a9edf249e82ba964561db4d0b8e411e71a5"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_33.txt",
+      "sha256": "a1faf961063261157487c7ebc009f66e1397c592375a15698164a96a85459a5f"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_36.txt",
+      "sha256": "6555fd7658bc1644b27df3e500930001893d7eb491a3a817c3fa797bf54c7e9e"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_39.txt",
+      "sha256": "dc6a6977bcdcb57969a956f778907c9ee1c94d6dd60d1243ebda00129d0cd0a4"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_42.txt",
+      "sha256": "d1411c1aa6203211074bd46fe60a01a7d671ad3530746c20dc800dfdbd393f82"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_45.txt",
+      "sha256": "4b910223faab1f5a6b2c0353e09ff5ebca8303c9aaf3a5775d86edbaf38ce37b"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_48.txt",
+      "sha256": "b2d49aee7d6612d619d412c97747990de24dc5ab0d0c2956597a6ddbbceeddb8"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_51.txt",
+      "sha256": "4c5553d23b9c6f3622c0cf2892950d47a226e7f2705f3cb0e723c106f16102f7"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_54.txt",
+      "sha256": "8a4e1a136440b9d1b250783c3d0f6e605c9328da53cec1448658e8927df6fac7"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_57.txt",
+      "sha256": "2198345bf89e177626d8ac64d825685884857261028ef61788262a6fb01b396e"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_60.txt",
+      "sha256": "6eb3661428e27481f10b5526b48763d4192b2ad53ca43436d203b8d7b2d7ed03"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_63.txt",
+      "sha256": "82f69e4f5ee0535333b751342d039f3719c306712283f94f7580b02437ec292d"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_66.txt",
+      "sha256": "32d4fb56a9a076ee5ad21d805f6346285a4d07d7c37a7444a1730f6177b5fa5f"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_69.txt",
+      "sha256": "78d8e7938e7a7f352588e0a323ee76821a328946fc96f826a323768f688d31da"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_72.txt",
+      "sha256": "534c9a78a20ee612fffc6b73fb649d8a61b778a3c5ad344bceb1150963b565cb"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_75.txt",
+      "sha256": "21b6596c534ad4af027d2ef94ae085f99b30a7c81b5deb06667f220e86e71337"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_78.txt",
+      "sha256": "bda8c4603a132564095c57967b93b43d3da508dc5dcaac95eaf563a329dbf8e7"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_81.txt",
+      "sha256": "21ca7bc61c04e83ee906067301fc10319600bc182807e41684bd8115e0e3aba8"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_84.txt",
+      "sha256": "6bab69bf5c1a7bdfc0085e2425f92ce901c24af3eff40ee1125342677c14a437"
+    },
+    {
+      "path": "footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Livepool_Wolf_Boardcast_1/Game_Livepool_Wolf_Boardcast_1_87.txt",
+      "sha256": "9e56e65ba5865045f912d687c9afad6e7e471d39144bde65e5347b1d37410604"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_0.txt",
+      "sha256": "8a675eb252300bef1b0baa20e1be49e71c525af3202d03d075eb78332a7e22d0"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_3.txt",
+      "sha256": "e86349effa9c4cf606daad0a799969a671a41f4c3feb4d3a531e22433b1c5ffc"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_6.txt",
+      "sha256": "b4e74567c6c6d646076c6580554f5f4155ab940502f09e33f14182a8a3860e01"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_9.txt",
+      "sha256": "6c87d0baaf89051c9c5f002131dbf76e650eb36df9a264a167146f1fbde98fb2"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_12.txt",
+      "sha256": "1c5dd5ee2d1444c5fe10fadc16b86bcce91565147722d001f9e35fcb375ba311"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_15.txt",
+      "sha256": "582135a40cd69b3fee1d2d06b0e832555613c4b9c028471c83f4a0efe7d37b3b"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_18.txt",
+      "sha256": "9355f3eabfbfb54ae93a964d59cd4f51c6ad1db09c519e8cf3e43ae2b197c30a"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_21.txt",
+      "sha256": "705c08879bed590a24415d5c196c252bdf2f775e307b38a4a54076cf70ba1ab8"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_24.txt",
+      "sha256": "34aa494881860c7c2c155512650a0ad0f646bcf3c634f86e5381db4f732f48bd"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_27.txt",
+      "sha256": "5f1e405509ebc6a55f89a9f499a68d2d4378388bec4743efaa3ec935d22a4598"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_30.txt",
+      "sha256": "ba62e4abb01184ce80c30a842c08af15e76ff67f320d3302370386a4560dcedf"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_33.txt",
+      "sha256": "64e78d20cd7d276f251867786891b72f9786bc32c8532bd19377712d21643c0f"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_36.txt",
+      "sha256": "6abb57ec162e0dea25f8f8a6d5036961bd49dd10b377c6c2a4fcbf35e1a8d35e"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_39.txt",
+      "sha256": "f3fea9f8a2e62a4a004c8b13b1ca0df5526785ae180643d65c59656db10c75e0"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_42.txt",
+      "sha256": "261f4ba68c10c0142fa55bd93ddc69e0064da5adcbdac96aa347cfae4b493155"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_45.txt",
+      "sha256": "0f830067d38c11861bd734cde2505fb54f529f929163afbdfd0cc0988b223cc3"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_48.txt",
+      "sha256": "b3bf9aa999e9504fdecef60656f9e7faf09a8231b60d32214501e0138dd4b12e"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_51.txt",
+      "sha256": "968b46ea50946114125d9c5478e98187b1d63e42965187845f39d8ed41e3ef8f"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_54.txt",
+      "sha256": "d4646cd1f99d769ea6694b316b78e3975b490c90147e73bed3c09a48e26da97f"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_57.txt",
+      "sha256": "d248ea760e8e316d273f76293fbc546ca51534e3811959a782fada70cd4de6ae"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_60.txt",
+      "sha256": "3b438f01bec650b598913e9da19791c7d772725e932869c00084460b3aeb17c5"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_63.txt",
+      "sha256": "b36eafd053fbb8cb0bdfeaf0ec5acce612d9b470a53f748694566573cf2a06f7"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_66.txt",
+      "sha256": "d1a44a5cf0bc563d2f9e342373d83115c8d304916105b04b7b69dff72ff129ea"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_69.txt",
+      "sha256": "c5a6b7f06d23678ddb5c12cf770366c7b31e39c6e9f444f6b1f5638737f3db7b"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_72.txt",
+      "sha256": "a76194059dcf64d52aabf3fb33b4f15abaaeac1eda294417a085010827f6a50a"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_75.txt",
+      "sha256": "785bf8aef86efafcff5369274a665d92543c70c5a1735dee705f379a90375bcb"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_78.txt",
+      "sha256": "f1be03b62b80265d1165f064686988872ea99325d5a7b9ff64df416dc9f5d296"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_81.txt",
+      "sha256": "cf4140adde19e55c8661815c571b3476d463b11bc054013f63b166f3017aff6e"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_84.txt",
+      "sha256": "d28d56f72cb4e8cbf5573de1692af00dbb252e8c960a48c39d90f065dd50a5f1"
+    },
+    {
+      "path": "footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Real_Mardrid_ManCity_Boardcast_1/Game_Real_Mardrid_ManCity_Boardcast_1_87.txt",
+      "sha256": "41d8b353f051e049ca34bca563c00c5bfdb5ede092e0d750b5910be3e94947a8"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_0.txt",
+      "sha256": "fdc6e8400285f6493e789987f4857b0979f858de51f2faf4473e32190035d837"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_2.txt",
+      "frame_index": 2,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_2.txt",
+      "sha256": "b69f21229e9c22e1fb7116160b80addf434032dbceef65b45603acd8c0607979"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_5.txt",
+      "frame_index": 5,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_5.txt",
+      "sha256": "8211a1820ef655ea8462049b073b75efa8b376d7bac2fbf8a3afb9638bea4fdb"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_7.txt",
+      "frame_index": 7,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_7.txt",
+      "sha256": "d0c02a1dc082df3152e643af8e8774d96db5f58c6d5dcb2c31d2094c5a53027c"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_10.txt",
+      "frame_index": 10,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_10.txt",
+      "sha256": "8638c8beebf2c9a59538c54190b7eabdf8785053d5511125db5761cc4206764a"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_12.txt",
+      "sha256": "5255a50cf7751bb1f7c3462350d59b3910eeb2e21fca343bef9bf585d2f8476a"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_15.txt",
+      "sha256": "231999b085d566e6230f5c8248a8bf1a56b90e6ce6d544b1643be597f37f5432"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_17.txt",
+      "frame_index": 17,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_17.txt",
+      "sha256": "77c51ebbedb0eeb0bc43ee4f1cbab293b9bc5791e4244210abcffd7ad81fb13b"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_20.txt",
+      "frame_index": 20,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_20.txt",
+      "sha256": "7b185e0b2ca03c0ab7b8774fa5566b977a7b83d23212fc807481212f53fc2d47"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_22.txt",
+      "frame_index": 22,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_22.txt",
+      "sha256": "5f5acf2b23672ac8b6f4eaf7a835c04c93db7d2e49164678a8bea28c886b9ffc"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_25.txt",
+      "frame_index": 25,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_25.txt",
+      "sha256": "b1b4db15cb47e33886ae282d0f15379b0b358cb85cd7ba73fd37a03a3dce1b5e"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_27.txt",
+      "sha256": "a5932373eac0b2d404abec470faccf715bc8b428a04a4c306c2135a1f9915b20"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_30.txt",
+      "sha256": "0e46206065b328ac992a86ca30077220c979f4189efedea4858c840a2e82d292"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_32.txt",
+      "frame_index": 32,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_32.txt",
+      "sha256": "f3d477dfebe3b556c7572bda01798d142a0f6c63e295df69a5e55bcf714980d2"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_35.txt",
+      "frame_index": 35,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_35.txt",
+      "sha256": "50be7a121ffb89ec2bf1c61842c7265a3114f80a2237512ae675b0e1b1342207"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_37.txt",
+      "frame_index": 37,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_37.txt",
+      "sha256": "e95fcfc81157e4987f6e4612ca3b15c444f2246ab24d838fa22c9e6986dee46e"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_40.txt",
+      "frame_index": 40,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_40.txt",
+      "sha256": "50c319e9539d425c85348fb85d32da6f0917ba957838ac1a92eed0e886ac2b53"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_42.txt",
+      "sha256": "c0cf0e7495ddea25b0ffe32101a614df52ffc04a87567b0a1ba9dd032f68dca0"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_45.txt",
+      "sha256": "bddf9bf0cfa888ac0f00bee9ff26a5f85017825cf3087229a9bec727d4a3e17a"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_47.txt",
+      "frame_index": 47,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_47.txt",
+      "sha256": "b2d584137e51343dd8d37fe6b9c5465baf14a7444dec03696c41ab342c8e7307"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_50.txt",
+      "frame_index": 50,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_50.txt",
+      "sha256": "8ba91627865f2b62613e9b1437e209d00de5ec2e5dd65088a00cba0e420d02e6"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_52.txt",
+      "frame_index": 52,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_52.txt",
+      "sha256": "534116ff492a49d5b5a6f40696d6617dafd263c82d3c61176d62af3185e79f43"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_55.txt",
+      "frame_index": 55,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_55.txt",
+      "sha256": "8df265bcffd125acbece21794310588a58fc9356707ca6fcf94393af326d4e5e"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_57.txt",
+      "sha256": "4e89fd7819ad419f7f004c0d285b1f86780b2a08a8eb4a6df3bdadf12e22cf08"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_60.txt",
+      "sha256": "a69fd3b5e8a1902e73cffea874d986d64bcbf7a8f77bc28b796dd335e4d5c1b6"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_62.txt",
+      "frame_index": 62,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_62.txt",
+      "sha256": "88e5a32ef174675c0ec77c1d74412919d85a89e732fdbdfc9f0504402ec94f98"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_65.txt",
+      "frame_index": 65,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_65.txt",
+      "sha256": "adc7212579935532ad034801b5cc1f9de273a4f88c4fee480b35dabb7af145bf"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_67.txt",
+      "frame_index": 67,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_67.txt",
+      "sha256": "7566612fec7dcb04ed011c76c55cca096943d33d307b6c42f9b218aa725954c4"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_70.txt",
+      "frame_index": 70,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_70.txt",
+      "sha256": "249d6dd96f1a7dda5f08514930a7507b9ac9bbd03da31f497d08ab2d801fc43f"
+    },
+    {
+      "path": "footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Game_Torino_ACMilan_Boardcast_1/Game_Torino_ACMilan_Boardcast_1_72.txt",
+      "sha256": "6bd2fc6ce49e8397eb3d3835d1786106b8c219b250d2b0ef91661ea55dfe49bc"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_0.txt",
+      "sha256": "812e01552057620f0d60632c6804267d3255f3d9187f1a8161fda65f61c753b9"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_3.txt",
+      "sha256": "913915e5634f2635d1d8bfe4137ecf8d420a91e835e6d8ca77cc8413bc912ab8"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_6.txt",
+      "sha256": "7f985e24624cf9d7c46ae8b5c3bc0f2b0ad1404735d4f43cea05508032019efb"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_9.txt",
+      "sha256": "91837afdd158e9b520d59e43a5e78f2e2c4fe6dab4dce185ffefcce728a10998"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_12.txt",
+      "sha256": "9bbe2e7df304a939df97a0ef59d6df90a27165876522c11d608fb4c2d9f02310"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_15.txt",
+      "sha256": "a17e78ef143d74e288963bba04269589b617e9fa1d7d6602f420bc655c4f29dc"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_18.txt",
+      "sha256": "cc57df50883b5e1640173b81856ba6ff7810381e0a4399df66bf04eeb7febd00"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_21.txt",
+      "sha256": "b83a7c0daf78393dde7c5250d01f21ead8163848fa2f96399154d992e7603252"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_24.txt",
+      "sha256": "2e65d01879f39ca2c9c9c5c7c02a55317e133e695a4e0d5461a8f759670795ea"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_27.txt",
+      "sha256": "3ba7641027acbf0b8a49adb60e235bf463573debfb526ad859b0dc40efb641b2"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_30.txt",
+      "sha256": "8c9bc0f5f5a2f07f64c9d87585f31ec12b8a7d7dcf4ab64d3d8e8cfd9151698d"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_33.txt",
+      "sha256": "083926df07b4ddc7b2f42819542e4a52df226d8fa50ad95d96c16695833fa874"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_36.txt",
+      "sha256": "74155b3e3194efdb4ba3f49d5844dbd1a319b065221075d51c5c25fdfcdc4a59"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_39.txt",
+      "sha256": "8ec0d4cf6dfe51819254b1bfe143221f61ac2902c1da9f9561da20134933d265"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_42.txt",
+      "sha256": "9ddf2581d7ac50c9472c472bda871c82e07ebe50f8d582ad23423328a7d74653"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_45.txt",
+      "sha256": "28d99688de4b3d4ca70b904a61df27a053cfeb795d5ff3abdb74e9db9ff20e3a"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_48.txt",
+      "sha256": "9474b63526e82db1c214d2b84ef53ee0c2537dab80ae8e51c684cfe7beb16429"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_51.txt",
+      "sha256": "ce1a7eb0ec94a6410e01de0d006795960c92b004da00ffbca4c85c8a2bc4e1ef"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_54.txt",
+      "sha256": "5d460eb2ba16155c532ad07f56ba1957c9dafa4c0d2f2612f06ad720eef5e639"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_57.txt",
+      "sha256": "9167326b3c8500aba7285c0b5c1566f294397e90aea37dd12dca45bb39134aa2"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_60.txt",
+      "sha256": "22aa13a7345477383b0349197fa49dbf191a69b14e7ce30c9d9cf77b066ddcd5"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_63.txt",
+      "sha256": "8544c994982b11cd9792b123dbc48ff671ddfb65c6963a87f1728f7bd82fc816"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_66.txt",
+      "sha256": "5912a0c1b9101f8910c0495e5a9afe173db4d21ad17e44e314a4004efe55f292"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_69.txt",
+      "sha256": "c482bf115f57e1030c2830549f0f4ea860a43398b5019b0dfbd54d7de7c1c821"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_72.txt",
+      "sha256": "8ba023e737dfcc0ed195f21e1596d21c2e7de5811e3fc4c6e4ccc4ae24810652"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_75.txt",
+      "sha256": "67cb10b47f8f8f06378ec44389edf4139829a97edd35af9f814ec1390ce42c1e"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_78.txt",
+      "sha256": "41cea5379d132d66b1ab8745b8237a94367b0384532cb555f8cf6d3f8adbb5f3"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_81.txt",
+      "sha256": "2944ba509a960f28d024c0ec15388243d4b62ac1167eb516eb7ab8858f840b69"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_84.txt",
+      "sha256": "d3ccf2ada5703db6b6b937724f1a4eb959b018ae16b531ff20a042804402abc4"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_1_1/Pass_Training_1_1_87.txt",
+      "sha256": "d14f5cd33cf15924cf9570a9f6c2337b4cdf7caca85f0bb914fb99ed480040c3"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_0.txt",
+      "sha256": "2733e6259780910f04439e206c40fec9009b1cde1abaac41ca05983a414a28f6"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_3.txt",
+      "sha256": "111426f2ed5b1d93bef4c9b50feae14e726ee16f7c2fd6f01a0efa595cf890a7"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_6.txt",
+      "sha256": "6d9d0e299e86209206b8e03eeaa9c860e098b2afc4d35b39d29f0e154ca71ae5"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_9.txt",
+      "sha256": "f3499064664131fbc0218cfb93cf72ca4af45afaddd5506b2e351a1408952aaf"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_12.txt",
+      "sha256": "191ca157407bbefffdb6adcadb3381bd386c8ac6beb9a45a78ff9ac1ca5d5329"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_15.txt",
+      "sha256": "5cb1bea424142ce24096dbc945d68a529a55238f488f01de18dc768da4952482"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_18.txt",
+      "sha256": "ac32a8f1f554805149c528710e89d3931c6a67c2f08ee1e9fe9b29f2df298a3d"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_21.txt",
+      "sha256": "a66e57bbff294968e6c7397b9854995c00fbe6086801d7df0d1b44b54ca7cf66"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_24.txt",
+      "sha256": "74e0469954f139836f54c40dded3897e13a5cf06d2faaa44bcf9392105455360"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_27.txt",
+      "sha256": "1c928840081e183b731513470f5b2007edaf42d1df46503039762e0e236b5658"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_30.txt",
+      "sha256": "f3d7bf02082aacbdb178b507bec6f062bd6dfaba1c7af9b401a72dca258d1171"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_33.txt",
+      "sha256": "2cc7b5fd85ce06b6dec508fbd8c3950699cc6c0c7283f7f6cba9fdf0a0c4f1a2"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_36.txt",
+      "sha256": "a1eaa304f870f3d9c2e407159794d7d227a9dad36bc9a0cbec04522cf8b4db73"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_39.txt",
+      "sha256": "1dbcf18ea324a09d1a7ddbd35869c1c5ca82e02119938801b44dfb83887311be"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_42.txt",
+      "sha256": "8b4aef46a1157b84084701079b4ea26d158d0ce2988c52c434acc8e7c34727f7"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_45.txt",
+      "sha256": "b69cd492570436bfbd2133c67b4f264b7be274049ab6f06b7a5810e24199b2eb"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_48.txt",
+      "sha256": "4c82470830a677bb2f3b7b798e97df9c3de1d6ac34c73b34e1f9f7ff4bc3594e"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_51.txt",
+      "sha256": "ab7c870bdf0e6227ebd13de36cb1ddd47e1d39883c305ae6e2abaaf674cad80e"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_54.txt",
+      "sha256": "8a76f282f0e38a2b32548a3f0e44d346b16518210a3bf92f84c824be6d7b0bfc"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_57.txt",
+      "sha256": "4317681898b7bd6daa963035f48184d9830f37cece80a6597bc74286ae222023"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_60.txt",
+      "sha256": "a43f49681d2607a7c8cbc904f18f1ec1ccdc7455c57429d384f0c8ef0858f80e"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_63.txt",
+      "sha256": "26d5c83b7608b486dc4a1a27babdb13e886c47b037336449a4bf9b7cc24fc47b"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_66.txt",
+      "sha256": "1fbc6ba3b52e47e7698319b11d233769a0717ba56a5e976a5044d7a9436d1835"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_69.txt",
+      "sha256": "4fa7b2ac391b0af1114b5523fa672ffa61e5baa016d8ac14cd82bba858788365"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_72.txt",
+      "sha256": "bedec3706f1cf08356c9b2e3011b368da15e889837e9491a89d291b7dbbdae4b"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_75.txt",
+      "sha256": "9169128b2b72f235a18eb1439a84c716aa2e69f11cd0ebe626c7cb0b9ea1f6e3"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_78.txt",
+      "sha256": "6bba08697906d1190f335c8499ae4cbf33222c71ab100871b9bf680a5534d8bd"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_81.txt",
+      "sha256": "fbe96f1028f3159c34e17b94dbb93951a655ec14e380389c169ccbdfc2837ced"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_84.txt",
+      "sha256": "1a8cd92b7e24049814798102ad7dd7defa3ee98a99f6f077ac170a5a4bcdc91a"
+    },
+    {
+      "path": "footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Pass_Training_2_1/Pass_Training_2_1_87.txt",
+      "sha256": "04f2db67fdec552cac838cf00a65dcd19ce285ae895fd8d35d2799b0eca4d937"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_0.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_2.txt",
+      "frame_index": 2,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_2.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_5.txt",
+      "frame_index": 5,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_5.txt",
+      "sha256": "43a5bb25316f812666277faa0324dc9e16ea5016df3f698ff21aeca644e84a7f"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_8.txt",
+      "frame_index": 8,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_8.txt",
+      "sha256": "2d1a873d595bb20a98d687385ceb10bc9a14914d0857be753d7f2a41e087b24e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_11.txt",
+      "frame_index": 11,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_11.txt",
+      "sha256": "26582450e526052bf7915b365e0a5d30e580d83d17617edcd32f2f99e71e593f"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_14.txt",
+      "frame_index": 14,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_14.txt",
+      "sha256": "e220a90d3de1d5cf875f28c79b4e22dd1d92e04d784c46f32a65ac514feff735"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_17.txt",
+      "frame_index": 17,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_17.txt",
+      "sha256": "f5927478a8601eb63f78bc7716debeb8e29800333f53f3759b78d2671f36e6d6"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_20.txt",
+      "frame_index": 20,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_20.txt",
+      "sha256": "509593e8cabe4b7219f2e6cd47273a916208aadd702060b8f0832e52d4cd2e2a"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_23.txt",
+      "frame_index": 23,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_23.txt",
+      "sha256": "2d301ebf6e61bab8bcb88d939116333889878a42aa5c54f04b036d965888bd64"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_26.txt",
+      "frame_index": 26,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_26.txt",
+      "sha256": "efdfe735bd89b5736ebb975544de1b02eb9196a0300a284c559587afd8f67ec1"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_29.txt",
+      "frame_index": 29,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_29.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_31.txt",
+      "frame_index": 31,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_31.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_34.txt",
+      "frame_index": 34,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_34.txt",
+      "sha256": "f1632e6970b5e9748456434ed7abee492d029c5d9d24730d6974ea10d5832a8d"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_37.txt",
+      "frame_index": 37,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_37.txt",
+      "sha256": "639ac95db3f5436002c7f9c4c1d66eae258f4cd9972fc3112982d75c69522b1d"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_40.txt",
+      "frame_index": 40,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_40.txt",
+      "sha256": "98235b56c7210935ab3efdac9c259296d4b30634fa72a25a2b4e64e9185526d5"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_43.txt",
+      "frame_index": 43,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_43.txt",
+      "sha256": "a555a853ef48b85babb89533640a4ee96e0138cc7d8bd27d8188ccfabe062180"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_46.txt",
+      "frame_index": 46,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_46.txt",
+      "sha256": "3ec8a628cb297cba89739e7a49647e8ddd4ca5ecc0a3fd35c28fef162e25db12"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_49.txt",
+      "frame_index": 49,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_49.txt",
+      "sha256": "3e067b61de26bd0a86c4ab9a19914094d42ad14717d6fe4c546771224c1bb13b"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_52.txt",
+      "frame_index": 52,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_52.txt",
+      "sha256": "5e1464a16a8878ad3007d0534da199e11646a531e60f5ad9405fe790e853c2d0"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_55.txt",
+      "frame_index": 55,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_55.txt",
+      "sha256": "d21f867116d085bd87464de767e12cc917a612ebc5fba682a39648aed5eed703"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_58.txt",
+      "frame_index": 58,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_58.txt",
+      "sha256": "cc43acf4585c3909e9050f4649c025cd3a4ded70c77c85d84d0bb57d2e0eac82"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_60.txt",
+      "sha256": "80dd7d39e3e6c7202b487659a6ac181c3076f9eac187c1b67855303a49e23141"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_63.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_66.txt",
+      "sha256": "de542292c768be7d9659730b81890e93c4d21842d46325c9aa994c1bfb437811"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_69.txt",
+      "sha256": "1910ce1c74790850895989f9fcf07e9ff16b089542ddb2203b41c31a3893787c"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_72.txt",
+      "sha256": "ddcd0f1e999e5f40cb01a132b1ffb5f70918581be5dbc748e7596d38dc55b32e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_75.txt",
+      "sha256": "7c2740e3d12adcd6d82899f7c5bc51cb0b1ac277315e9bb6359e5603c94f7930"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_78.txt",
+      "sha256": "1fcbb0b6f45f13f5e4176ddb6729c1e3cc95e8158acf325c6327d2ee116b1fc7"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_81.txt",
+      "sha256": "3f11d746e42d616ce4b84c5ff0217b8dc65b135de6475e4ef781aaad0bc095ee"
+    },
+    {
+      "path": "footBall/Labels/Seven_Air_1/Seven_Air_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Air_1/Seven_Air_1_84.txt",
+      "sha256": "af830e21452540757de5279edc6093abfd2b5a5098c7c4c3970cecdb9fc40213"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_0.txt",
+      "sha256": "5299cf27a9048a45f6933e607e7b434456f27471bf23350014bdec74ac8a47b7"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_3.txt",
+      "sha256": "b48082dcabd53121ed3d0399cd6fba4a08e959c56dcdcc29aa6fcf6f760ea1db"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_6.txt",
+      "sha256": "a2966555dbd627499fdb02892ef33743d46c1b5eefdc1e434e91e3718156bf8e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_9.txt",
+      "sha256": "080cafe5fb60a68a6216f6044442556b6ceafb7fd997766d958d44ea22e939b2"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_12.txt",
+      "sha256": "1198ae34b9e840b59f05d9a242339e72a846d3baf572aff7089b3c1880e21e6f"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_15.txt",
+      "sha256": "80cb830cfe10cd63c5eba422882117e2a5c3ea0977b01e429fcb5bbd9aa734e9"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_18.txt",
+      "sha256": "eff4b2101092c6bb73aaa9678789927eab60bbc21c33ca5f2967cddb123f8302"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_21.txt",
+      "sha256": "8131efd48363dca6876e41cb2e717d078b01df6309bd9bc51d5693dbc5777205"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_24.txt",
+      "sha256": "6312f80932d453138a67e2c22a52846cece177f00e8afd3e5535432fcd087ca9"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_27.txt",
+      "sha256": "8bddb3cbebd4b910a1fd8e1d3e3de1fb00c94f5e9a61e5500778709edf73df07"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_30.txt",
+      "sha256": "6500e7657e7a0c804445f86395ee9043d86a2b2ccdb8e6b6d3e8e2985dbfbb0c"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_33.txt",
+      "sha256": "c3b957f924d786cf781110b421cd7502f514b502e3f1bbf120e58d2c5a5d7de6"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_36.txt",
+      "sha256": "2a01a772241fb5c18204d70f99a99a76c6c321cba20f0a72d0c025b4d753d8cc"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_39.txt",
+      "sha256": "e657ea8ee3edfbeb9bf9df0168895c33b3d45c3b5c37342fd73fc90255050b05"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_42.txt",
+      "sha256": "1fb66e0036437fe24cedbff3c8eea00357dbac67b3aa37ca73a6d75181c342a0"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_45.txt",
+      "sha256": "181c50fd47f504364b5532579922c32a0da78dd7ba34f16ad9fb1f1e9e4025de"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_48.txt",
+      "sha256": "fe64c07397a4061778d1b96305dd90f14ea6200910da83a98ddc5a964afac772"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_51.txt",
+      "sha256": "8ee11e237bae106d8493e7b10ffe5a90601f732d587aff787a9871799e8740d6"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_54.txt",
+      "sha256": "7320dda1a2b813885c63c053c5711f3570003682857657ab406a2e83c385d0a1"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_57.txt",
+      "sha256": "e988ed9058d22b88a979b47cfae4f0a804842d13bdffe1f942102496a90fd1c5"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_60.txt",
+      "sha256": "2f4c5ff03452c3fce45c5bb55b2888e4939d308b5265a0fe0cc685630161aff7"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_63.txt",
+      "sha256": "688988a054356922f277c3396c0031bc7b7445ad5349ca0ab01de2236f505722"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_66.txt",
+      "sha256": "41fdfeb25420696e71e11fc7072b8128b672d9233131a80c8defbd5abc687fd3"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_69.txt",
+      "sha256": "878a844e98104c3299cb2944623dca518b9394aa4c0bcba5b0e7a3d1d7d5836f"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_72.txt",
+      "sha256": "723f3afed1547e3385f4f44825f27cf3aab7e30d48e54956e5d7e3e81178899a"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_75.txt",
+      "sha256": "5f3c79fab89c8e9242150b50ee19925e68dcc46b49573be768c2ac11fcbca7bc"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_78.txt",
+      "sha256": "e307aaf61a3c6450d4aae18e599e0049e801da2de66b59d2ff9eb1b6574c9a30"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_81.txt",
+      "sha256": "b0c54e3a9b35da967357388b666ee7a8ff6ec594e58f959d90cc81151d6c954c"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_84.txt",
+      "sha256": "61e650d394726f6215298bd01cf764c361dfbbe16fccf43a655b631a97b674a9"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_1_1/Seven_Audience_1_1_87.txt",
+      "sha256": "f62f2e2f327e94ffedaaf85199e1daeb31cc8a230c5c6820555c24a022d77448"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_0.txt",
+      "sha256": "65755f1c152d881b9a39c8447ce109b618fc4ce988d43475e3b45e40f59d76c7"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_2.txt",
+      "frame_index": 2,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_2.txt",
+      "sha256": "48f8ada21fa26606b7636ad4e234058f4804433a0e82d27e08b2f026da245c93"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_5.txt",
+      "frame_index": 5,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_5.txt",
+      "sha256": "829a4a5132c9eb881510ed0e5980402df058aaeecb9111a9125f7159596b8516"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_7.txt",
+      "frame_index": 7,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_7.txt",
+      "sha256": "ee38a2a0d6099aaecede01a964148d487a9f9ea84e04aee10a014fced7cf9d04"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_10.txt",
+      "frame_index": 10,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_10.txt",
+      "sha256": "07d128fa620a64a9f4800394f51c24576fac651c21f7cc9e85fe13e3d70bfa59"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_12.txt",
+      "sha256": "52b4985d23515d41c8b08c6bb4f0af0a7197d63b68bfc7371a7b1b6969ac0de8"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_15.txt",
+      "sha256": "c73069f0439688fdcd7cca724d0eb09760aaf7212f83db95986fa0f34e051a22"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_17.txt",
+      "frame_index": 17,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_17.txt",
+      "sha256": "6070bea6700c542c6cd8f42d694e39e3a85461f1968671c9ad1b233019b8f462"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_20.txt",
+      "frame_index": 20,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_20.txt",
+      "sha256": "d4c6571b536368d5a1de1829b7bc4745335e4fe7bb34a0849aee3e686cf66cb1"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_22.txt",
+      "frame_index": 22,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_22.txt",
+      "sha256": "4d1c7922031d905ea2698d06ad369b9f983e360fdd45550adca4c642979cdeb0"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_25.txt",
+      "frame_index": 25,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_25.txt",
+      "sha256": "0e074b9ee4870cc7ef41c11f8c5abed06a9ba88d3683a887a82ec2218920f033"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_27.txt",
+      "sha256": "916750f18022cdb47c5573a33fff60638c5b64f1a19d6c7482f9e84026668640"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_30.txt",
+      "sha256": "7af36f24f5079d5db2aa4d3da7245032b613df144e1116264b195a0de1f98035"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_32.txt",
+      "frame_index": 32,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_32.txt",
+      "sha256": "50462f9e41051ce165e17f3afff5ec73f74d459bcf28e73512c1ebdbc6cbb231"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_35.txt",
+      "frame_index": 35,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_35.txt",
+      "sha256": "7692aed41a2cfe0ef1243f7f02c7a5170854bf05f504da7a07dc9d187dca1c7d"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_37.txt",
+      "frame_index": 37,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_37.txt",
+      "sha256": "e57bb9213c8319779cf83cffee9ca58f884390fb94eca7eaa8f853bc415325b7"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_40.txt",
+      "frame_index": 40,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_40.txt",
+      "sha256": "6a512f831bd8d227c23bd4951e0b46973ea17e45ca89e508427ea9cc81d5374e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_42.txt",
+      "sha256": "fd9af9123fe3ce56a1fb46d1ea645dc89d31658480714409d47d1f4f26c851f9"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_45.txt",
+      "sha256": "c163deb9daceb1fa9ee0d1f0fe4f37d3e18c11e3942c9aa120210cb67a370acf"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_47.txt",
+      "frame_index": 47,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_47.txt",
+      "sha256": "7d94655d25e762b5dd7de7311696a0d5285e035315fa00636530e376d3afca32"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_50.txt",
+      "frame_index": 50,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_50.txt",
+      "sha256": "3b5da3ec3a1239c0e5a950db9fa86ff35f3daa497167a92447c2ab34db6ebb7e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_52.txt",
+      "frame_index": 52,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_52.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_55.txt",
+      "frame_index": 55,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_55.txt",
+      "sha256": "d5f7d833a94225f3b647b0063b213bdfaa13ba3f2cf36011fc4da767bc64a4d9"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_57.txt",
+      "sha256": "43bc48d9771e6972c8efc9e8f5a71c80b3b3d55d615cdf795837f0cab202c837"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_60.txt",
+      "sha256": "285804bf1854cf4b69ede83a9a12928d75bd3a7df0f0d9efc553aaa26472a114"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_62.txt",
+      "frame_index": 62,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_62.txt",
+      "sha256": "4df007fb1399eb6e93c3c6bbab546124c9affdb090b1e62d7f1137966764bb1e"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_65.txt",
+      "frame_index": 65,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_65.txt",
+      "sha256": "7103616d07e8b22bfa5ed2c8a41d849b22182fb223a61c6a59ccd0da16b6ee97"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_67.txt",
+      "frame_index": 67,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_67.txt",
+      "sha256": "e8ef0f54ed9fb4b0f1707fa9c4a954fd42bc08f5663cc4af91e10b8e5f596912"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_70.txt",
+      "frame_index": 70,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_70.txt",
+      "sha256": "de800a540e8fc371bc6379eac214e17d825b3add98be8cb28517e090c63147f5"
+    },
+    {
+      "path": "footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/Seven_Audience_2_1/Seven_Audience_2_1_72.txt",
+      "sha256": "699b12e2e6eb2f9e42c486b6d388650a1cdb24cf7034f15fc95ec9aa2e2ede09"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_0.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_2.txt",
+      "frame_index": 2,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_2.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_5.txt",
+      "frame_index": 5,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_5.txt",
+      "sha256": "4192795c743c58fca22866f8a98cad365282cf3174800c868a7e119d618d45b1"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_7.txt",
+      "frame_index": 7,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_7.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_10.txt",
+      "frame_index": 10,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_10.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_12.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_15.txt",
+      "sha256": "15b61856bd88c5b76d5209706c56af251ad39f665c1bee66a566a09ccf24807d"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_17.txt",
+      "frame_index": 17,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_17.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_20.txt",
+      "frame_index": 20,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_20.txt",
+      "sha256": "930f1580d9467f39e982c0985ebf031b82046b63d4b12f611e8cb6085a92e5fb"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_22.txt",
+      "frame_index": 22,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_22.txt",
+      "sha256": "c748a49389c8b9ffb9c905e9d85dfcb179adccf64e71efc9b75b6b9ac6911a8f"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_25.txt",
+      "frame_index": 25,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_25.txt",
+      "sha256": "ede5738c7b24a4de65bb7eded8b3336a5ce4fae40e756a3b88e5cbf5ee285672"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_27.txt",
+      "sha256": "8a4cee42a13d0645f002e71903b8c7ca4cf6d59cbe59f50710dcbf3111e8cf38"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_30.txt",
+      "sha256": "4efed4f3b7ce2a41730d726ad55869be845be272c6ee3c35958c55e43f168bb4"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_32.txt",
+      "frame_index": 32,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_32.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_35.txt",
+      "frame_index": 35,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_35.txt",
+      "sha256": "94e5df991f3b5be99c01562b728c021cd762e92475b5ffc3e0da818e3e02c1fd"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_37.txt",
+      "frame_index": 37,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_37.txt",
+      "sha256": "3792a11b912702362f067a1478cb4759bfa1be608864fe6c5b0097ed7f90014a"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_40.txt",
+      "frame_index": 40,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_40.txt",
+      "sha256": "e731be8069306f15591d173d7d778ad66890c481356b8a8562518ddb5da03677"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_42.txt",
+      "sha256": "374c4d9adc9971cef83ba437e077293b840465c0ccbfe3257f5959a1438198f8"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_45.txt",
+      "sha256": "0d6a29c3c84938e3239c0cb3e879321b8b03671d58d1b00e19d261f9d117526c"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_47.txt",
+      "frame_index": 47,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_47.txt",
+      "sha256": "f320b0089cd2d6baff7f40b3319f0f612159d43231a15815444f915621429bda"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_50.txt",
+      "frame_index": 50,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_50.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_52.txt",
+      "frame_index": 52,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_52.txt",
+      "sha256": "58297d8a8dc6f85ec757a0527cc6c5b27d7fa4f506f9fca7aa383c52eb60e744"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_55.txt",
+      "frame_index": 55,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_55.txt",
+      "sha256": "e2d1fe01fb6d03ba477d2825046300863211b2d6c8ae308b2e4cb078a2ac0991"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_57.txt",
+      "sha256": "0a6dd4058a56f1b9df42e19f8aca12631da539582bb057c50088234bb1d92348"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_60.txt",
+      "sha256": "80d7dd1e44f40486e0265431a3ca4be390bcb9cd7dd7b02d54133da169cbe654"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_62.txt",
+      "frame_index": 62,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_62.txt",
+      "sha256": "b032d27bfbc5576b0ecc3b85eeb6269a0cbcc3f9b39095fb9dea96978534dc18"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_65.txt",
+      "frame_index": 65,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_65.txt",
+      "sha256": "20a8229387fad710e8cc08abc7ec2ba8a06b7a06408c5e82279c888faa926a7b"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_67.txt",
+      "frame_index": 67,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_67.txt",
+      "sha256": "56e836a7c57f8fcdc679cf8fdbaf940a76abfd46af5cfb58478f91a1eca9c3d4"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_70.txt",
+      "frame_index": 70,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_70.txt",
+      "sha256": "7718150670b1651f40b852dd071872b744bcb34978f80593fdb6fcb15152fa73"
+    },
+    {
+      "path": "footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Top_10_1/dribble_Top_10_1_72.txt",
+      "sha256": "3cfcd63dfd284a57c6caf2cadddad5fdff2940d139906f61ea7bc4fd3fbf1f9b"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_0.txt",
+      "sha256": "f2b613243afd7256855cf568debd54734507ae8fbb523d171ef012e752f63b5f"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_3.txt",
+      "frame_index": 3,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_3.txt",
+      "sha256": "25e1371dbfc3cf22fbd36a7dd248813cbad68a2b7910c62a96b7259a7eaa273f"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_6.txt",
+      "frame_index": 6,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_6.txt",
+      "sha256": "abc4fe8e152b6972aa68895f9af86c045ecf5a30aefa18bcac0796ed6597d322"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_9.txt",
+      "frame_index": 9,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_9.txt",
+      "sha256": "d973e41f5d44a25d41c708475d53fe98919f6452514743c55c37198eee0daf07"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_12.txt",
+      "sha256": "408952ef1d0e26f8c088e0f5db5fedd01f7752c3725ecabc79658bb00f41f9a0"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_15.txt",
+      "sha256": "679401630b927c8d336522ee60b75486598eca06f1e63ca5da749ffedca70998"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_18.txt",
+      "frame_index": 18,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_18.txt",
+      "sha256": "1b3d1c293d0620f6ca2d2b62fe1acc98ae52b0af0338a72bc4c581da79034bf9"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_21.txt",
+      "frame_index": 21,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_21.txt",
+      "sha256": "4f12bc52d285d50a1e45b09dfac312de7265e0a0658f21e6b96013934c9f2ad0"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_24.txt",
+      "frame_index": 24,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_24.txt",
+      "sha256": "26a1f17e7428e9144ac382ef00ae67e6287f40ac741c11b95f23e567c1b7e214"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_27.txt",
+      "sha256": "61e8e07090f8ca682bdcbf718a2a59c3d76e34ab2c2578cde1fc18ead1c5fdc0"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_30.txt",
+      "sha256": "7a94a4634c7a8ab2e81e441fa6abcfd9aa582ec6afa8a63d0165c09013e340e5"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_33.txt",
+      "frame_index": 33,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_33.txt",
+      "sha256": "b9682ce2cd43d1d16760d5c01b4b2a9b9addf101c81519c5c95d1bb128070749"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_36.txt",
+      "frame_index": 36,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_36.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_39.txt",
+      "frame_index": 39,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_39.txt",
+      "sha256": "328a35b72b98834e7a3d6af502320826bbd197d0df228c824aa9beddaf147ac4"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_42.txt",
+      "sha256": "97479706bcad7d3fd14ea2bd68a035d323ed52fc6568f83b14ea00c7ca7f5fa1"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_45.txt",
+      "sha256": "be6024f49c1b899ba46ad2f65468fd22aa571fbfbf0a2d993fb44d6d03e9aa4d"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_48.txt",
+      "frame_index": 48,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_48.txt",
+      "sha256": "71e99c65fb1a5eb322595626fae376dba604db5424676c9716132c9b3ff1d5d1"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_51.txt",
+      "frame_index": 51,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_51.txt",
+      "sha256": "2639ca1bc8b3effd4e0606a6fe08fd4789d7a2888fb3b063503681f4a95953ef"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_54.txt",
+      "frame_index": 54,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_54.txt",
+      "sha256": "124f009d63e7ed8461da9a49d2a0c40865b31a00de44e1cb11bc8af327f116af"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_57.txt",
+      "sha256": "a19723ab8cf3df12588bc0421f1d874d141711fe1354e69a538f75ebc5429f73"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_60.txt",
+      "sha256": "3ae20f87f79bbe4aacce2eff1102c3ab07a3939bffb7f53d5b88c12b02351960"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_63.txt",
+      "frame_index": 63,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_63.txt",
+      "sha256": "94192b47576c90f20e56d570911fd8677d4d1e2d0f50a261d2bd445c7ffcbe7d"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_66.txt",
+      "frame_index": 66,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_66.txt",
+      "sha256": "32d17dc7cf51ca02612f062a8a70e8fc1685f1a98f52dbe4e182df007a31cb2d"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_69.txt",
+      "frame_index": 69,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_69.txt",
+      "sha256": "c2bbe4a5ad963382e6c98ae9128400a5c9a70eaabd202072a2b699f02fa1897d"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_72.txt",
+      "sha256": "91827ffa393d8bccb7209fb34d1209827c5a496c2071bfe5bea2a70ffb41dfe4"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_75.txt",
+      "frame_index": 75,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_75.txt",
+      "sha256": "553caaf562f74823cc863155261aa8fe73e3ed0f6544e1b6c58b8d5e6aa5804c"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_78.txt",
+      "frame_index": 78,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_78.txt",
+      "sha256": "0364b5c1611ac545d3c450c1930f627ddd90ece9aabf5d379b32e173e7986ed2"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_81.txt",
+      "frame_index": 81,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_81.txt",
+      "sha256": "a6c1a9656298c3703de91d24956261cc679e4a17fb522955179cad3202e20a2b"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_84.txt",
+      "frame_index": 84,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_84.txt",
+      "sha256": "190f6ff112ec95ab5ed68cd95b79fb7c04b4fd2ce63362ff92431c649c23a160"
+    },
+    {
+      "path": "footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_87.txt",
+      "frame_index": 87,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/dribble_Training_2_1/dribble_Training_2_1_87.txt",
+      "sha256": "ba5f0451066457a4d055ad7955ea085ddd7d2feaf51242e526bc031c1d11fdf6"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_0.txt",
+      "frame_index": 0,
+      "sample_time": 0.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_0.txt",
+      "sha256": "1a4787b7c6df3ede6df075fb8b7436d2f9cb2a30c5223bb0ad2165546271117d"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_2.txt",
+      "frame_index": 2,
+      "sample_time": 0.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_2.txt",
+      "sha256": "df49299b9e7a692e3d517507b6cb20ba93dc28f2d4f617c73a1665ca1127d119"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_5.txt",
+      "frame_index": 5,
+      "sample_time": 0.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_5.txt",
+      "sha256": "c1d3c0b98fafed5b77de0c85285c1c0218ed38c0085b174ac954354a547275fa"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_7.txt",
+      "frame_index": 7,
+      "sample_time": 0.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_7.txt",
+      "sha256": "44d3d6f4ddc95c31e8ae35d2ed32ec990c1efa8256ae3e39b3fbc5b6f834e024"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_10.txt",
+      "frame_index": 10,
+      "sample_time": 0.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_10.txt",
+      "sha256": "f260a1419dcfa697857610b38474c671aa1f1e889933cd7332d0f98150e80af2"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_12.txt",
+      "frame_index": 12,
+      "sample_time": 0.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_12.txt",
+      "sha256": "2b661870a8e84b0b174e6ed7a805a4d134c60343a2485692f492899d65ccf237"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_15.txt",
+      "frame_index": 15,
+      "sample_time": 0.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_15.txt",
+      "sha256": "2619149e235f0c01d0a24b20729c6e2d5e239a10d04bc89a393d4187f3d22219"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_17.txt",
+      "frame_index": 17,
+      "sample_time": 0.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_17.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_20.txt",
+      "frame_index": 20,
+      "sample_time": 0.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_20.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_22.txt",
+      "frame_index": 22,
+      "sample_time": 0.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_22.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_25.txt",
+      "frame_index": 25,
+      "sample_time": 1.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_25.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_27.txt",
+      "frame_index": 27,
+      "sample_time": 1.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_27.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_30.txt",
+      "frame_index": 30,
+      "sample_time": 1.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_30.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_32.txt",
+      "frame_index": 32,
+      "sample_time": 1.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_32.txt",
+      "status": "missing_label"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_35.txt",
+      "frame_index": 35,
+      "sample_time": 1.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_35.txt",
+      "sha256": "687c333a7fc7844cace11969e18651545591d6d72208b4aa9113dd19b9a2c04a"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_37.txt",
+      "frame_index": 37,
+      "sample_time": 1.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_37.txt",
+      "sha256": "0f109cd315bd8af37ce9f6114e80f2a4e715d625a5bf7b29805b3166f4e47e1e"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_40.txt",
+      "frame_index": 40,
+      "sample_time": 1.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_40.txt",
+      "sha256": "c9a70dd2bf629310654d92c350d5c6681b6f456bdd1289063f586adfa0ff70f1"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_42.txt",
+      "frame_index": 42,
+      "sample_time": 1.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_42.txt",
+      "sha256": "25ccc3948345ecf0970c785c8360c405bfac0c8893e3dfcd037ba455aa89751f"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_45.txt",
+      "frame_index": 45,
+      "sample_time": 1.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_45.txt",
+      "sha256": "be4c4e3f2550a815cbe89feff933290eb224c5a2fb06f14acc8efbaf51e8ba12"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_47.txt",
+      "frame_index": 47,
+      "sample_time": 1.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_47.txt",
+      "sha256": "a359aba0fb810765812bc51b1132d22b9ce77d9fd018e943cbac1bb44c157226"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_50.txt",
+      "frame_index": 50,
+      "sample_time": 2.0,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_50.txt",
+      "sha256": "dd3013afb1f91d32143477012f814a870021cd5ad34cc15e78144bae9c28b660"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_52.txt",
+      "frame_index": 52,
+      "sample_time": 2.1,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_52.txt",
+      "sha256": "e615194604c70a12aaf90d81236817cc3d836a1952351f10658e68c4b5991b15"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_55.txt",
+      "frame_index": 55,
+      "sample_time": 2.2,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_55.txt",
+      "sha256": "188947c2b14473f267280fbb95fbb78083e6b90221eeea19eb718b4e47b9076f"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_57.txt",
+      "frame_index": 57,
+      "sample_time": 2.3,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_57.txt",
+      "sha256": "f8348ee612cd6740f63e8840f606685a466f5aed0fc20c919478fbb2faf94066"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_60.txt",
+      "frame_index": 60,
+      "sample_time": 2.4,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_60.txt",
+      "sha256": "4597a2be2fafeb74775919c0421e4fa8902e1fe0fe8670fa8b4c87a951dd6b93"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_62.txt",
+      "frame_index": 62,
+      "sample_time": 2.5,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_62.txt",
+      "sha256": "8c796512fb60356de3d806abb947691ce5a38d74a082a4aa0bbc0464aa784f62"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_65.txt",
+      "frame_index": 65,
+      "sample_time": 2.6,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_65.txt",
+      "sha256": "f1394e8b32331806134d90d62da545fe72e3a875c2cde5a172c6a9058c986557"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_67.txt",
+      "frame_index": 67,
+      "sample_time": 2.7,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_67.txt",
+      "sha256": "005782a75de0bfd5c35e4504eb9b7a9edecc2f7f5117ab1a5d1813c1bfa7108f"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_70.txt",
+      "frame_index": 70,
+      "sample_time": 2.8,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_70.txt",
+      "sha256": "0c6b9ca7f516839d78f250633f60dff212f32945fd451062bbd3efd0c16d5052"
+    },
+    {
+      "path": "footBall/Labels/shot_Training_1_1/shot_Training_1_1_72.txt",
+      "frame_index": 72,
+      "sample_time": 2.9,
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/footBall/Labels/shot_Training_1_1/shot_Training_1_1_72.txt",
+      "sha256": "7d1e07f65afa0bdac85e5c368e81ae0a7c0e1c6e92c40b7b630f5b8145e9d913"
+    }
+  ],
+  "clips": [
+    {
+      "id": "Game_1_1",
+      "fps": 30.0,
+      "frames": 30,
+      "visible": 30
+    },
+    {
+      "id": "Game_2_1",
+      "fps": 30.0,
+      "frames": 28,
+      "visible": 28
+    },
+    {
+      "id": "Game_3_1",
+      "fps": 30.0,
+      "frames": 30,
+      "visible": 30
+    },
+    {
+      "id": "Game_4_1",
+      "fps": 25.0,
+      "frames": 30,
+      "visible": 30
+    },
+    {
+      "id": "Pass_Training_1_1",
+      "fps": 30.0,
+      "frames": 30,
+      "visible": 30
+    },
+    {
+      "id": "Pass_Training_2_1",
+      "fps": 30.0,
+      "frames": 30,
+      "visible": 4
+    },
+    {
+      "id": "Seven_Air_1",
+      "fps": 29.0,
+      "frames": 25,
+      "visible": 25
+    },
+    {
+      "id": "Seven_Audience_1_1",
+      "fps": 30.0,
+      "frames": 30,
+      "visible": 30
+    },
+    {
+      "id": "Seven_Audience_2_1",
+      "fps": 25.0,
+      "frames": 29,
+      "visible": 29
+    },
+    {
+      "id": "dribble_Top_10_1",
+      "fps": 25.0,
+      "frames": 22,
+      "visible": 22
+    },
+    {
+      "id": "dribble_Training_2_1",
+      "fps": 30.0,
+      "frames": 29,
+      "visible": 29
+    },
+    {
+      "id": "shot_Training_1_1",
+      "fps": 25.0,
+      "frames": 23,
+      "visible": 23
+    }
+  ]
+}

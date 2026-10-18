@@ -1,0 +1,9 @@
+{
+  "source": "volley-dark.mp4",
+  "first_seconds": 4,
+  "looped_to_seconds": 30.1,
+  "reencoded": true,
+  "purpose": "compute benchmark, not independent accuracy",
+  "sha256": "2bada961790fe99f04d87198a2d5be0ad1862ed3f2aae0b17c7b1496e57ad9d8",
+  "bytes": 11671482
+}

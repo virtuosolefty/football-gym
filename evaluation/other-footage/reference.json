@@ -1,0 +1,321 @@
+{
+ "method": "Single-reviewer visual reference by the AI assistant that implemented the detector. It was recorded before any tracker ran on these clips, from frames decoded by the app's own video element (an earlier attempt that used a static server without range support silently captured the wrong frames and was discarded). Ball centres and radii are read in native video pixels from gridded views, with an uncertainty of roughly 5-15 native pixels. Spot checks are every third frame of the window at 10 Hz. A detection is correct if its centre is within 1.5 reference radii of the reference centre; this is size-independent and, for large balls, stricter than the pixel rule used in the first screening. Clips of kind no_ball, ball_not_visible and tiny_ball test refusal and abstention rather than accuracy.",
+ "clips": [
+  {
+   "id": "aerial",
+   "file": "aerial.mp4",
+   "video_size": [
+    1280,
+    720
+   ],
+   "window": [
+    0.5,
+    3.5
+   ],
+   "kind": "ball",
+   "note": "Two players in red kit pass and juggle a white/orange ball in front of a plain wall; the ball colour is close to the kits and the ball moves between the players.",
+   "click_native": [
+    826,
+    370
+   ],
+   "click_normalized": [
+    0.6453,
+    0.5139
+   ],
+   "radius_hint_canvas_px": 6,
+   "canvas_scale": 4.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 0.5,
+     "x": 826,
+     "y": 370,
+     "radius": 26
+    },
+    {
+     "frame": 3,
+     "time": 0.8,
+     "x": 850,
+     "y": 342,
+     "radius": 26
+    },
+    {
+     "frame": 6,
+     "time": 1.1,
+     "x": 864,
+     "y": 390,
+     "radius": 26
+    },
+    {
+     "frame": 9,
+     "time": 1.4,
+     "x": 856,
+     "y": 250,
+     "radius": 26
+    },
+    {
+     "frame": 12,
+     "time": 1.7,
+     "x": 844,
+     "y": 370,
+     "radius": 26
+    },
+    {
+     "frame": 15,
+     "time": 2.0,
+     "x": 852,
+     "y": 340,
+     "radius": 26
+    },
+    {
+     "frame": 18,
+     "time": 2.3,
+     "x": 868,
+     "y": 300,
+     "radius": 26
+    },
+    {
+     "frame": 21,
+     "time": 2.6,
+     "x": 880,
+     "y": 466,
+     "radius": 26
+    },
+    {
+     "frame": 24,
+     "time": 2.9,
+     "x": 956,
+     "y": 270,
+     "radius": 26
+    },
+    {
+     "frame": 27,
+     "time": 3.2,
+     "x": 1024,
+     "y": 328,
+     "radius": 26
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "training",
+   "file": "training.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    7.4,
+    9.1
+   ],
+   "kind": "ball",
+   "note": "Low-quality handheld training footage. The target is the ball dribbled by the player in the white shirt (balls at other players' feet are not the target). The camera shakes; the ball is about 45 px across at native size, about 8 px on the tracking canvas.",
+   "click_native": [
+    866,
+    632
+   ],
+   "click_normalized": [
+    0.451,
+    0.5852
+   ],
+   "radius_hint_canvas_px": 4,
+   "canvas_scale": 6.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 7.4,
+     "x": 866,
+     "y": 632,
+     "radius": 24
+    },
+    {
+     "frame": 3,
+     "time": 7.7,
+     "x": 776,
+     "y": 636,
+     "radius": 24
+    },
+    {
+     "frame": 6,
+     "time": 8.0,
+     "x": 676,
+     "y": 636,
+     "radius": 22
+    },
+    {
+     "frame": 9,
+     "time": 8.3,
+     "x": 626,
+     "y": 584,
+     "radius": 22
+    },
+    {
+     "frame": 12,
+     "time": 8.6,
+     "x": 586,
+     "y": 546,
+     "radius": 20
+    }
+   ],
+   "unscorable_frames": {
+    "15": "ball not clearly visible"
+   }
+  },
+  {
+   "id": "tennis",
+   "file": "tennis.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    5.0,
+    8.0
+   ],
+   "kind": "ball_then_cut",
+   "note": "Opening low-angle close-up with a large ball against the sky (frames 0-7), then a hard cut at frame 8 to a wide shot where the same ball is about 28 px across. The tracker should lose the track at the cut instead of picking up something else; post-cut detections are audited by overlay, not by spot checks.",
+   "click_native": [
+    1264,
+    350
+   ],
+   "click_normalized": [
+    0.6583,
+    0.3241
+   ],
+   "radius_hint_canvas_px": 6,
+   "canvas_scale": 6.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 5.0,
+     "x": 1264,
+     "y": 350,
+     "radius": 36
+    },
+    {
+     "frame": 2,
+     "time": 5.2,
+     "x": 1340,
+     "y": 246,
+     "radius": 40
+    },
+    {
+     "frame": 4,
+     "time": 5.4,
+     "x": 1446,
+     "y": 244,
+     "radius": 48
+    },
+    {
+     "frame": 6,
+     "time": 5.6,
+     "x": 1736,
+     "y": 380,
+     "radius": 66
+    },
+    {
+     "frame": 7,
+     "time": 5.7,
+     "x": 1816,
+     "y": 180,
+     "radius": 76
+    },
+    {
+     "frame": 8,
+     "time": 5.8,
+     "x": 1086,
+     "y": 596,
+     "radius": 14
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "topdown",
+   "file": "topdown.webm",
+   "video_size": [
+    3840,
+    2160
+   ],
+   "window": [
+    5.0,
+    8.0
+   ],
+   "kind": "tiny_ball",
+   "note": "Drone view at 4K. The ball is a white speck about 10 px across at native size, well under 1 px on the 320 px tracking canvas and far below the app's minimum representable ball (radius 2 canvas px = 24 native px). Only frame 0 is annotated.",
+   "click_native": [
+    1546,
+    790
+   ],
+   "click_normalized": [
+    0.4026,
+    0.3657
+   ],
+   "radius_hint_canvas_px": 2,
+   "canvas_scale": 12.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 5.0,
+     "x": 1546,
+     "y": 790,
+     "radius": 5
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "improvised",
+   "file": "improvised.mp4",
+   "video_size": [
+    1280,
+    720
+   ],
+   "window": [
+    50.0,
+    53.0
+   ],
+   "kind": "ball_not_visible",
+   "note": "Two children contest a ball among others on a dirt field; at this distance and with occlusion no ball can be located reliably by eye, so there is no reference position. Click is on the feet of the child in purple. Expectation: the app must not report a confident ball track.",
+   "click_native": [
+    1050,
+    512
+   ],
+   "click_normalized": [
+    0.8203,
+    0.7111
+   ],
+   "radius_hint_canvas_px": 2,
+   "canvas_scale": 4.0,
+   "spots": [],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "tournament",
+   "file": "tournament.webm",
+   "video_size": [
+    320,
+    240
+   ],
+   "window": [
+    2.0,
+    5.0
+   ],
+   "kind": "no_ball",
+   "note": "320x240 footage of a team huddle; no ball is visible. Click is on a player's white sock. Expectation: the app finds no ball.",
+   "click_native": [
+    205,
+    197
+   ],
+   "click_normalized": [
+    0.6406,
+    0.8208
+   ],
+   "radius_hint_canvas_px": 2,
+   "canvas_scale": 1.0,
+   "spots": [],
+   "unscorable_frames": {}
+  }
+ ]
+}

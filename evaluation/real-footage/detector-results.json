@@ -1,0 +1,98 @@
+{
+  "page_errors": [],
+  "clips": [
+    {
+      "clip": "daylight",
+      "version": "detector-ball-1",
+      "method": "detector",
+      "detector": {
+        "model": "yolox_nano",
+        "size": 416,
+        "score_threshold": 0.2
+      },
+      "fitted_radius_px": 38,
+      "sample_count": 30,
+      "detected_frames": 29,
+      "coverage_percent": 96.7,
+      "max_gap_seconds": 0.2,
+      "system_status": "REVIEW_REQUIRED",
+      "reasons": [],
+      "scorable_spot_checks": 9,
+      "spot_detections": 9,
+      "correct_spot_detections": 9,
+      "mean_centre_error_in_radii": 0.04,
+      "audited_correct_detections": 29,
+      "audited_wrong_detections": 0,
+      "audited_precision_percent": 100.0,
+      "min_detection_score": 0.56,
+      "released_contact_proposals": 0,
+      "clear_reference_contacts": 0,
+      "matched_contact_proposals": null,
+      "measurement_records_created": 0,
+      "elapsed_ms": 6249
+    },
+    {
+      "clip": "indoor",
+      "version": "detector-ball-1",
+      "method": "detector",
+      "detector": {
+        "model": "yolox_nano",
+        "size": 416,
+        "score_threshold": 0.2
+      },
+      "fitted_radius_px": 8,
+      "sample_count": 30,
+      "detected_frames": 29,
+      "coverage_percent": 96.7,
+      "max_gap_seconds": 0.2,
+      "system_status": "REVIEW_REQUIRED",
+      "reasons": [],
+      "scorable_spot_checks": 10,
+      "spot_detections": 10,
+      "correct_spot_detections": 10,
+      "mean_centre_error_in_radii": 0.12,
+      "audited_correct_detections": 29,
+      "audited_wrong_detections": 0,
+      "audited_precision_percent": 100.0,
+      "min_detection_score": 0.684,
+      "released_contact_proposals": 1,
+      "clear_reference_contacts": 3,
+      "matched_contact_proposals": 1,
+      "measurement_records_created": 0,
+      "elapsed_ms": 4940
+    },
+    {
+      "clip": "strobe",
+      "version": "detector-ball-1",
+      "method": "detector",
+      "detector": {
+        "model": "yolox_nano",
+        "size": 416,
+        "score_threshold": 0.2
+      },
+      "fitted_radius_px": 14,
+      "sample_count": 30,
+      "detected_frames": 12,
+      "coverage_percent": 40.0,
+      "max_gap_seconds": 0.5,
+      "system_status": "UNMEASURABLE",
+      "reasons": [
+        "The selected ball was missing or ambiguous in too many frames.",
+        "Track gaps are too long; review the clip manually."
+      ],
+      "scorable_spot_checks": 3,
+      "spot_detections": 3,
+      "correct_spot_detections": 3,
+      "mean_centre_error_in_radii": 0.11,
+      "audited_correct_detections": 10,
+      "audited_wrong_detections": 2,
+      "audited_precision_percent": 83.3,
+      "min_detection_score": 0.213,
+      "released_contact_proposals": 0,
+      "clear_reference_contacts": null,
+      "matched_contact_proposals": null,
+      "measurement_records_created": 0,
+      "elapsed_ms": 3886
+    }
+  ]
+}

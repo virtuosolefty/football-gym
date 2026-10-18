@@ -1,0 +1,239 @@
+{
+  "format": "football-evaluation-1",
+  "clip": {
+    "id": "Game_3_1",
+    "filename": "Game_3_1.mp4",
+    "sha256": "0c7725944e5fa9929195fb3b810e5af58dd029e8a8d18c897a4af8e0cf9d899c",
+    "width": 1920,
+    "height": 1080,
+    "start": 0,
+    "end": 3
+  },
+  "annotator": {
+    "id": "Zou-Liu-public-dataset",
+    "role": "external-dataset",
+    "independent": false
+  },
+  "conditions": [],
+  "notes": "Published external ball boxes, mapped by the author's naming guide. Blind annotation protocol unverified; condition review and alignment spot-check required. Multiple boxes are marked uncertain. Blurred people prevent pose validation.",
+  "sample_interval": 0.1,
+  "frames": [
+    {
+      "time": 0.0,
+      "status": "visible",
+      "x": 0.502344,
+      "y": 0.532407,
+      "radius": 3.50016
+    },
+    {
+      "time": 0.1,
+      "status": "visible",
+      "x": 0.510417,
+      "y": 0.524074,
+      "radius": 3.9997800000000003
+    },
+    {
+      "time": 0.2,
+      "status": "visible",
+      "x": 0.517188,
+      "y": 0.516204,
+      "radius": 3.49974
+    },
+    {
+      "time": 0.3,
+      "status": "visible",
+      "x": 0.523177,
+      "y": 0.509259,
+      "radius": 3.50016
+    },
+    {
+      "time": 0.4,
+      "status": "visible",
+      "x": 0.528646,
+      "y": 0.504167,
+      "radius": 2.5002
+    },
+    {
+      "time": 0.5,
+      "status": "visible",
+      "x": 0.534635,
+      "y": 0.499537,
+      "radius": 3.49974
+    },
+    {
+      "time": 0.6,
+      "status": "visible",
+      "x": 0.540885,
+      "y": 0.494444,
+      "radius": 3.0002400000000002
+    },
+    {
+      "time": 0.7,
+      "status": "visible",
+      "x": 0.547135,
+      "y": 0.490278,
+      "radius": 3.49974
+    },
+    {
+      "time": 0.8,
+      "status": "visible",
+      "x": 0.552604,
+      "y": 0.485185,
+      "radius": 3.9997800000000003
+    },
+    {
+      "time": 0.9,
+      "status": "visible",
+      "x": 0.558073,
+      "y": 0.481481,
+      "radius": 3.0002400000000002
+    },
+    {
+      "time": 1.0,
+      "status": "visible",
+      "x": 0.563542,
+      "y": 0.479167,
+      "radius": 3.0
+    },
+    {
+      "time": 1.1,
+      "status": "visible",
+      "x": 0.567708,
+      "y": 0.475926,
+      "radius": 3.0
+    },
+    {
+      "time": 1.2,
+      "status": "visible",
+      "x": 0.571875,
+      "y": 0.473611,
+      "radius": 2.5002
+    },
+    {
+      "time": 1.3,
+      "status": "visible",
+      "x": 0.576042,
+      "y": 0.470833,
+      "radius": 2.5002
+    },
+    {
+      "time": 1.4,
+      "status": "visible",
+      "x": 0.579948,
+      "y": 0.468056,
+      "radius": 2.49984
+    },
+    {
+      "time": 1.5,
+      "status": "visible",
+      "x": 0.584375,
+      "y": 0.464815,
+      "radius": 3.0
+    },
+    {
+      "time": 1.6,
+      "status": "visible",
+      "x": 0.586198,
+      "y": 0.464352,
+      "radius": 3.49974
+    },
+    {
+      "time": 1.7,
+      "status": "visible",
+      "x": 0.586198,
+      "y": 0.4625,
+      "radius": 3.49974
+    },
+    {
+      "time": 1.8,
+      "status": "visible",
+      "x": 0.586719,
+      "y": 0.4625,
+      "radius": 3.49974
+    },
+    {
+      "time": 1.9,
+      "status": "visible",
+      "x": 0.586198,
+      "y": 0.462037,
+      "radius": 3.50016
+    },
+    {
+      "time": 2.0,
+      "status": "visible",
+      "x": 0.586458,
+      "y": 0.461111,
+      "radius": 3.9997800000000003
+    },
+    {
+      "time": 2.1,
+      "status": "visible",
+      "x": 0.58724,
+      "y": 0.460648,
+      "radius": 3.49974
+    },
+    {
+      "time": 2.2,
+      "status": "visible",
+      "x": 0.588021,
+      "y": 0.460185,
+      "radius": 3.9997800000000003
+    },
+    {
+      "time": 2.3,
+      "status": "visible",
+      "x": 0.589583,
+      "y": 0.45787,
+      "radius": 4.000319999999999
+    },
+    {
+      "time": 2.4,
+      "status": "visible",
+      "x": 0.591406,
+      "y": 0.45787,
+      "radius": 3.49974
+    },
+    {
+      "time": 2.5,
+      "status": "visible",
+      "x": 0.595052,
+      "y": 0.459259,
+      "radius": 3.9997800000000003
+    },
+    {
+      "time": 2.6,
+      "status": "visible",
+      "x": 0.598177,
+      "y": 0.461111,
+      "radius": 3.0002400000000002
+    },
+    {
+      "time": 2.7,
+      "status": "visible",
+      "x": 0.6,
+      "y": 0.459722,
+      "radius": 3.49974
+    },
+    {
+      "time": 2.8,
+      "status": "visible",
+      "x": 0.603125,
+      "y": 0.459259,
+      "radius": 4.99968
+    },
+    {
+      "time": 2.9,
+      "status": "visible",
+      "x": 0.60599,
+      "y": 0.458796,
+      "radius": 4.49952
+    }
+  ],
+  "contacts": [],
+  "contacts_reviewed": false,
+  "source": {
+    "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/",
+    "revision": "c6992050c74d6e3f6992bac0e314e7b378a0f51c",
+    "fps": 30.0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "web/tracker.js": "ca760fe69cd439c01138af0c438a615381c548eda4e769442942be7c05f17b0c",
+  "web/detector.js": "1f323f1fa94917fe99c7ee008fda88471d3ecc0cd9094252604f5add7581bad3",
+  "web/video-lab.js": "ce0a1ed7770f3deec5414f08cdd91826df104f561a3977ccc70587cb407a5205",
+  "web/pose.js": "6a168a4d417a0d0a6c9439e73403690cd28ee46718b6b194dff6ea45dcde37ae",
+  "web/pose-worker.js": "10c7370a08d37bd90dac1fd85cc84ec5cdcb06f453db78e6080188eea51e4e17",
+  "football/video.py": "bf148aface9cb7091bf4cdfbef11ef69a5ee4410e197d015e2f8a983b2d2ce0b"
+}

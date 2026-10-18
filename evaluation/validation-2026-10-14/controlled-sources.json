@@ -1,0 +1,86 @@
+[
+  {
+    "id": "control-football",
+    "file": "control-football.mp4",
+    "sha256": "4c2b2fa044400ace1bb76de41a7253f5e57189e01a802716c3d1ef8af328820c",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-basket",
+    "file": "control-basket.mp4",
+    "sha256": "cb62ed0153933d2102091703f0f350188e8826b15112cd4e0208fc68f5fde92f",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-tennis",
+    "file": "control-tennis.mp4",
+    "sha256": "918901c24552ffb18678493b7f692b9d0428c1ff6009a9262203bea2456d4c98",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-small",
+    "file": "control-small.mp4",
+    "sha256": "6b83e16fbb0136320b92ee04f614eaa1c27912cf05ccfc00cbfb080de5ab74fb",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-fast",
+    "file": "control-fast.mp4",
+    "sha256": "10cb8a545f52c8feb913a24f961aa943ad72466942ea08a3ada21cb5e6b19a52",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-dark",
+    "file": "control-dark.mp4",
+    "sha256": "d09ae16bebbb1810e40189ad4136f3b1c2a425cd91fb0e37a8b3fd56e2a9a04f",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-rain",
+    "file": "control-rain.mp4",
+    "sha256": "54ddaf691bd2e7296eaa36269935742c7ab56fbefed3d73382516d57050153fc",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-blur",
+    "file": "control-blur.mp4",
+    "sha256": "13d78a79376a55a02c98d1e75e985e597cf4b41c4a0ae235e76f69ecebbb8e8b",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-occlusion",
+    "file": "control-occlusion.mp4",
+    "sha256": "53af4ea13183ee811740598f0cbe4020bc559bfb9bfde80a970564821619e341",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-edge-decoy",
+    "file": "control-edge-decoy.mp4",
+    "sha256": "05c7484394f6b122ea590640df76fdbff6d74a6f0680d467df54309146fc343c",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-cut-decoy",
+    "file": "control-cut-decoy.mp4",
+    "sha256": "fbbf2fd1c58f0113f54eb54da479f6b487a285148fbc59b264ccc75d24a12c16",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  },
+  {
+    "id": "control-30s",
+    "file": "control-30s.mp4",
+    "sha256": "11714dc68dd121b7feb7bbec22619299be0ba02bb94bccf0dbd3c20f7b6e18c9",
+    "generator": "controlled.py",
+    "origin": "original deterministic synthetic marker, not real athlete/weather footage"
+  }
+]

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Football Helper · Blind evaluation labels</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/video.css"><script src="/label.js" defer></script></head>
+<body class="label-page"><main>
+<h1>Blind evaluation labels</h1><p>Label the selected ball from the video before viewing tracker output. Nothing is uploaded. Export your labels before closing this page.</p>
+<div class="lab-grid"><section class="card">
+<label>Local evaluation video<input id="label-file" type="file" accept="video/*"></label>
+<div class="lab-player"><video id="label-video" controls playsinline preload="metadata"></video><canvas id="label-frame" aria-label="Evaluation frame; click the selected ball centre" tabindex="0"></canvas></div>
+<div class="form-grid"><label>Window start<input id="label-start" type="number" min="0" max="600" step=".1" value="0"></label><label>Window end<input id="label-end" type="number" min=".1" max="600" step=".1" value="30"></label></div>
+<div class="actions"><button id="label-begin" class="secondary">Start window</button><button id="label-prev" class="secondary">Previous sample</button><button id="label-next" class="secondary">Next sample</button></div>
+<p id="label-time" role="status"></p>
+<label>Ball radius (native video pixels)<input id="label-radius" type="number" min="1" max="500" value="12"></label>
+<div class="form-grid"><label>Ball centre x (normalized)<input id="label-x" type="number" min="0" max="1" step=".001"></label><label>Ball centre y (normalized)<input id="label-y" type="number" min="0" max="1" step=".001"></label></div><button id="label-visible" class="secondary">Mark visible ball at coordinates</button>
+<label class="check"><input id="label-auto" type="checkbox" checked>Advance after each frame label</label>
+<p class="fine">Shortcuts outside form fields: left/right arrows step on the sample grid; A marks absent, O marks uncertain. Click the same ball centre when visible. Use occluded when its identity or position is uncertain. Radius defines the position tolerance in the evaluation; measure the actual ball size.</p>
+<div class="actions"><button id="label-absent" class="secondary">Ball absent</button><button id="label-occluded" class="secondary">Ball occluded / uncertain</button><button id="label-clear" class="secondary">Clear this frame label</button></div>
+<div class="form-grid subtitle-divider"><label>Contact body part<select id="label-foot"><option value="unknown">Unknown</option><option value="left">Left foot</option><option value="right">Right foot</option><option value="body">Other body part</option></select></label><button id="label-contact" class="secondary">Mark clear contact</button></div>
+<label class="check"><input id="label-contacts-reviewed" type="checkbox">I reviewed the entire window for contacts, including frames with no contact</label>
+<div id="label-contacts" class="event-list"></div><p id="label-error" class="form-error" role="alert"></p>
+</section><section class="card">
+<h2>Label provenance</h2><label>Clip ID<input id="label-id" maxlength="100" required></label><label>Annotator name or ID<input id="label-reviewer" maxlength="80" required></label>
+<label>Annotator role<select id="label-role"><option value="second-annotator">Second annotator</option><option value="coach">Coach</option><option value="external-dataset">Published dataset (not a blind review)</option><option value="implementer">Tracker implementer</option></select></label>
+<label class="check"><input id="label-independent" type="checkbox">I did not implement this tracker or view its predictions before labelling</label>
+<fieldset><legend>Conditions</legend><div class="checks">
+<label><input name="condition" value="daylight" type="checkbox">Daylight</label><label><input name="condition" value="night" type="checkbox">Night</label><label><input name="condition" value="rain" type="checkbox">Rain</label><label><input name="condition" value="indoor" type="checkbox">Indoor</label><label><input name="condition" value="small" type="checkbox">Small ball</label><label><input name="condition" value="fast" type="checkbox">Fast ball</label><label><input name="condition" value="juggling-30s" type="checkbox">Full 30-second juggling window</label><label><input name="condition" value="edge-exit" type="checkbox">Ball leaves view</label><label><input name="condition" value="scene-cut" type="checkbox">Scene cut</label>
+</div></fieldset><label>Notes, rights and source<input id="label-notes" maxlength="1000"></label>
+<label>Resume exported labels<input id="label-import" type="file" accept="application/json,.json"></label>
+<p id="label-count" role="status">0 frame labels</p><button id="label-export" class="primary">Export evaluation labels</button>
+<p class="fine">Independence is self-declared. These labels do not create player assessments. Collect at least three different clips per condition, split by source video into calibration and held-out sets, and have a second annotator review disagreements.</p>
+</section></div><p><a href="/">Return to Football Helper</a></p>
+</main></body></html>

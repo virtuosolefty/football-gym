@@ -1,0 +1,11 @@
+.data/
+__pycache__/
+*.pyc
+.playwright-mcp/
+test-results/
+web/vendor/
+web/models/
+node_modules/
+AV_digitalTwin/
+sdlc/runtime/
+sdlc/app-data/

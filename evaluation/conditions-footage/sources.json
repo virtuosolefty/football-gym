@@ -1,0 +1,82 @@
+{
+  "clips": [
+    {
+      "id": "beach",
+      "title": "File:2021-08-29 - FIFA Beach Soccer World Cup - Match 31 - Switzerland v Senegal - Noël Ott scores a penalty kick.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3A2021-08-29_-_FIFA_Beach_Soccer_World_Cup_-_Match_31_-_Switzerland_v_Senegal_-_No%C3%ABl_Ott_scores_a_penalty_kick.webm",
+      "file": "beach.webm",
+      "bytes": 18577212,
+      "sha256": "a4d163a5bcc54b62d9d09926b56278677e06436c4e9d2b01bd0e137ef8cdf131",
+      "sha1_matches_commons": true,
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Voltmetro\" title=\"User:Voltmetro\">Voltmetro</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "u17",
+      "title": "File:2018 FIFA U-17 Women's World Cup - New Zealand vs Canada - 20.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3A2018_FIFA_U-17_Women%27s_World_Cup_-_New_Zealand_vs_Canada_-_20.webm",
+      "file": "u17.webm",
+      "bytes": 26603905,
+      "sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:NaBUru38\" title=\"User:NaBUru38\">NaBUru38</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "latvia",
+      "title": "File:Latvia-Gibraltar football 2026-03-31.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3ALatvia-Gibraltar_football_2026-03-31.webm",
+      "file": "latvia.webm",
+      "bytes": 9100520,
+      "sha256": "3612e26baf7d57a83e1ab7aa176b8ef7551fa7fe991d821e15434e9f0b5c3fe3",
+      "sha1_matches_commons": true,
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Papuass\" title=\"User:Papuass\">Mārtiņš Bruņenieks</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "futsal",
+      "title": "File:Futsal-Euro feminino- Luís Conceição vê Portugal traquejado.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AFutsal-Euro_feminino-_Lu%C3%ADs_Concei%C3%A7%C3%A3o_v%C3%AA_Portugal_traquejado.webm",
+      "file": "futsal.webm",
+      "bytes": 23163257,
+      "sha256": "982201e681df0673043ceddbd1e89e8cb7d0492639d56ce67f02675d95ea8788",
+      "sha1_matches_commons": true,
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "author_html": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/@AgenciaLUSANoticiasdePortugal\">Agencia LUSA</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "street",
+      "title": "File:Street football 2.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AStreet_football_2.webm",
+      "file": "street.webm",
+      "bytes": 7942923,
+      "sha256": "8adc03bc2239695635d2f36378948c9c46faa7a4e3c51987cd78ec893f7301f3",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Anasskoko\" title=\"User:Anasskoko\">Anasskoko</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "wc2022",
+      "title": "File:2022 FIFA World Cup's first goal by Enner Valencia of Ecuador against Qatar.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3A2022_FIFA_World_Cup%27s_first_goal_by_Enner_Valencia_of_Ecuador_against_Qatar.webm",
+      "file": "wc2022.webm",
+      "bytes": 14407203,
+      "sha256": "107074ff47f9f44388658446f7765b9ad1216b864046ad9aea7dafe2e5ea5956",
+      "sha1_matches_commons": true,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "author_html": "Mehdi Mortazavian (uncredited)",
+      "retrieved": "2026-10-13"
+    }
+  ]
+}

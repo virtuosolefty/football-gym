@@ -1,0 +1,265 @@
+{
+  "detector": {
+    "page_errors": [],
+    "clips": [
+      {
+        "clip": "aerial",
+        "kind": "ball",
+        "window": [
+          0.5,
+          3.5
+        ],
+        "outcome": "tracked",
+        "method": "detector",
+        "version": "detector-ball-1",
+        "samples": 30,
+        "detected_frames": 24,
+        "coverage_percent": 80.0,
+        "max_gap_seconds": 0.3,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "The selected ball was missing or ambiguous in too many frames."
+        ],
+        "spot_checks": 10,
+        "spot_detections": 8,
+        "correct_spot_detections": 8,
+        "audited_correct": 24,
+        "audited_wrong": 0,
+        "contact_proposals": 0,
+        "elapsed_ms": 4915
+      },
+      {
+        "clip": "training",
+        "kind": "ball",
+        "window": [
+          7.4,
+          9.1
+        ],
+        "outcome": "tracked",
+        "method": "detector",
+        "version": "detector-ball-1",
+        "samples": 17,
+        "detected_frames": 16,
+        "coverage_percent": 94.1,
+        "max_gap_seconds": 0.2,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "Too few sampled frames for track suggestions."
+        ],
+        "spot_checks": 5,
+        "spot_detections": 5,
+        "correct_spot_detections": 5,
+        "audited_correct": 16,
+        "audited_wrong": 0,
+        "contact_proposals": 0,
+        "elapsed_ms": 11452
+      },
+      {
+        "clip": "tennis",
+        "kind": "ball_then_cut",
+        "window": [
+          5.0,
+          8.0
+        ],
+        "outcome": "tracked",
+        "method": "detector",
+        "version": "detector-ball-1",
+        "samples": 30,
+        "detected_frames": 6,
+        "coverage_percent": 20.0,
+        "max_gap_seconds": 2.4,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "The selected ball was missing or ambiguous in too many frames.",
+          "Track gaps are too long; review the clip manually."
+        ],
+        "spot_checks": 6,
+        "spot_detections": 4,
+        "correct_spot_detections": 4,
+        "audited_correct": 6,
+        "audited_wrong": 0,
+        "contact_proposals": 0,
+        "elapsed_ms": 4384
+      },
+      {
+        "clip": "topdown",
+        "kind": "tiny_ball",
+        "window": [
+          5.0,
+          8.0
+        ],
+        "outcome": "tracked",
+        "method": "detector",
+        "version": "detector-ball-1",
+        "samples": 30,
+        "detected_frames": 1,
+        "coverage_percent": 3.3,
+        "max_gap_seconds": 3,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "The selected ball was missing or ambiguous in too many frames.",
+          "Track gaps are too long; review the clip manually."
+        ],
+        "spot_checks": 1,
+        "spot_detections": 1,
+        "correct_spot_detections": 1,
+        "audited_correct": 1,
+        "audited_wrong": 0,
+        "contact_proposals": 0,
+        "elapsed_ms": 2315
+      },
+      {
+        "clip": "improvised",
+        "kind": "ball_not_visible",
+        "window": [
+          50.0,
+          53.0
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local detector found no ball at the clicked spot, so the colour patch is used instead (less reliable)."
+      },
+      {
+        "clip": "tournament",
+        "kind": "no_ball",
+        "window": [
+          2.0,
+          5.0
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local detector found no ball at the clicked spot, so the colour patch is used instead (less reliable)."
+      }
+    ]
+  },
+  "colour": {
+    "page_errors": [],
+    "clips": [
+      {
+        "clip": "aerial",
+        "kind": "ball",
+        "window": [
+          0.5,
+          3.5
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+      },
+      {
+        "clip": "training",
+        "kind": "ball",
+        "window": [
+          7.4,
+          9.1
+        ],
+        "outcome": "tracked",
+        "method": "colour",
+        "version": "contrast-ball-2",
+        "samples": 17,
+        "detected_frames": 13,
+        "coverage_percent": 76.5,
+        "max_gap_seconds": 0.4,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "Too few sampled frames for track suggestions.",
+          "The selected ball was missing or ambiguous in too many frames.",
+          "Track gaps are too long; review the clip manually."
+        ],
+        "spot_checks": 5,
+        "spot_detections": 4,
+        "correct_spot_detections": 1,
+        "audited_correct": 1,
+        "audited_wrong": 12,
+        "contact_proposals": 0,
+        "elapsed_ms": 15919
+      },
+      {
+        "clip": "tennis",
+        "kind": "ball_then_cut",
+        "window": [
+          5.0,
+          8.0
+        ],
+        "outcome": "tracked",
+        "method": "colour",
+        "version": "contrast-ball-2",
+        "samples": 30,
+        "detected_frames": 7,
+        "coverage_percent": 23.3,
+        "max_gap_seconds": 2.3,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "The selected ball was missing or ambiguous in too many frames.",
+          "Track gaps are too long; review the clip manually."
+        ],
+        "spot_checks": 6,
+        "spot_detections": 4,
+        "correct_spot_detections": 4,
+        "audited_correct": 7,
+        "audited_wrong": 0,
+        "contact_proposals": 0,
+        "elapsed_ms": 5570
+      },
+      {
+        "clip": "topdown",
+        "kind": "tiny_ball",
+        "window": [
+          5.0,
+          8.0
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+      },
+      {
+        "clip": "improvised",
+        "kind": "ball_not_visible",
+        "window": [
+          50.0,
+          53.0
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+      },
+      {
+        "clip": "tournament",
+        "kind": "no_ball",
+        "window": [
+          2.0,
+          5.0
+        ],
+        "outcome": "refused",
+        "message": "No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. The local ball detector is not installed. Run: python tools/fetch_detector.py"
+      }
+    ]
+  },
+  "detector-without-size-rule": {
+    "page_errors": [],
+    "clips": [
+      {
+        "clip": "tennis",
+        "kind": "ball_then_cut",
+        "window": [
+          5.0,
+          8.0
+        ],
+        "outcome": "tracked",
+        "method": "detector",
+        "version": "detector-ball-1",
+        "samples": 30,
+        "detected_frames": 22,
+        "coverage_percent": 73.3,
+        "max_gap_seconds": 0.4,
+        "status": "UNMEASURABLE",
+        "reasons": [
+          "The selected ball was missing or ambiguous in too many frames.",
+          "Track gaps are too long; review the clip manually."
+        ],
+        "spot_checks": 6,
+        "spot_detections": 4,
+        "correct_spot_detections": 4,
+        "audited_correct": 6,
+        "audited_wrong": 16,
+        "contact_proposals": 0,
+        "elapsed_ms": 20337
+      }
+    ]
+  }
+}

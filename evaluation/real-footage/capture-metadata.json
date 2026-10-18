@@ -1,0 +1,5 @@
+[
+  {"id":"daylight","duration":5.839167,"width":720,"height":1280,"canvas":{"width":320,"height":569},"start":0,"end":3,"samples":30,"contact_reference_step_seconds":0.04},
+  {"id":"indoor","duration":20.04,"width":1280,"height":720,"canvas":{"width":320,"height":180},"start":0,"end":3,"samples":30,"contact_reference_step_seconds":0.04},
+  {"id":"strobe","duration":4.72,"width":1366,"height":720,"canvas":{"width":320,"height":169},"start":0,"end":3,"samples":30,"contact_reference_step_seconds":0.04}
+]

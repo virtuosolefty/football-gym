@@ -1,0 +1,110 @@
+{
+  "source": "https://doi.org/10.5061/dryad.3bk3j9m13",
+  "video_revision": "7981dcadb2c268808413f5f4d6bdbc25dbfbae75",
+  "annotation_provenance": "External published ball boxes; independence and blind protocol not verified. No contact labels.",
+  "limitations": "Blurred people; match/training footage, not a representative juggling benchmark. Conditions need human review.",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/README.md",
+      "bytes": 3226,
+      "sha256": "939cb20fe42da8c40aa6e864193f492be9143ea90427caf20eb88c6e9215f6e8"
+    },
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/LICENSE.md",
+      "bytes": 18078,
+      "sha256": "b268dfa886075be770875818b71c8b5730bf0527513f9232fbcd64ea03c8b645"
+    },
+    {
+      "path": "footBall/README.md",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/README.md",
+      "bytes": 4802,
+      "sha256": "5bfb6d41b0e92d2c2e0148be4d1ebb8fe078c09ebebed6a0fe8ec63d2ff431bb"
+    },
+    {
+      "path": "footBall/Videos/README.MD",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/README.MD",
+      "bytes": 793,
+      "sha256": "aa76f2c7d708c0c688272d326ad61f6b5d7c9b7065bb85556dcce79bc4f5f79e"
+    },
+    {
+      "path": "footBall/Videos/Game_1_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Game_1_1.mp4",
+      "bytes": 9784483,
+      "sha256": "cd66421dd4108502c07d927fdf9ec9abb3cfcec9416b1fc2a0bd9fac9d0e2017"
+    },
+    {
+      "path": "footBall/Videos/Game_2_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Game_2_1.mp4",
+      "bytes": 14898422,
+      "sha256": "65f190ef0c2632fde6e26da1ff5c367068caec297c0007387f3353fb59b542d2"
+    },
+    {
+      "path": "footBall/Videos/Game_3_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Game_3_1.mp4",
+      "bytes": 6639333,
+      "sha256": "0c7725944e5fa9929195fb3b810e5af58dd029e8a8d18c897a4af8e0cf9d899c"
+    },
+    {
+      "path": "footBall/Videos/Game_4_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Game_4_1.mp4",
+      "bytes": 10312707,
+      "sha256": "a77508cc4890cfe9a5988f5756c56ea20a24abf2ba78e00b7649d0e3cb1a1215"
+    },
+    {
+      "path": "footBall/Videos/Pass_Training_1_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Pass_Training_1_1.mp4",
+      "bytes": 14290126,
+      "sha256": "cbc5e6d3e0ca519b62a6e2fac9054d7ebcf01484d0638bd3301479b920bb69c8"
+    },
+    {
+      "path": "footBall/Videos/Pass_Training_2_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Pass_Training_2_1.mp4",
+      "bytes": 2362956,
+      "sha256": "cd27a4f8a2e45d42f1c32ac13da91f9df6888b8f4d11d7cae10c442084c98399"
+    },
+    {
+      "path": "footBall/Videos/Seven_Air_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Seven_Air_1.mp4",
+      "bytes": 4844731,
+      "sha256": "c0cad9a85712de79e5c3415ed45d68e844401c057fd0fa560fee03337dd44dfb"
+    },
+    {
+      "path": "footBall/Videos/Seven_Audience_1_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Seven_Audience_1_1.mp4",
+      "bytes": 11091708,
+      "sha256": "5ae3ac5388434958331b4fea6aedcd4521ca03727e01a34f1022f8bc1555e30f"
+    },
+    {
+      "path": "footBall/Videos/Seven_Audience_2_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/Seven_Audience_2_1.mp4",
+      "bytes": 13553990,
+      "sha256": "f65f13279600a3044bfd9e9ebc1c3e0ca2cbe88fda74e76b697e9296c50f88a5"
+    },
+    {
+      "path": "footBall/Videos/dribble_Top_10_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/dribble_Top_10_1.mp4",
+      "bytes": 3804327,
+      "sha256": "7c7798aaf32d1c5617ad5cd5b747b909ab84f9eddd395bee393f243b6c2253a0"
+    },
+    {
+      "path": "footBall/Videos/dribble_Training_2_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/dribble_Training_2_1.mp4",
+      "bytes": 3126913,
+      "sha256": "a53b22c694e72a248f3361399bda8859bbdf722395d1eea7497574abd0f5a1e3"
+    },
+    {
+      "path": "footBall/Videos/shot_Training_1_1.mp4",
+      "url": "https://raw.githubusercontent.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall/Videos/shot_Training_1_1.mp4",
+      "bytes": 4837692,
+      "sha256": "972a95345d0200cd95a664e60f7b394155fdf88f2b04b0e4bf755341a487f46c"
+    }
+  ],
+  "errors": [
+    {
+      "path": "footBall-labels.zip",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

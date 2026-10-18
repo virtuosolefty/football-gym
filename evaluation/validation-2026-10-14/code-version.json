@@ -1,0 +1,7 @@
+{
+  "web/tracker.js": "0581c6c7e64562843e3d15ce36f0f83669c001bf51982acc983de9f826986fbd",
+  "web/detector.js": "1bfa3503d99a0d0859f155fb7e613ef7764952db759e556d47169eb3828a9620",
+  "web/video-lab.js": "905c9e07b3aaaf043c894f17c4756cf49f48fc799277154ac121a7b640d2f16d",
+  "football/video.py": "0cd51fd009285d1776a1336ae63272a0dafca4e224cfc5f988e86c75c8b1df9f",
+  "web/models/yolox_nano.onnx": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d"
+}

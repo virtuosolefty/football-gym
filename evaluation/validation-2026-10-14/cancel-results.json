@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "model": "actual installed YOLOX nano",
+  "progress": [
+    "Decoding · 5/300 samples · 2% · 0.50 s · 1 s elapsed",
+    "Decoding · 12/300 samples · 4% · 1.20 s · 3 s elapsed"
+  ],
+  "cancellation_ms": 704,
+  "error": "Analysis cancelled.",
+  "before": {
+    "analyses": 36,
+    "attempts": 0
+  },
+  "after": {
+    "analyses": 36,
+    "attempts": 0
+  },
+  "page_errors": []
+}

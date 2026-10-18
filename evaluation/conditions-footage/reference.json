@@ -1,0 +1,353 @@
+{
+ "method": "Single-reviewer visual reference by the AI assistant that implemented the detector, recorded before any tracker ran on these clips, from frames decoded by the app's own video element. Ball centres and radii are read in native video pixels from gridded views, with an uncertainty of roughly 5-20 native pixels (larger for the street clip). Spot checks are every third (or fourth/tenth) frame of the window at 10 Hz. A detection is correct if its centre is within 1.5 reference radii of the reference centre. Clips of kind decoy_no_ball and tiny_unverified test refusal and abstention; frames of ball_then_absent clips after the ball leaves the view are audited, not spot-checked.",
+ "clips": [
+  {
+   "id": "beach",
+   "file": "beach.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    0.5,
+    3.5
+   ],
+   "kind": "ball",
+   "condition": "Bright sun, sand, broadcast camera panning",
+   "note": "Beach-soccer penalty: a static orange ball on sand, a run-up, the kick (ball in flight, motion blur), then the ball in the net while the camera pans.",
+   "click_native": [
+    476,
+    1040
+   ],
+   "click_normalized": [
+    0.2479,
+    0.963
+   ],
+   "radius_hint_canvas_px": 4,
+   "canvas_scale": 6.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 0.5,
+     "x": 476,
+     "y": 1040,
+     "radius": 24
+    },
+    {
+     "frame": 3,
+     "time": 0.8,
+     "x": 486,
+     "y": 950,
+     "radius": 26
+    },
+    {
+     "frame": 6,
+     "time": 1.1,
+     "x": 452,
+     "y": 914,
+     "radius": 26
+    },
+    {
+     "frame": 9,
+     "time": 1.4,
+     "x": 428,
+     "y": 906,
+     "radius": 26
+    },
+    {
+     "frame": 12,
+     "time": 1.7,
+     "x": 376,
+     "y": 904,
+     "radius": 26
+    },
+    {
+     "frame": 15,
+     "time": 2.0,
+     "x": 1051,
+     "y": 623,
+     "radius": 27
+    },
+    {
+     "frame": 18,
+     "time": 2.3,
+     "x": 1204,
+     "y": 450,
+     "radius": 27
+    },
+    {
+     "frame": 21,
+     "time": 2.6,
+     "x": 1178,
+     "y": 326,
+     "radius": 29
+    },
+    {
+     "frame": 24,
+     "time": 2.9,
+     "x": 1111,
+     "y": 403,
+     "radius": 29
+    },
+    {
+     "frame": 27,
+     "time": 3.2,
+     "x": 1071,
+     "y": 659,
+     "radius": 31
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "futsal",
+   "file": "futsal.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    57.0,
+    60.0
+   ],
+   "kind": "ball",
+   "condition": "Indoor lighting, reflective wooden floor, static balls",
+   "note": "Two futsal balls lie still on a wooden floor next to a bench while people stand behind them; the target is the left ball. Window is static.",
+   "click_native": [
+    258,
+    770
+   ],
+   "click_normalized": [
+    0.1344,
+    0.713
+   ],
+   "radius_hint_canvas_px": 12,
+   "canvas_scale": 6.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 57.0,
+     "x": 258,
+     "y": 770,
+     "radius": 70
+    },
+    {
+     "frame": 10,
+     "time": 58.0,
+     "x": 258,
+     "y": 770,
+     "radius": 70
+    },
+    {
+     "frame": 20,
+     "time": 59.0,
+     "x": 258,
+     "y": 770,
+     "radius": 70
+    },
+    {
+     "frame": 29,
+     "time": 59.9,
+     "x": 258,
+     "y": 770,
+     "radius": 70
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "u17",
+   "file": "u17.webm",
+   "video_size": [
+    1280,
+    720
+   ],
+   "window": [
+    34.0,
+    37.0
+   ],
+   "kind": "ball_then_absent",
+   "condition": "Daylight stadium, broadcast camera, small ball on grass",
+   "note": "A ball lies on the grass while a player walks and the camera pans slowly; the ball is about 24 px across at native size and leaves the frame after about frame 21. Detections after that are errors.",
+   "click_native": [
+    690,
+    448
+   ],
+   "click_normalized": [
+    0.5391,
+    0.6222
+   ],
+   "radius_hint_canvas_px": 3,
+   "canvas_scale": 4.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 34.0,
+     "x": 690,
+     "y": 448,
+     "radius": 12
+    },
+    {
+     "frame": 4,
+     "time": 34.4,
+     "x": 580,
+     "y": 456,
+     "radius": 12
+    },
+    {
+     "frame": 8,
+     "time": 34.8,
+     "x": 734,
+     "y": 446,
+     "radius": 12
+    },
+    {
+     "frame": 12,
+     "time": 35.2,
+     "x": 794,
+     "y": 438,
+     "radius": 12
+    },
+    {
+     "frame": 16,
+     "time": 35.6,
+     "x": 990,
+     "y": 408,
+     "radius": 12
+    },
+    {
+     "frame": 20,
+     "time": 36.0,
+     "x": 1168,
+     "y": 420,
+     "radius": 12
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "street",
+   "file": "street.webm",
+   "video_size": [
+    1280,
+    720
+   ],
+   "window": [
+    10.0,
+    13.0
+   ],
+   "kind": "small_ball",
+   "condition": "Overcast dusty pitch, handheld phone video, motion blur",
+   "note": "Handheld footage of a pick-up match; the ball is about 20-28 px across at native size and moves among players. Reference positions are uncertain by roughly 10-20 native pixels.",
+   "click_native": [
+    266,
+    380
+   ],
+   "click_normalized": [
+    0.2078,
+    0.5278
+   ],
+   "radius_hint_canvas_px": 3,
+   "canvas_scale": 4.0,
+   "spots": [
+    {
+     "frame": 0,
+     "time": 10.0,
+     "x": 266,
+     "y": 380,
+     "radius": 14
+    },
+    {
+     "frame": 5,
+     "time": 10.5,
+     "x": 364,
+     "y": 396,
+     "radius": 14
+    },
+    {
+     "frame": 10,
+     "time": 11.0,
+     "x": 494,
+     "y": 394,
+     "radius": 14
+    },
+    {
+     "frame": 15,
+     "time": 11.5,
+     "x": 404,
+     "y": 446,
+     "radius": 14
+    },
+    {
+     "frame": 20,
+     "time": 12.0,
+     "x": 344,
+     "y": 442,
+     "radius": 14
+    },
+    {
+     "frame": 25,
+     "time": 12.5,
+     "x": 396,
+     "y": 410,
+     "radius": 14
+    }
+   ],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "latvia",
+   "file": "latvia.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    11.0,
+    14.0
+   ],
+   "kind": "decoy_no_ball",
+   "condition": "Night, stadium smoke and haze, handheld from the stands",
+   "note": "The ball is not identifiable. Click is on the round club crest (which contains a stylised football) on the advertising boards at (782, 352). Expectation: no ball is reported.",
+   "click_native": [
+    782,
+    352
+   ],
+   "click_normalized": [
+    0.4073,
+    0.3259
+   ],
+   "radius_hint_canvas_px": 5,
+   "canvas_scale": 6.0,
+   "spots": [],
+   "unscorable_frames": {}
+  },
+  {
+   "id": "wc2022",
+   "file": "wc2022.webm",
+   "video_size": [
+    1920,
+    1080
+   ],
+   "window": [
+    5.0,
+    8.0
+   ],
+   "kind": "tiny_unverified",
+   "condition": "Overhead broadcast view of a floodlit pitch",
+   "note": "The ball is at most a few pixels across, if visible at all. Click is on a small bright dot near the touchline at (592, 165) that cannot be confirmed as the ball. Not scored; the check is that nothing confident is claimed.",
+   "click_native": [
+    592,
+    165
+   ],
+   "click_normalized": [
+    0.3083,
+    0.1528
+   ],
+   "radius_hint_canvas_px": 2,
+   "canvas_scale": 6.0,
+   "spots": [],
+   "unscorable_frames": {}
+  }
+ ]
+}

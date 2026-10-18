@@ -1,0 +1,400 @@
+{
+  "label": "followup",
+  "loss_policy": "At each loss prompt choose Skip remaining track in this direction. No automatic or unreviewed reseeds.",
+  "page_errors": [],
+  "clips": [
+    {
+      "id": "tennis-dark-high-coverage",
+      "kind": "diagnostic follow-up to observed floor-ball switch; longer window to test coverage masking; not a held-out source",
+      "window": [
+        1,
+        5
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 80%). Radius set to 8 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 8895,
+      "error": "",
+      "analysis": {
+        "id": "4c173f35c6a74d01b7996bff5a0dbfc1",
+        "created": "2026-10-14T11:17:13.542676+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "c233c9b0da074df7a038300424c44aa4",
+        "duration": 10.12,
+        "start": 1,
+        "end": 5,
+        "width": 720,
+        "height": 1366,
+        "samples": [
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.563778,
+            "y": 0.607188,
+            "score": 0.767,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.565002,
+            "y": 0.606361,
+            "score": 0.659,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.56889,
+            "y": 0.602843,
+            "score": 0.492,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.572737,
+            "y": 0.601797,
+            "score": 0.748,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.575753,
+            "y": 0.598735,
+            "score": 0.871,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.579619,
+            "y": 0.596566,
+            "score": 0.857,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.587202,
+            "y": 0.5934,
+            "score": 0.877,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": true,
+            "x": 0.594544,
+            "y": 0.591241,
+            "score": 0.865,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.614182,
+            "y": 0.585518,
+            "score": 0.844,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": true,
+            "x": 0.634511,
+            "y": 0.579105,
+            "score": 0.475,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": true,
+            "x": 0.663181,
+            "y": 0.559594,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": true,
+            "x": 0.684503,
+            "y": 0.541325,
+            "score": 0.831,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": true,
+            "x": 0.705108,
+            "y": 0.512748,
+            "score": 0.784,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": true,
+            "x": 0.71623,
+            "y": 0.49338,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": true,
+            "x": 0.730875,
+            "y": 0.471312,
+            "score": 0.299,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.750482,
+            "y": 0.467657,
+            "score": 0.527,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": true,
+            "x": 0.790092,
+            "y": 0.601952,
+            "score": 0.922,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": true,
+            "x": 0.804054,
+            "y": 0.690998,
+            "score": 0.908,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": true,
+            "x": 0.813002,
+            "y": 0.756222,
+            "score": 0.758,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": true,
+            "x": 0.90712,
+            "y": 0.82899,
+            "score": 0.792,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": true,
+            "x": 0.906591,
+            "y": 0.826281,
+            "score": 0.696,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": true,
+            "x": 0.906024,
+            "y": 0.827022,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": true,
+            "x": 0.904956,
+            "y": 0.825713,
+            "score": 0.686,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": true,
+            "x": 0.903061,
+            "y": 0.825473,
+            "score": 0.777,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": true,
+            "x": 0.901246,
+            "y": 0.8254,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": true,
+            "x": 0.898113,
+            "y": 0.823872,
+            "score": 0.67,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": true,
+            "x": 0.895286,
+            "y": 0.823599,
+            "score": 0.73,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": true,
+            "x": 0.893113,
+            "y": 0.823744,
+            "score": 0.645,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": true,
+            "x": 0.892179,
+            "y": 0.824021,
+            "score": 0.652,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": true,
+            "x": 0.889788,
+            "y": 0.824379,
+            "score": 0.652,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": true,
+            "x": 0.888867,
+            "y": 0.823974,
+            "score": 0.632,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": true,
+            "x": 0.885688,
+            "y": 0.824372,
+            "score": 0.571,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": true,
+            "x": 0.884176,
+            "y": 0.824658,
+            "score": 0.651,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": true,
+            "x": 0.879504,
+            "y": 0.823214,
+            "score": 0.657,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": true,
+            "x": 0.877135,
+            "y": 0.823295,
+            "score": 0.723,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.663627,
+            "y": 0.560133,
+            "radius": 8,
+            "time": 2
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "SUSPECT",
+          "coverage": 0.875,
+          "max_gap_seconds": 0.3,
+          "reasons": [
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.299,
+              "mean_score": 0.7204,
+              "scored_detections": 35,
+              "found_detections": 35,
+              "max_speed": 1.6952,
+              "max_stationary_seconds": 0.1
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 40
+        },
+        "candidates": [],
+        "media_sha256": "b96283c5d1ccd7f55513406af8777bbe53f7e215b7e01d17b526004eb103e1f7",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    }
+  ]
+}

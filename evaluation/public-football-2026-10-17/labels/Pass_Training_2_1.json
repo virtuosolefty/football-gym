@@ -1,0 +1,161 @@
+{
+  "format": "football-evaluation-1",
+  "clip": {
+    "id": "Pass_Training_2_1",
+    "filename": "Pass_Training_2_1.mp4",
+    "sha256": "cd27a4f8a2e45d42f1c32ac13da91f9df6888b8f4d11d7cae10c442084c98399",
+    "width": 640,
+    "height": 360,
+    "start": 0,
+    "end": 3
+  },
+  "annotator": {
+    "id": "Zou-Liu-public-dataset",
+    "role": "external-dataset",
+    "independent": false
+  },
+  "conditions": [],
+  "notes": "Published external ball boxes, mapped by the author's naming guide. Blind annotation protocol unverified; condition review and alignment spot-check required. Multiple boxes are marked uncertain. Blurred people prevent pose validation.",
+  "sample_interval": 0.1,
+  "frames": [
+    {
+      "time": 0.0,
+      "status": "occluded"
+    },
+    {
+      "time": 0.1,
+      "status": "occluded"
+    },
+    {
+      "time": 0.2,
+      "status": "occluded"
+    },
+    {
+      "time": 0.3,
+      "status": "occluded"
+    },
+    {
+      "time": 0.4,
+      "status": "occluded"
+    },
+    {
+      "time": 0.5,
+      "status": "occluded"
+    },
+    {
+      "time": 0.6,
+      "status": "occluded"
+    },
+    {
+      "time": 0.7,
+      "status": "occluded"
+    },
+    {
+      "time": 0.8,
+      "status": "visible",
+      "x": 0.483594,
+      "y": 0.591667,
+      "radius": 9.49984
+    },
+    {
+      "time": 0.9,
+      "status": "visible",
+      "x": 0.50625,
+      "y": 0.616667,
+      "radius": 9.0
+    },
+    {
+      "time": 1.0,
+      "status": "occluded"
+    },
+    {
+      "time": 1.1,
+      "status": "occluded"
+    },
+    {
+      "time": 1.2,
+      "status": "occluded"
+    },
+    {
+      "time": 1.3,
+      "status": "occluded"
+    },
+    {
+      "time": 1.4,
+      "status": "occluded"
+    },
+    {
+      "time": 1.5,
+      "status": "occluded"
+    },
+    {
+      "time": 1.6,
+      "status": "occluded"
+    },
+    {
+      "time": 1.7,
+      "status": "occluded"
+    },
+    {
+      "time": 1.8,
+      "status": "occluded"
+    },
+    {
+      "time": 1.9,
+      "status": "occluded"
+    },
+    {
+      "time": 2.0,
+      "status": "occluded"
+    },
+    {
+      "time": 2.1,
+      "status": "visible",
+      "x": 0.43125,
+      "y": 0.680556,
+      "radius": 10.00008
+    },
+    {
+      "time": 2.2,
+      "status": "visible",
+      "x": 0.380469,
+      "y": 0.665278,
+      "radius": 10.49994
+    },
+    {
+      "time": 2.3,
+      "status": "occluded"
+    },
+    {
+      "time": 2.4,
+      "status": "occluded"
+    },
+    {
+      "time": 2.5,
+      "status": "occluded"
+    },
+    {
+      "time": 2.6,
+      "status": "occluded"
+    },
+    {
+      "time": 2.7,
+      "status": "occluded"
+    },
+    {
+      "time": 2.8,
+      "status": "occluded"
+    },
+    {
+      "time": 2.9,
+      "status": "occluded"
+    }
+  ],
+  "contacts": [],
+  "contacts_reviewed": false,
+  "source": {
+    "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/",
+    "revision": "c6992050c74d6e3f6992bac0e314e7b378a0f51c",
+    "fps": 30.0
+  }
+}

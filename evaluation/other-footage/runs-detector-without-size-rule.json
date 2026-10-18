@@ -1,0 +1,260 @@
+{
+ "label": "detector-without-size-rule",
+ "page_errors": [],
+ "clips": [
+  {
+   "id": "tennis",
+   "selection": {
+    "status": "Ball found by the local detector (confidence 63%). Radius set to 6 tracking pixels. Start tracking when ready.",
+    "error": ""
+   },
+   "elapsed_ms": 20337,
+   "analysis": {
+    "id": "003178e7cf604fabb660d73d72066923",
+    "created": "2026-10-14T02:31:10.188164+00:00",
+    "kind": "analysis",
+    "protocol": "juggling",
+    "media_id": "dcd63aa0d3e64a11814a4d3a51830862",
+    "duration": 200.295,
+    "start": 5,
+    "end": 8,
+    "width": 1920,
+    "height": 1080,
+    "samples": [
+     {
+      "time": 5,
+      "found": true,
+      "x": 0.658109,
+      "y": 0.325047,
+      "score": 0.677
+     },
+     {
+      "time": 5.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 5.2,
+      "found": true,
+      "x": 0.699407,
+      "y": 0.229313,
+      "score": 0.825
+     },
+     {
+      "time": 5.3,
+      "found": true,
+      "x": 0.731517,
+      "y": 0.217088,
+      "score": 0.569
+     },
+     {
+      "time": 5.4,
+      "found": true,
+      "x": 0.753824,
+      "y": 0.226412,
+      "score": 0.471
+     },
+     {
+      "time": 5.5,
+      "found": true,
+      "x": 0.814744,
+      "y": 0.304396,
+      "score": 0.857
+     },
+     {
+      "time": 5.6,
+      "found": true,
+      "x": 0.906798,
+      "y": 0.344473,
+      "score": 0.479
+     },
+     {
+      "time": 5.7,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 5.8,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 5.9,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6,
+      "found": true,
+      "x": 0.796396,
+      "y": 0.757823,
+      "score": 0.333
+     },
+     {
+      "time": 6.1,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.2,
+      "found": true,
+      "x": 0.795803,
+      "y": 0.759396,
+      "score": 0.253
+     },
+     {
+      "time": 6.3,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.4,
+      "found": true,
+      "x": 0.646369,
+      "y": 0.666002,
+      "score": 0.205
+     },
+     {
+      "time": 6.5,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.6,
+      "found": false,
+      "x": null,
+      "y": null
+     },
+     {
+      "time": 6.7,
+      "found": true,
+      "x": 0.538822,
+      "y": 0.847828,
+      "score": 0.476
+     },
+     {
+      "time": 6.8,
+      "found": true,
+      "x": 0.538711,
+      "y": 0.849348,
+      "score": 0.747
+     },
+     {
+      "time": 6.9,
+      "found": true,
+      "x": 0.538989,
+      "y": 0.849191,
+      "score": 0.743
+     },
+     {
+      "time": 7,
+      "found": true,
+      "x": 0.538868,
+      "y": 0.849324,
+      "score": 0.619
+     },
+     {
+      "time": 7.1,
+      "found": true,
+      "x": 0.539041,
+      "y": 0.849444,
+      "score": 0.58
+     },
+     {
+      "time": 7.2,
+      "found": true,
+      "x": 0.538961,
+      "y": 0.849479,
+      "score": 0.593
+     },
+     {
+      "time": 7.3,
+      "found": true,
+      "x": 0.539008,
+      "y": 0.849599,
+      "score": 0.477
+     },
+     {
+      "time": 7.4,
+      "found": true,
+      "x": 0.539098,
+      "y": 0.849526,
+      "score": 0.348
+     },
+     {
+      "time": 7.5,
+      "found": true,
+      "x": 0.539079,
+      "y": 0.84968,
+      "score": 0.523
+     },
+     {
+      "time": 7.6,
+      "found": true,
+      "x": 0.538925,
+      "y": 0.849788,
+      "score": 0.69
+     },
+     {
+      "time": 7.7,
+      "found": true,
+      "x": 0.538918,
+      "y": 0.849761,
+      "score": 0.655
+     },
+     {
+      "time": 7.8,
+      "found": true,
+      "x": 0.538868,
+      "y": 0.849707,
+      "score": 0.668
+     },
+     {
+      "time": 7.9,
+      "found": true,
+      "x": 0.538824,
+      "y": 0.849619,
+      "score": 0.65
+     }
+    ],
+    "version": "detector-ball-1",
+    "configuration": {
+     "seed": {
+      "x": 0.658115,
+      "y": 0.324825,
+      "radius": 6,
+      "time": 5
+     },
+     "sample_interval_seconds": 0.1,
+     "method": "detector",
+     "detector": {
+      "model": "yolox_nano",
+      "size": 416,
+      "score_threshold": 0.2
+     }
+    },
+    "report": {
+     "status": "UNMEASURABLE",
+     "coverage": 0.733,
+     "max_gap_seconds": 0.4,
+     "reasons": [
+      "The selected ball was missing or ambiguous in too many frames.",
+      "Track gaps are too long; review the clip manually."
+     ],
+     "sample_count": 30
+    },
+    "candidates": [],
+    "annotation": null,
+    "feedback": []
+   },
+   "attempts": 0
+  }
+ ]
+}

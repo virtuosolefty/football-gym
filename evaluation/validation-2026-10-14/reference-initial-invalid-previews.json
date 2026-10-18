@@ -1,0 +1,510 @@
+{
+  "method": "Implementer visual seeds selected from unannotated source frames before these tracker runs. These are diagnostic references, not independent coach labels. Real detections will be audited frame by frame; uncertain frames stay unscorable. No thresholds are tuned on this set.",
+  "loss_policy": "At each loss prompt choose Skip remaining track in this direction. No automatic or unreviewed reseeds.",
+  "clips": [
+    {
+      "id": "night-kick",
+      "file": "night-kick.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.684,
+        0.72
+      ],
+      "radius": 25,
+      "kind": "football; night; fast kick; ball exit"
+    },
+    {
+      "id": "urban-juggle",
+      "file": "urban-juggle.mp4",
+      "window": [
+        0,
+        5
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.326,
+        0.76
+      ],
+      "radius": 28,
+      "kind": "orange patterned football; urban daylight; close view; ball exits top"
+    },
+    {
+      "id": "park-juggle",
+      "file": "park-juggle.mp4",
+      "window": [
+        2.5,
+        5.5
+      ],
+      "seed_time": 2.5,
+      "click_normalized": [
+        0.659,
+        0.475
+      ],
+      "radius": 16,
+      "kind": "white patterned football; tree shade; cluttered background"
+    },
+    {
+      "id": "studio-juggle",
+      "file": "studio-juggle.mp4",
+      "window": [
+        0,
+        5
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.385,
+        0.616
+      ],
+      "radius": 10,
+      "kind": "white patterned football; dark studio; multiple stationary look-alike balls"
+    },
+    {
+      "id": "rain",
+      "file": "rain.mp4",
+      "window": [
+        4,
+        7
+      ],
+      "seed_time": 4,
+      "click_normalized": [
+        0.593,
+        0.537
+      ],
+      "radius": 2,
+      "kind": "white football; rain; wet reflective court; approximately 12 native pixels"
+    },
+    {
+      "id": "tennis-day",
+      "file": "tennis-day.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.472,
+        0.329
+      ],
+      "radius": 22,
+      "kind": "yellow tennis ball; blue wall; hand toss and occlusion"
+    },
+    {
+      "id": "tennis-dark",
+      "file": "tennis-dark.mp4",
+      "window": [
+        2,
+        5
+      ],
+      "seed_time": 2,
+      "click_normalized": [
+        0.714,
+        0.502
+      ],
+      "radius": 5,
+      "kind": "yellow tennis ball; dim court; small ball; multiple floor balls"
+    },
+    {
+      "id": "basket-outdoor",
+      "file": "basket-outdoor.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.332,
+        0.306
+      ],
+      "radius": 11,
+      "kind": "dark basketball; outdoor hard shadows; moving camera"
+    },
+    {
+      "id": "basket-indoor",
+      "file": "basket-indoor.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.43,
+        0.69
+      ],
+      "radius": 26,
+      "kind": "orange basketball; indoor gym; repeated frame-edge occlusion"
+    },
+    {
+      "id": "volley-dark",
+      "file": "volley-dark.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.405,
+        0.464
+      ],
+      "radius": 26,
+      "kind": "white volleyball; dark indoor court; net across view"
+    },
+    {
+      "id": "volley-beach",
+      "file": "volley-beach.mp4",
+      "window": [
+        1.5,
+        4.5
+      ],
+      "seed_time": 1.5,
+      "click_normalized": [
+        0.783,
+        0.155
+      ],
+      "radius": 22,
+      "kind": "yellow/blue volleyball; sun and sand; ball leaves top edge"
+    },
+    {
+      "id": "basket-outdoor-30s",
+      "file": "basket-outdoor.mp4",
+      "window": [
+        0,
+        30
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.332,
+        0.306
+      ],
+      "radius": 11,
+      "kind": "full 30-second basketball window; not a football-juggling accuracy case"
+    },
+    {
+      "id": "regression-beach",
+      "file": "regression-beach.webm",
+      "window": [
+        0.5,
+        3.5
+      ],
+      "seed_time": 0.5,
+      "click_normalized": [
+        0.2479,
+        0.963
+      ],
+      "radius": 4,
+      "kind": "old source regression: Bright sun, sand, broadcast camera panning",
+      "prior_reference": "evaluation\\conditions-footage\\reference.json"
+    },
+    {
+      "id": "regression-futsal",
+      "file": "regression-futsal.webm",
+      "window": [
+        57.0,
+        60.0
+      ],
+      "seed_time": 57.0,
+      "click_normalized": [
+        0.1344,
+        0.713
+      ],
+      "radius": 12,
+      "kind": "old source regression: Indoor lighting, reflective wooden floor, static balls",
+      "prior_reference": "evaluation\\conditions-footage\\reference.json"
+    },
+    {
+      "id": "regression-u17",
+      "file": "regression-u17.webm",
+      "window": [
+        34.0,
+        37.0
+      ],
+      "seed_time": 34.0,
+      "click_normalized": [
+        0.5391,
+        0.6222
+      ],
+      "radius": 3,
+      "kind": "old source regression: Daylight stadium, broadcast camera, small ball on grass",
+      "prior_reference": "evaluation\\conditions-footage\\reference.json"
+    },
+    {
+      "id": "regression-street",
+      "file": "regression-street.webm",
+      "window": [
+        10.0,
+        13.0
+      ],
+      "seed_time": 10.0,
+      "click_normalized": [
+        0.2078,
+        0.5278
+      ],
+      "radius": 3,
+      "kind": "old source regression: Overcast dusty pitch, handheld phone video, motion blur",
+      "prior_reference": "evaluation\\conditions-footage\\reference.json"
+    },
+    {
+      "id": "regression-aerial",
+      "file": "regression-aerial.mp4",
+      "window": [
+        0.5,
+        3.5
+      ],
+      "seed_time": 0.5,
+      "click_normalized": [
+        0.6453,
+        0.5139
+      ],
+      "radius": 6,
+      "kind": "old source regression: Two players in red kit pass and juggle a white/orange ball in front of a plain wall; the ball colour is close to the kits and the ball moves between the players.",
+      "prior_reference": "evaluation\\other-footage\\reference.json"
+    },
+    {
+      "id": "aerial-30s",
+      "file": "regression-aerial.mp4",
+      "window": [
+        0.5,
+        30.5
+      ],
+      "seed_time": 0.5,
+      "click_normalized": [
+        0.6453,
+        0.5139
+      ],
+      "radius": 6,
+      "kind": "full 30-second real-football window on existing source; not a new independent source",
+      "prior_reference": "evaluation\\other-footage\\reference.json"
+    },
+    {
+      "id": "regression-tennis",
+      "file": "regression-tennis.webm",
+      "window": [
+        5.0,
+        8.0
+      ],
+      "seed_time": 5.0,
+      "click_normalized": [
+        0.6583,
+        0.3241
+      ],
+      "radius": 6,
+      "kind": "old source regression: Opening low-angle close-up with a large ball against the sky (frames 0-7), then a hard cut at frame 8 to a wide shot where the same ball is about 28 px across. The tracker should lose the track at the cut instead of picking up something else; post-cut detections are audited by overlay, not by spot checks.",
+      "prior_reference": "evaluation\\other-footage\\reference.json"
+    },
+    {
+      "id": "regression-improvised",
+      "file": "regression-improvised.mp4",
+      "window": [
+        50.0,
+        53.0
+      ],
+      "seed_time": 50.0,
+      "click_normalized": [
+        0.8203,
+        0.7111
+      ],
+      "radius": 2,
+      "kind": "old source regression: Two children contest a ball among others on a dirt field; at this distance and with occlusion no ball can be located reliably by eye, so there is no reference position. Click is on the feet of the child in purple. Expectation: the app must not report a confident ball track.",
+      "prior_reference": "evaluation\\other-footage\\reference.json"
+    },
+    {
+      "id": "improvised-30s",
+      "file": "regression-improvised.mp4",
+      "window": [
+        50.0,
+        80.0
+      ],
+      "seed_time": 50.0,
+      "click_normalized": [
+        0.8203,
+        0.7111
+      ],
+      "radius": 2,
+      "kind": "full 30-second real-football window on existing source; not a new independent source",
+      "prior_reference": "evaluation\\other-footage\\reference.json"
+    },
+    {
+      "id": "control-football",
+      "file": "control-football.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-basket",
+      "file": "control-basket.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: basket; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-tennis",
+      "file": "control-tennis.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 10,
+      "kind": "CONTROLLED: tennis; clear; radius 10px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-small",
+      "file": "control-small.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 5,
+      "kind": "CONTROLLED: football; clear; radius 5px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-fast",
+      "file": "control-fast.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 2.5; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-dark",
+      "file": "control-dark.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; dark; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-rain",
+      "file": "control-rain.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; rain-overlay; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-blur",
+      "file": "control-blur.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; blur; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-occlusion",
+      "file": "control-occlusion.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; occlusion; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-edge-decoy",
+      "file": "control-edge-decoy.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.5
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; edge-decoy; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-cut-decoy",
+      "file": "control-cut-decoy.mp4",
+      "window": [
+        0,
+        4
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.5
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; cut-decoy; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    },
+    {
+      "id": "control-30s",
+      "file": "control-30s.mp4",
+      "window": [
+        0,
+        30
+      ],
+      "seed_time": 0,
+      "click_normalized": [
+        0.5,
+        0.3333333333333333
+      ],
+      "radius": 16,
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence"
+    }
+  ]
+}

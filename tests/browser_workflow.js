@@ -1,0 +1,113 @@
+// Playwright callback. Run only against the isolated QA server described in TESTING.md.
+async (page) => {
+  const assert = (value, message) => { if (!value) throw new Error(message); };
+  const origin = BASE_URL;
+  await page.goto(origin);
+  const snapshot = () => page.evaluate(async () => (await fetch('/api/state')).json());
+  assert((await snapshot()).profile === null, 'Use a fresh, isolated QA data directory.');
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  const nav = name => page.getByRole('navigation', {name:'Main navigation'}).getByRole('button', {name, exact:false}).click();
+  const workspace = name => page.getByRole('navigation', {name:'Workspace navigation'}).getByRole('button', {name, exact:false}).click();
+  const quality = async () => { for (const name of ['Player, ball and targets were visible', 'Camera / observation viewpoint was fixed', 'I followed the stated assessment setup']) await page.getByRole('checkbox', {name}).check(); };
+  const wall = async success => {
+    await page.getByRole('spinbutton', {name:'Total attempts'}).fill('20');
+    await page.getByRole('spinbutton', {name:'Successful outcomes'}).fill(String(success));
+    await page.getByRole('spinbutton', {name:'Weak-foot passes'}).fill('10');
+  };
+  const saveAttempt = async () => { await page.getByRole('button', {name:'Save assessment'}).click(); await page.getByRole('heading', {name:'Progress you can trace.'}).waitFor(); };
+
+  await page.getByRole('textbox', {name:'Name', exact:true}).fill('Browser QA');
+  await page.getByRole('combobox', {name:'Development goal'}).selectOption('wall');
+  await page.getByRole('spinbutton', {name:'Time per session (minutes)'}).fill('20');
+  for (const name of ['Wall','Markers','Cones']) await page.getByRole('checkbox', {name,exact:true}).check();
+  await page.getByRole('checkbox', {name:'I agree to store and process'}).check();
+  await page.getByRole('button', {name:'Save my profile'}).click();
+  await page.locator('dialog').waitFor({state:'hidden'});
+  await nav('Train');
+  await page.getByRole('button', {name:'Build my session'}).click();
+  await page.getByRole('button', {name:'Save session feedback'}).first().waitFor();
+  assert(await page.locator('.assignment').count() === 4, '20-minute plan should contain four eligible drills.');
+  await page.locator('.assignment').first().getByRole('button', {name:'Save session feedback'}).click();
+  await page.getByText('Completed · Effort 3/5').waitFor();
+  await page.getByRole('combobox', {name:'How ready do you feel?'}).selectOption('Tired');
+  await page.getByRole('button', {name:'Adapt my session'}).click();
+  await page.getByText('Reduced workload based on readiness or recent effort.', {exact:false}).waitFor();
+  assert((await snapshot()).plan.minutes === 10, 'Tired session should reduce to 10 minutes.');
+  await page.getByRole('combobox', {name:'How ready do you feel?'}).selectOption('Rest');
+  await page.getByRole('button', {name:'Adapt my session'}).click();
+  await page.getByText('No training prescribed today.', {exact:false}).waitFor();
+  assert((await snapshot()).plan.assignments.length === 0, 'Rest must not prescribe training.');
+  await page.getByRole('searchbox', {name:'Search drills'}).fill('wall');
+  assert(await page.locator('.drill-card').count() === 5, 'Library search should find five wall drills.');
+
+  await nav('Record');
+  await wall(16);
+  await quality();
+  // Use the checked-in video: headless canvas capture can emit a header with no frames on some hosts.
+  await page.locator('#evidence-file').setInputFiles('tests/fixtures/contrast-ball.webm');
+  await page.waitForFunction(()=>document.querySelector('#attempt-preview').readyState>=1, {}, {timeout:10000});
+  await saveAttempt();
+  assert((await snapshot()).attempts[0].value === 80, 'Raw wall accuracy should be 80%.');
+  await page.getByRole('button',{name:'Request a local review'}).first().click();
+  await page.getByRole('textbox',{name:'Reviewer name',exact:true}).fill('QA Coach');
+  await page.getByRole('checkbox',{name:'Correct the recorded measurements'}).check();
+  await page.getByRole('spinbutton',{name:'Successful outcomes'}).fill('18');
+  await page.getByRole('textbox',{name:'Observation & coaching note'}).fill('Corrected two counted returns.');
+  await page.getByRole('button',{name:'Save review',exact:true}).click();
+  await page.getByText('Coach-reviewed manual measurement', {exact:false}).waitFor();
+  let data=await snapshot();
+  assert(data.attempts[0].value === 90 && data.attempts[0].original_metrics.successes === 16, 'Review must retain original counts.');
+  await nav('Progress');
+  await page.getByRole('button',{name:'Repeat this setup'}).first().click();
+  assert(await page.getByRole('spinbutton',{name:'Distance / cone spacing (m)'}).inputValue() === '3', 'Retest must retain setup.');
+  await wall(19);await quality();await saveAttempt();
+  await page.getByText('+5 percentage points vs baseline', {exact:false}).waitFor();
+  await nav('Record');
+  await page.getByRole('combobox',{name:'Or use a saved evidence video'}).selectOption({label:'contrast-ball.webm'});
+  await page.waitForFunction(()=>document.querySelector('#attempt-preview').readyState>=1, {}, {timeout:10000});
+  await page.locator('#attempt-preview').evaluate(video=>video.play());
+  assert(await page.locator('#attempt-preview').evaluate(video=>video.videoWidth) === 320, 'Saved video must decode and play.');
+  await wall(20);await saveAttempt();
+  data=await snapshot();
+  assert(data.attempts.at(-1).status === 'UNMEASURABLE', 'Unchecked quality must be unmeasurable.');
+  assert(data.passport.find(skill=>skill.protocol==='wall').latest.value === 95, 'Invalid attempts must not change the passport.');
+
+  for(const test of [{id:'juggling',fields:{contacts:'12'}},{id:'touch',fields:{successes:'17'}},{id:'gates',fields:{successes:'18'}},{id:'slalom',fields:{seconds:'14.2',missed:'0'}}]) {
+    await nav('Record');await page.getByRole('combobox',{name:'Assessment',exact:true}).selectOption(test.id);
+    for(const [name,v] of Object.entries(test.fields)) await page.locator(`[name=${name}]`).fill(v);
+    await quality();await saveAttempt();
+  }
+  assert((await snapshot()).passport.every(skill=>skill.latest), 'All five protocols must have usable results.');
+  await nav('Coach');
+  await page.getByRole('button',{name:'Prepare a retest'}).click();
+  await page.getByRole('button',{name:'Ask my coach'}).click();
+  await page.locator('.message').filter({hasText:'Offline rules'}).waitFor();
+  await workspace('Coach review');
+  await page.getByRole('combobox',{name:'Drill',exact:true}).selectOption('wall-1');
+  await page.getByRole('textbox',{name:'Qualified reviewer name'}).fill('QA Coach');
+  await page.getByRole('textbox',{name:'Review note',exact:true}).fill('Guidance reviewed for this fixture.');
+  await page.getByRole('checkbox',{name:'A qualified coach has reviewed'}).check();
+  await page.getByRole('button',{name:'Mark locally reviewed'}).click();
+  await page.getByText('1 knowledge reviews saved.', {exact:false}).waitFor();
+  await workspace('Settings & privacy');
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('link',{name:'Export records & videos'}).click()]);
+  assert(download.suggestedFilename() === 'football-helper-backup.zip', 'Backup download must work.');
+  await download.saveAs('test-results/browser-backup.zip');
+  await nav('Home');
+  await page.setViewportSize({width:1440,height:1100});
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:'test-results/home-desktop.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  await page.evaluate(()=>window.scrollTo(0,0));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'Mobile layout must not overflow.');
+  await page.screenshot({path:'test-results/home-mobile.png',fullPage:true});
+  await workspace('Settings & privacy');
+  await page.getByRole('textbox',{name:'Type DELETE to confirm'}).fill('DELETE');
+  await page.getByRole('button',{name:'Delete my local workspace'}).click();
+  await page.getByRole('heading',{name:'Your next level starts here.'}).waitFor();
+  data=await snapshot();
+  assert(data.profile === null && data.attempts.length === 0 && data.media.length === 0, 'Deletion must clear local data.');
+  assert(errors.length === 0, 'Browser runtime errors: '+errors.join('; '));
+  return {result:'PASS', workflows: ['onboarding','adaptive plan','feedback','rest','library search','video upload and playback','coach corrections','comparable retest','invalid-quality exclusion','five protocols','offline chat','knowledge review','export','mobile layout','deletion'], browserErrors:errors};
+}

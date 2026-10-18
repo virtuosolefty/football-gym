@@ -1,0 +1,190 @@
+{
+  "format": "football-evaluation-1",
+  "clip": {
+    "id": "shot_Training_1_1",
+    "filename": "shot_Training_1_1.mp4",
+    "sha256": "972a95345d0200cd95a664e60f7b394155fdf88f2b04b0e4bf755341a487f46c",
+    "width": 1920,
+    "height": 1080,
+    "start": 0,
+    "end": 3
+  },
+  "annotator": {
+    "id": "Zou-Liu-public-dataset",
+    "role": "external-dataset",
+    "independent": false
+  },
+  "conditions": [],
+  "notes": "Published external ball boxes, mapped by the author's naming guide. Blind annotation protocol unverified; condition review and alignment spot-check required. Multiple boxes are marked uncertain. Blurred people prevent pose validation.",
+  "sample_interval": 0.1,
+  "frames": [
+    {
+      "time": 0.0,
+      "status": "visible",
+      "x": 0.417448,
+      "y": 0.775,
+      "radius": 48.00006
+    },
+    {
+      "time": 0.1,
+      "status": "visible",
+      "x": 0.417448,
+      "y": 0.775463,
+      "radius": 47.50002
+    },
+    {
+      "time": 0.2,
+      "status": "visible",
+      "x": 0.327344,
+      "y": 0.526389,
+      "radius": 41.500080000000004
+    },
+    {
+      "time": 0.3,
+      "status": "visible",
+      "x": 0.252604,
+      "y": 0.311574,
+      "radius": 34.50006
+    },
+    {
+      "time": 0.4,
+      "status": "visible",
+      "x": 0.249219,
+      "y": 0.166204,
+      "radius": 24.4998
+    },
+    {
+      "time": 0.5,
+      "status": "visible",
+      "x": 0.229948,
+      "y": 0.091667,
+      "radius": 18.9999
+    },
+    {
+      "time": 0.6,
+      "status": "visible",
+      "x": 0.21276,
+      "y": 0.025,
+      "radius": 18.50016
+    },
+    {
+      "time": 1.4,
+      "status": "visible",
+      "x": 0.204427,
+      "y": 0.065741,
+      "radius": 9.500160000000001
+    },
+    {
+      "time": 1.5,
+      "status": "visible",
+      "x": 0.20026,
+      "y": 0.104167,
+      "radius": 6.499980000000001
+    },
+    {
+      "time": 1.6,
+      "status": "visible",
+      "x": 0.191667,
+      "y": 0.173148,
+      "radius": 11.99988
+    },
+    {
+      "time": 1.7,
+      "status": "visible",
+      "x": 0.185677,
+      "y": 0.226389,
+      "radius": 13.5
+    },
+    {
+      "time": 1.8,
+      "status": "visible",
+      "x": 0.176042,
+      "y": 0.321296,
+      "radius": 12.999960000000002
+    },
+    {
+      "time": 1.9,
+      "status": "visible",
+      "x": 0.169271,
+      "y": 0.390741,
+      "radius": 13.99968
+    },
+    {
+      "time": 2.0,
+      "status": "visible",
+      "x": 0.157031,
+      "y": 0.509722,
+      "radius": 10.49976
+    },
+    {
+      "time": 2.1,
+      "status": "visible",
+      "x": 0.149219,
+      "y": 0.6,
+      "radius": 10.00026
+    },
+    {
+      "time": 2.2,
+      "status": "visible",
+      "x": 0.136458,
+      "y": 0.554167,
+      "radius": 13.5
+    },
+    {
+      "time": 2.3,
+      "status": "visible",
+      "x": 0.126302,
+      "y": 0.491667,
+      "radius": 11.99988
+    },
+    {
+      "time": 2.4,
+      "status": "visible",
+      "x": 0.113542,
+      "y": 0.414352,
+      "radius": 12.49992
+    },
+    {
+      "time": 2.5,
+      "status": "visible",
+      "x": 0.103385,
+      "y": 0.369907,
+      "radius": 15.500160000000001
+    },
+    {
+      "time": 2.6,
+      "status": "visible",
+      "x": 0.089323,
+      "y": 0.314352,
+      "radius": 13.5
+    },
+    {
+      "time": 2.7,
+      "status": "visible",
+      "x": 0.079427,
+      "y": 0.287037,
+      "radius": 12.999960000000002
+    },
+    {
+      "time": 2.8,
+      "status": "visible",
+      "x": 0.064062,
+      "y": 0.258333,
+      "radius": 11.99988
+    },
+    {
+      "time": 2.9,
+      "status": "visible",
+      "x": 0.053906,
+      "y": 0.246296,
+      "radius": 15.00012
+    }
+  ],
+  "contacts": [],
+  "contacts_reviewed": false,
+  "source": {
+    "url": "https://raw.githubusercontent.com/Zoutianjian/Ball-Yolo-A-Sport-Ball-Dataset/c6992050c74d6e3f6992bac0e314e7b378a0f51c/",
+    "revision": "c6992050c74d6e3f6992bac0e314e7b378a0f51c",
+    "fps": 25.0
+  }
+}

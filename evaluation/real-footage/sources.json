@@ -1,0 +1,40 @@
+{
+  "retrieved_on": "2026-10-13",
+  "purpose": "Local evaluation of existing contrast-ball-1; no model training or athlete rating",
+  "license_url": "https://www.pexels.com/license/",
+  "clips": [
+    {
+      "id": "daylight",
+      "pexels_id": 27353726,
+      "author": "Diyorbek Mirzamakhmudov",
+      "page": "https://www.pexels.com/video/juggling-football-27353726/",
+      "download": "https://videos.pexels.com/video-files/27353726/12121995_720_1280_24fps.mp4",
+      "file": "daylight.mp4",
+      "source_fps": 23.98,
+      "description": "Outdoor juggling in daylight; space/framing to be recorded after visual inspection",
+      "browser_download": "https://www.pexels.com/download/video/27353726/?fps=23.98&h=1280&w=720"
+    },
+    {
+      "id": "indoor",
+      "pexels_id": 6078265,
+      "author": "Tima Miroshnichenko",
+      "page": "https://www.pexels.com/video/football-player-juggling-with-ball-6078265/",
+      "download": "https://videos.pexels.com/video-files/6078265/6078265-hd_1280_720_25fps.mp4",
+      "file": "indoor.mp4",
+      "source_fps": 25,
+      "description": "Indoor dome juggling; space/framing to be recorded after visual inspection",
+      "browser_download": "https://www.pexels.com/download/video/6078265/?fps=25.0&h=720&w=1280"
+    },
+    {
+      "id": "strobe",
+      "pexels_id": 10349043,
+      "author": "cottonbro studio",
+      "page": "https://www.pexels.com/video/a-man-playing-with-a-football-under-a-strobe-light-10349043/",
+      "download": "https://videos.pexels.com/video-files/10349043/10349043-hd_1366_720_25fps.mp4",
+      "file": "strobe.mp4",
+      "source_fps": 25,
+      "description": "Dark strobe-lit juggling; space/framing to be recorded after visual inspection",
+      "browser_download": "https://www.pexels.com/download/video/10349043/?fps=25.0&h=720&w=1366"
+    }
+  ]
+}

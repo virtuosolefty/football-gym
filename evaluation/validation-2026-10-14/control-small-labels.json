@@ -1,0 +1,304 @@
+{
+  "format": "football-evaluation-1",
+  "clip": {
+    "id": "control-small",
+    "sha256": "6b83e16fbb0136320b92ee04f614eaa1c27912cf05ccfc00cbfb080de5ab74fb",
+    "width": 320,
+    "height": 180,
+    "start": 0,
+    "end": 4
+  },
+  "annotator": {
+    "id": "deterministic-generator",
+    "role": "implementer",
+    "independent": false
+  },
+  "conditions": [
+    "football",
+    "clear"
+  ],
+  "frames": [
+    {
+      "time": 0.0,
+      "status": "visible",
+      "x": 0.5,
+      "y": 0.3333333333333333,
+      "radius": 5
+    },
+    {
+      "time": 0.1,
+      "status": "visible",
+      "x": 0.5152625281642134,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 0.2,
+      "status": "visible",
+      "x": 0.5302263990616999,
+      "y": 0.4,
+      "radius": 5
+    },
+    {
+      "time": 0.3,
+      "status": "visible",
+      "x": 0.5445987995533905,
+      "y": 0.4833333333333334,
+      "radius": 5
+    },
+    {
+      "time": 0.4,
+      "status": "visible",
+      "x": 0.5580984903975966,
+      "y": 0.6,
+      "radius": 5
+    },
+    {
+      "time": 0.5,
+      "status": "visible",
+      "x": 0.5704613095416224,
+      "y": 0.75,
+      "radius": 5
+    },
+    {
+      "time": 0.6,
+      "status": "visible",
+      "x": 0.5814453412468128,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 0.7,
+      "status": "visible",
+      "x": 0.5908356498975593,
+      "y": 0.48333333333333334,
+      "radius": 5
+    },
+    {
+      "time": 0.8,
+      "status": "visible",
+      "x": 0.5984484858630552,
+      "y": 0.4,
+      "radius": 5
+    },
+    {
+      "time": 0.9,
+      "status": "visible",
+      "x": 0.6041348811114626,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 1.0,
+      "status": "visible",
+      "x": 0.6077835642174878,
+      "y": 0.3333333333333333,
+      "radius": 5
+    },
+    {
+      "time": 1.1,
+      "status": "visible",
+      "x": 0.6093231377224743,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 1.2,
+      "status": "visible",
+      "x": 0.6087234752404146,
+      "y": 0.4,
+      "radius": 5
+    },
+    {
+      "time": 1.3,
+      "status": "visible",
+      "x": 0.6059963109712999,
+      "y": 0.4833333333333334,
+      "radius": 5
+    },
+    {
+      "time": 1.4,
+      "status": "visible",
+      "x": 0.6011950100862059,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 1.5,
+      "status": "visible",
+      "x": 0.5944135244772206,
+      "y": 0.75,
+      "radius": 5
+    },
+    {
+      "time": 1.6,
+      "status": "visible",
+      "x": 0.5857845543061084,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 1.7,
+      "status": "visible",
+      "x": 0.57547695132654,
+      "y": 0.48333333333333317,
+      "radius": 5
+    },
+    {
+      "time": 1.8,
+      "status": "visible",
+      "x": 0.5636924147916964,
+      "y": 0.40000000000000013,
+      "radius": 5
+    },
+    {
+      "time": 1.9,
+      "status": "visible",
+      "x": 0.5506615446017565,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 2.0,
+      "status": "visible",
+      "x": 0.5366393289233021,
+      "y": 0.3333333333333333,
+      "radius": 5
+    },
+    {
+      "time": 2.1,
+      "status": "visible",
+      "x": 0.5219001545789437,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 2.2,
+      "status": "visible",
+      "x": 0.5067324378438968,
+      "y": 0.40000000000000013,
+      "radius": 5
+    },
+    {
+      "time": 2.3,
+      "status": "visible",
+      "x": 0.4914329807141241,
+      "y": 0.48333333333333317,
+      "radius": 5
+    },
+    {
+      "time": 2.4,
+      "status": "visible",
+      "x": 0.4763011630826304,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 2.5,
+      "status": "visible",
+      "x": 0.46163308447144785,
+      "y": 0.75,
+      "radius": 5
+    },
+    {
+      "time": 2.6,
+      "status": "visible",
+      "x": 0.4477157699539469,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 2.7,
+      "status": "visible",
+      "x": 0.4348215536460258,
+      "y": 0.48333333333333317,
+      "radius": 5
+    },
+    {
+      "time": 2.8,
+      "status": "visible",
+      "x": 0.4232027496700682,
+      "y": 0.40000000000000013,
+      "radius": 5
+    },
+    {
+      "time": 2.9,
+      "status": "visible",
+      "x": 0.41308671487028475,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 3.0,
+      "status": "visible",
+      "x": 0.40467139989226386,
+      "y": 0.3333333333333333,
+      "radius": 5
+    },
+    {
+      "time": 3.1,
+      "status": "visible",
+      "x": 0.3981214756832391,
+      "y": 0.35,
+      "radius": 5
+    },
+    {
+      "time": 3.2,
+      "status": "visible",
+      "x": 0.39356511120974663,
+      "y": 0.40000000000000013,
+      "radius": 5
+    },
+    {
+      "time": 3.3,
+      "status": "visible",
+      "x": 0.3910914654463169,
+      "y": 0.48333333333333317,
+      "radius": 5
+    },
+    {
+      "time": 3.4,
+      "status": "visible",
+      "x": 0.39074894271198596,
+      "y": 0.5999999999999999,
+      "radius": 5
+    },
+    {
+      "time": 3.5,
+      "status": "visible",
+      "x": 0.39254424549421363,
+      "y": 0.75,
+      "radius": 5
+    },
+    {
+      "time": 3.6,
+      "status": "visible",
+      "x": 0.3964422432945584,
+      "y": 0.6000000000000004,
+      "radius": 5
+    },
+    {
+      "time": 3.7,
+      "status": "visible",
+      "x": 0.40236666006253685,
+      "y": 0.48333333333333317,
+      "radius": 5
+    },
+    {
+      "time": 3.8,
+      "status": "visible",
+      "x": 0.41020156676595726,
+      "y": 0.40000000000000013,
+      "radius": 5
+    },
+    {
+      "time": 3.9,
+      "status": "visible",
+      "x": 0.4197936498911001,
+      "y": 0.34999999999999987,
+      "radius": 5
+    }
+  ],
+  "contacts": [],
+  "notes": "Exact generated marker positions/visibility. Turning points are not human foot contacts."
+}

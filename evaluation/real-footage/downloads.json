@@ -1,0 +1,20 @@
+[
+  {
+    "id": "daylight",
+    "file": "test-results\\real-footage\\footage\\daylight.mp4",
+    "bytes": 9060208,
+    "sha256": "c8e4d9c2a1e4735d1007ba65cadf811168f1b1ede986f2784d0b7ccb2c2c493c"
+  },
+  {
+    "id": "indoor",
+    "file": "test-results\\real-footage\\footage\\indoor.mp4",
+    "bytes": 6928498,
+    "sha256": "4d75a3f076128807fe2245f7db4cc15a218ba41d91c5391696788d1b08d9ea37"
+  },
+  {
+    "id": "strobe",
+    "file": "test-results\\real-footage\\footage\\strobe.mp4",
+    "bytes": 1559784,
+    "sha256": "d04873a53858874ebedba0a9b741752a3d1f98a09b580fbaee170d6c1d60eb01"
+  }
+]

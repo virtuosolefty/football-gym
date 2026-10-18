@@ -1,0 +1,98 @@
+{
+  "clips": [
+    {
+      "id": "aerial",
+      "title": "File:Aerial Football - Don't Touch the Ground - Play and Africa.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AAerial_Football_-_Don%27t_Touch_the_Ground_-_Play_and_Africa.webm",
+      "file": "aerial.webm",
+      "bytes": 8946129,
+      "sha256": "96f473b361c7bfcbc8f49cf5c582ead116de297ea46477b402f658a443b7c2ac",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Arch-Angel_Raphael_the_Artist\" title=\"User:Arch-Angel Raphael the Artist\">Arch-Angel Raphael the Artist</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "training",
+      "title": "File:Girls football training.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AGirls_football_training.webm",
+      "file": "training.webm",
+      "bytes": 5572217,
+      "sha256": "37f86e65d3a285fa788f7ab69734ec365170b16f5b0bd37f88b87c515106ab67",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Evworo&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Evworo (page does not exist)\">Evworo</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "tennis",
+      "title": "File:Football Tennis.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AFootball_Tennis.webm",
+      "file": "tennis.webm",
+      "bytes": 29588878,
+      "sha256": "29a725e817e9a2ce70213c3a232b893a07dd0191a78446e2c16325452b76a680",
+      "sha1_matches_commons": true,
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "author_html": "PK17 Football (PredatorKnuckles17) UK HD",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "topdown",
+      "title": "File:Amateurfußball Torschuss von oben.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AAmateurfu%C3%9Fball_Torschuss_von_oben.webm",
+      "file": "topdown.webm",
+      "bytes": 24894974,
+      "sha256": "42e9d2a0468a7fc08622eccabea2bd640324f9550d1909f99ead0e49a1bfeac0",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Maximilian_Sch%C3%B6nherr\" title=\"User:Maximilian Schönherr\">Maximilian Schönherr</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "tournament",
+      "title": "File:Secondary schools football tournament.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3ASecondary_schools_football_tournament.webm",
+      "file": "tournament.webm",
+      "bytes": 6330074,
+      "sha256": "4288a0238840ef46b95a328272e82db09a01ae3a3ea264f89a2c558ef1fd2907",
+      "sha1_matches_commons": true,
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Samson_Ssemakadde&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Samson Ssemakadde (page does not exist)\">Samson Ssemakadde</a>",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "improvised",
+      "title": "File:Future Footballers, Without been able to afford a Football to Play - Play and Africa.webm",
+      "page": "https://commons.wikimedia.org/wiki/File%3AFuture_Footballers%2C_Without_been_able_to_afford_a_Football_to_Play_-_Play_and_Africa.webm",
+      "file": "improvised.webm",
+      "bytes": 15682888,
+      "sha256": "5c3de9bb796960bbad14e4554beef8fd5aed39ce0cf265053eb5441bdb6f1dc9",
+      "sha1_matches_commons": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Arch-Angel_Raphael_the_Artist\" title=\"User:Arch-Angel Raphael the Artist\">Arch-Angel Raphael the Artist</a>",
+      "retrieved": "2026-10-13"
+    }
+  ],
+  "derived_files": [
+    {
+      "file": "aerial.mp4",
+      "from": "aerial.webm",
+      "why": "The source webm has container timestamps starting near 98,000 s, so the browser reports a 98,000 s duration and the app (maximum 600 s) cannot analyse it. Timestamps were reset to zero; pixels are unchanged apart from re-encoding.",
+      "command": "ffmpeg -vf setpts=PTS-STARTPTS -an -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p",
+      "sha256": "e72bd354cab2c9a5c0b290c1d8495c5c8f504333be9af1ca2d0c7b6b0334914d"
+    },
+    {
+      "file": "improvised.mp4",
+      "from": "improvised.webm",
+      "why": "The source webm has container timestamps starting near 98,000 s, so the browser reports a 98,000 s duration and the app (maximum 600 s) cannot analyse it. Timestamps were reset to zero; pixels are unchanged apart from re-encoding.",
+      "command": "ffmpeg -vf setpts=PTS-STARTPTS -an -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p",
+      "sha256": "c4d747eceec176830fbc22ed450455619739493a21dc80a79473311129664787"
+    }
+  ]
+}

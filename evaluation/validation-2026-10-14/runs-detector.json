@@ -1,0 +1,6198 @@
+{
+  "label": "detector",
+  "loss_policy": "At each loss prompt choose Skip remaining track in this direction. No automatic or unreviewed reseeds.",
+  "page_errors": [],
+  "clips": [
+    {
+      "id": "night-kick",
+      "kind": "football; night; fast kick; ball exit",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 2.80 s (edge_exit). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 2.8
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 39%). Radius set to 25 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 6613,
+      "error": "",
+      "analysis": {
+        "id": "a63d183052f847d1a04f3ed5c182103d",
+        "created": "2026-10-14T11:03:34.224515+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "0a0214cce6904f3888f850f6ff8104e9",
+        "duration": 11,
+        "start": 0,
+        "end": 4,
+        "width": 1280,
+        "height": 720,
+        "samples": [
+          {
+            "time": 0,
+            "found": true,
+            "x": 0.682525,
+            "y": 0.726365,
+            "score": 0.397,
+            "segment": 0
+          },
+          {
+            "time": 0.1,
+            "found": true,
+            "x": 0.683246,
+            "y": 0.725942,
+            "score": 0.379,
+            "segment": 0
+          },
+          {
+            "time": 0.2,
+            "found": true,
+            "x": 0.683699,
+            "y": 0.726207,
+            "score": 0.382,
+            "segment": 0
+          },
+          {
+            "time": 0.3,
+            "found": true,
+            "x": 0.683202,
+            "y": 0.726828,
+            "score": 0.363,
+            "segment": 0
+          },
+          {
+            "time": 0.4,
+            "found": true,
+            "x": 0.683126,
+            "y": 0.727474,
+            "score": 0.37,
+            "segment": 0
+          },
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.682152,
+            "y": 0.727731,
+            "score": 0.389,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.680982,
+            "y": 0.728212,
+            "score": 0.375,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.68033,
+            "y": 0.729267,
+            "score": 0.368,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.679069,
+            "y": 0.729037,
+            "score": 0.363,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.678019,
+            "y": 0.729468,
+            "score": 0.367,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.676968,
+            "y": 0.729563,
+            "score": 0.364,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.676423,
+            "y": 0.729367,
+            "score": 0.376,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.67567,
+            "y": 0.729846,
+            "score": 0.401,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.675757,
+            "y": 0.729439,
+            "score": 0.377,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.675157,
+            "y": 0.729492,
+            "score": 0.384,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.674563,
+            "y": 0.729437,
+            "score": 0.355,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.668795,
+            "y": 0.731743,
+            "score": 0.55,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": true,
+            "x": 0.667568,
+            "y": 0.732394,
+            "score": 0.627,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.667113,
+            "y": 0.726555,
+            "score": 0.664,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": true,
+            "x": 0.670331,
+            "y": 0.718819,
+            "score": 0.517,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": true,
+            "x": 0.704442,
+            "y": 0.63133,
+            "score": 0.39,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": true,
+            "x": 0.718886,
+            "y": 0.502331,
+            "score": 0.238,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": true,
+            "x": 0.740522,
+            "y": 0.354836,
+            "score": 0.882,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": true,
+            "x": 0.750341,
+            "y": 0.277354,
+            "score": 0.379,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": true,
+            "x": 0.761901,
+            "y": 0.195408,
+            "score": 0.87,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": true,
+            "x": 0.763129,
+            "y": 0.155185,
+            "score": 0.814,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.763773,
+            "y": 0.107034,
+            "score": 0.889,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": true,
+            "x": 0.76301,
+            "y": 0.08212,
+            "score": 0.529,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "edge_exit"
+          },
+          {
+            "time": 2.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.68213,
+            "y": 0.726423,
+            "radius": 25,
+            "time": 0
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.7,
+          "max_gap_seconds": 1.3,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.238,
+              "mean_score": 0.4771,
+              "scored_detections": 28,
+              "found_detections": 28,
+              "max_speed": 0.8574,
+              "max_stationary_seconds": 0.4
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 40
+        },
+        "candidates": [],
+        "media_sha256": "fb8b578361b5816d7a921b31ee6e7965ee4f567660300660d95a3220b0d1811d",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "urban-juggle",
+      "kind": "orange patterned football; urban daylight; close view; ball exits top",
+      "window": [
+        0.5,
+        5.5
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "park-juggle",
+      "kind": "white patterned football; tree shade; cluttered background",
+      "window": [
+        2.5,
+        5.5
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 4.60 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 4.6
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 75%). Radius set to 20 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 4254,
+      "error": "",
+      "analysis": {
+        "id": "665b3713feab4c6d9af637495668fd60",
+        "created": "2026-10-14T11:03:40.463591+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "26d9836124704ff48d6ea4614f220bca",
+        "duration": 10.026667,
+        "start": 2.5,
+        "end": 5.5,
+        "width": 720,
+        "height": 1280,
+        "samples": [
+          {
+            "time": 2.5,
+            "found": true,
+            "x": 0.656766,
+            "y": 0.620894,
+            "score": 0.445,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.607636,
+            "y": 0.612981,
+            "score": 0.691,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": true,
+            "x": 0.509895,
+            "y": 0.552839,
+            "score": 0.866,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": true,
+            "x": 0.474316,
+            "y": 0.444238,
+            "score": 0.791,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": true,
+            "x": 0.474927,
+            "y": 0.350926,
+            "score": 0.659,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": true,
+            "x": 0.476951,
+            "y": 0.28232,
+            "score": 0.49,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": true,
+            "x": 0.477434,
+            "y": 0.252067,
+            "score": 0.736,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": true,
+            "x": 0.481732,
+            "y": 0.254935,
+            "score": 0.461,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": true,
+            "x": 0.486727,
+            "y": 0.281829,
+            "score": 0.722,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": true,
+            "x": 0.490206,
+            "y": 0.345819,
+            "score": 0.884,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": true,
+            "x": 0.498705,
+            "y": 0.435832,
+            "score": 0.696,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": true,
+            "x": 0.558437,
+            "y": 0.589556,
+            "score": 0.722,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": true,
+            "x": 0.555449,
+            "y": 0.614107,
+            "score": 0.69,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": true,
+            "x": 0.50744,
+            "y": 0.590716,
+            "score": 0.799,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": true,
+            "x": 0.45423,
+            "y": 0.401847,
+            "score": 0.441,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": true,
+            "x": 0.488274,
+            "y": 0.305565,
+            "score": 0.431,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": true,
+            "x": 0.522079,
+            "y": 0.234894,
+            "score": 0.492,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 4.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.657819,
+            "y": 0.620842,
+            "radius": 20,
+            "time": 2.5
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.567,
+          "max_gap_seconds": 1.2,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.431,
+              "mean_score": 0.648,
+              "scored_detections": 17,
+              "found_detections": 17,
+              "max_speed": 1.9632,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "c70c29b48d079af9f43d25adedbbb65ecd7309f390df9386d132757f3096a7c1",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "studio-juggle",
+      "kind": "white patterned football; dark studio; multiple stationary look-alike balls",
+      "window": [
+        0,
+        5
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 1.10 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 1.1
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 30%). Radius set to 14 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 2453,
+      "error": "",
+      "analysis": {
+        "id": "d1f18cb5ddea4b508bcd5056a2018663",
+        "created": "2026-10-14T11:03:43.924005+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "a9021e12c617465cad0226a9d61b45ac",
+        "duration": 16.88,
+        "start": 0,
+        "end": 5,
+        "width": 1366,
+        "height": 720,
+        "samples": [
+          {
+            "time": 0,
+            "found": true,
+            "x": 0.382098,
+            "y": 0.629323,
+            "score": 0.222,
+            "segment": 0
+          },
+          {
+            "time": 0.1,
+            "found": true,
+            "x": 0.381392,
+            "y": 0.63004,
+            "score": 0.402,
+            "segment": 0
+          },
+          {
+            "time": 0.2,
+            "found": true,
+            "x": 0.383081,
+            "y": 0.624559,
+            "score": 0.436,
+            "segment": 0
+          },
+          {
+            "time": 0.3,
+            "found": true,
+            "x": 0.384945,
+            "y": 0.624958,
+            "score": 0.677,
+            "segment": 0
+          },
+          {
+            "time": 0.4,
+            "found": true,
+            "x": 0.387806,
+            "y": 0.614468,
+            "score": 0.766,
+            "segment": 0
+          },
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.389054,
+            "y": 0.611589,
+            "score": 0.424,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.391548,
+            "y": 0.59893,
+            "score": 0.718,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.397718,
+            "y": 0.590709,
+            "score": 0.398,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.402304,
+            "y": 0.585686,
+            "score": 0.586,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 1.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.383444,
+            "y": 0.628098,
+            "radius": 14,
+            "time": 0
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.18,
+          "max_gap_seconds": 4.2,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.222,
+              "mean_score": 0.5143,
+              "scored_detections": 9,
+              "found_detections": 9,
+              "max_speed": 0.0754,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 50
+        },
+        "candidates": [],
+        "media_sha256": "4456a12f04d24c738ea53c87a027a43ee5393aa3e3a2c5bc74a5fe587e1286dc",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "rain",
+      "kind": "white football; rain; wet reflective court; approximately 12 native pixels",
+      "window": [
+        4,
+        7
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 4.40 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 4.4
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 24%). Radius set to 2 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 1975,
+      "error": "",
+      "analysis": {
+        "id": "e2a43079cb4e4c6d87e8227a5085c6a9",
+        "created": "2026-10-14T11:03:46.763544+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "d8c2d2700166410fa5b23a5a4c04c53e",
+        "duration": 31.146667,
+        "start": 4,
+        "end": 7,
+        "width": 1080,
+        "height": 1920,
+        "samples": [
+          {
+            "time": 4,
+            "found": true,
+            "x": 0.592721,
+            "y": 0.53637,
+            "score": 0.236,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": true,
+            "x": 0.591734,
+            "y": 0.53623,
+            "score": 0.677,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 4.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.592704,
+            "y": 0.536452,
+            "radius": 2,
+            "time": 4
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.067,
+          "max_gap_seconds": 2.9,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.236,
+              "mean_score": 0.4565,
+              "scored_detections": 2,
+              "found_detections": 2,
+              "max_speed": 0.0102,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "30783a1392fcc554eb459bfa0ff2556cce44de4fd4c6a2298daa144eb1b0f969",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "tennis-day",
+      "kind": "yellow tennis ball; blue wall; hand toss and occlusion",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "tennis-dark",
+      "kind": "yellow tennis ball; dim court; small ball; multiple floor balls",
+      "window": [
+        2,
+        5
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 80%). Radius set to 8 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 5728,
+      "error": "",
+      "analysis": {
+        "id": "23f40fabad364e7fb85df05d180466b4",
+        "created": "2026-10-14T11:03:54.691293+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "c233c9b0da074df7a038300424c44aa4",
+        "duration": 10.12,
+        "start": 2,
+        "end": 5,
+        "width": 720,
+        "height": 1366,
+        "samples": [
+          {
+            "time": 2,
+            "found": true,
+            "x": 0.663181,
+            "y": 0.559594,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": true,
+            "x": 0.684503,
+            "y": 0.541325,
+            "score": 0.831,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": true,
+            "x": 0.705108,
+            "y": 0.512748,
+            "score": 0.784,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": true,
+            "x": 0.71623,
+            "y": 0.49338,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": true,
+            "x": 0.730875,
+            "y": 0.471312,
+            "score": 0.299,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.750482,
+            "y": 0.467657,
+            "score": 0.527,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": true,
+            "x": 0.790092,
+            "y": 0.601952,
+            "score": 0.922,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": true,
+            "x": 0.804054,
+            "y": 0.690998,
+            "score": 0.908,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": true,
+            "x": 0.813002,
+            "y": 0.756222,
+            "score": 0.758,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": true,
+            "x": 0.90712,
+            "y": 0.82899,
+            "score": 0.792,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": true,
+            "x": 0.906591,
+            "y": 0.826281,
+            "score": 0.696,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": true,
+            "x": 0.906024,
+            "y": 0.827022,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": true,
+            "x": 0.904956,
+            "y": 0.825713,
+            "score": 0.686,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": true,
+            "x": 0.903061,
+            "y": 0.825473,
+            "score": 0.777,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": true,
+            "x": 0.901246,
+            "y": 0.8254,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": true,
+            "x": 0.898113,
+            "y": 0.823872,
+            "score": 0.67,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": true,
+            "x": 0.895286,
+            "y": 0.823599,
+            "score": 0.73,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": true,
+            "x": 0.893113,
+            "y": 0.823744,
+            "score": 0.645,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": true,
+            "x": 0.892179,
+            "y": 0.824021,
+            "score": 0.652,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": true,
+            "x": 0.889788,
+            "y": 0.824379,
+            "score": 0.652,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": true,
+            "x": 0.888867,
+            "y": 0.823974,
+            "score": 0.632,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": true,
+            "x": 0.885688,
+            "y": 0.824372,
+            "score": 0.571,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": true,
+            "x": 0.884176,
+            "y": 0.824658,
+            "score": 0.651,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": true,
+            "x": 0.879504,
+            "y": 0.823214,
+            "score": 0.657,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": true,
+            "x": 0.877135,
+            "y": 0.823295,
+            "score": 0.723,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.663627,
+            "y": 0.560133,
+            "radius": 8,
+            "time": 2
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.833,
+          "max_gap_seconds": 0.3,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.299,
+              "mean_score": 0.7103,
+              "scored_detections": 25,
+              "found_detections": 25,
+              "max_speed": 1.6952,
+              "max_stationary_seconds": 0.1
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "b96283c5d1ccd7f55513406af8777bbe53f7e215b7e01d17b526004eb103e1f7",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "basket-outdoor",
+      "kind": "dark basketball; outdoor hard shadows; moving camera",
+      "window": [
+        0.25,
+        4.25
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "basket-indoor",
+      "kind": "orange basketball; indoor gym; repeated frame-edge occlusion",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "volley-dark",
+      "kind": "white volleyball; dark indoor court; net across view",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 85%). Radius set to 28 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 7822,
+      "error": "",
+      "analysis": {
+        "id": "358d2a03f4a942728f75d26257afc767",
+        "created": "2026-10-14T11:04:05.824458+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "7a0c64435c014900972b46f579966b65",
+        "duration": 13.28,
+        "start": 0,
+        "end": 4,
+        "width": 720,
+        "height": 1366,
+        "samples": [
+          {
+            "time": 0,
+            "found": true,
+            "x": 0.429125,
+            "y": 0.459089,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 0.1,
+            "found": true,
+            "x": 0.427415,
+            "y": 0.459509,
+            "score": 0.775,
+            "segment": 0
+          },
+          {
+            "time": 0.2,
+            "found": true,
+            "x": 0.427817,
+            "y": 0.459776,
+            "score": 0.775,
+            "segment": 0
+          },
+          {
+            "time": 0.3,
+            "found": true,
+            "x": 0.428874,
+            "y": 0.458887,
+            "score": 0.755,
+            "segment": 0
+          },
+          {
+            "time": 0.4,
+            "found": true,
+            "x": 0.428536,
+            "y": 0.457692,
+            "score": 0.798,
+            "segment": 0
+          },
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.422676,
+            "y": 0.457616,
+            "score": 0.736,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.429538,
+            "y": 0.458045,
+            "score": 0.844,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.426455,
+            "y": 0.458372,
+            "score": 0.841,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.423956,
+            "y": 0.458064,
+            "score": 0.837,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.42272,
+            "y": 0.457256,
+            "score": 0.801,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.415995,
+            "y": 0.456718,
+            "score": 0.728,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.415449,
+            "y": 0.458139,
+            "score": 0.779,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.406645,
+            "y": 0.461717,
+            "score": 0.818,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.402152,
+            "y": 0.467698,
+            "score": 0.856,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.396067,
+            "y": 0.474234,
+            "score": 0.882,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.392368,
+            "y": 0.478086,
+            "score": 0.815,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.38427,
+            "y": 0.483711,
+            "score": 0.281,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.359849,
+            "y": 0.48497,
+            "score": 0.346,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": true,
+            "x": 0.343319,
+            "y": 0.480871,
+            "score": 0.441,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": true,
+            "x": 0.334435,
+            "y": 0.475202,
+            "score": 0.741,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": true,
+            "x": 0.329125,
+            "y": 0.470583,
+            "score": 0.774,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": true,
+            "x": 0.328953,
+            "y": 0.459269,
+            "score": 0.638,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": true,
+            "x": 0.333857,
+            "y": 0.446964,
+            "score": 0.841,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": true,
+            "x": 0.358669,
+            "y": 0.433412,
+            "score": 0.643,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": true,
+            "x": 0.387973,
+            "y": 0.427165,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": true,
+            "x": 0.449068,
+            "y": 0.41846,
+            "score": 0.591,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": true,
+            "x": 0.500974,
+            "y": 0.417654,
+            "score": 0.721,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": true,
+            "x": 0.591564,
+            "y": 0.42642,
+            "score": 0.498,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": true,
+            "x": 0.638511,
+            "y": 0.428999,
+            "score": 0.793,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": true,
+            "x": 0.655297,
+            "y": 0.4192,
+            "score": 0.58,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": true,
+            "x": 0.664962,
+            "y": 0.417871,
+            "score": 0.577,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": true,
+            "x": 0.678538,
+            "y": 0.421272,
+            "score": 0.388,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": true,
+            "x": 0.68768,
+            "y": 0.423514,
+            "score": 0.521,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": true,
+            "x": 0.709583,
+            "y": 0.428457,
+            "score": 0.821,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": true,
+            "x": 0.731925,
+            "y": 0.434618,
+            "score": 0.878,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": true,
+            "x": 0.750573,
+            "y": 0.441253,
+            "score": 0.854,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": true,
+            "x": 0.75553,
+            "y": 0.445586,
+            "score": 0.886,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": true,
+            "x": 0.773861,
+            "y": 0.453159,
+            "score": 0.866,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": true,
+            "x": 0.784156,
+            "y": 0.451827,
+            "score": 0.915,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.431284,
+            "y": 0.459487,
+            "radius": 28,
+            "time": 0
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "SUSPECT",
+          "coverage": 0.975,
+          "max_gap_seconds": 0.2,
+          "reasons": [
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.281,
+              "mean_score": 0.7239,
+              "scored_detections": 39,
+              "found_detections": 39,
+              "max_speed": 0.921,
+              "max_stationary_seconds": 0.1
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 40
+        },
+        "candidates": [],
+        "media_sha256": "2676a698f6cca72b08c4fa9fb3f0c92f2ffda64c80271e99f77bf0e88db68c70",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "volley-beach",
+      "kind": "yellow/blue volleyball; sun and sand; ball leaves top edge",
+      "window": [
+        1.9,
+        4.9
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "basket-outdoor-30s",
+      "kind": "full 30-second basketball window; not a football-juggling accuracy case",
+      "window": [
+        0.25,
+        30.25
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "regression-beach",
+      "kind": "old source regression: Bright sun, sand, broadcast camera panning",
+      "window": [
+        0.5,
+        3.5
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 2.00 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 2
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 55%). Radius set to 5 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 4706,
+      "error": "",
+      "analysis": {
+        "id": "0a7d4be04321484a8128afc88935d29c",
+        "created": "2026-10-14T11:04:14.020774+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "1eddf19f222d46dc911b38f5e158a189",
+        "duration": 10.008,
+        "start": 0.5,
+        "end": 3.5,
+        "width": 1920,
+        "height": 1080,
+        "samples": [
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.248407,
+            "y": 0.963102,
+            "score": 0.329,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.251393,
+            "y": 0.938765,
+            "score": 0.786,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.25393,
+            "y": 0.897532,
+            "score": 0.837,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.253326,
+            "y": 0.880014,
+            "score": 0.647,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.249014,
+            "y": 0.858532,
+            "score": 0.54,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.242464,
+            "y": 0.853016,
+            "score": 0.631,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.23592,
+            "y": 0.846069,
+            "score": 0.773,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.233608,
+            "y": 0.843613,
+            "score": 0.635,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.227352,
+            "y": 0.840236,
+            "score": 0.668,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.222341,
+            "y": 0.839981,
+            "score": 0.669,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.213393,
+            "y": 0.837848,
+            "score": 0.753,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.205592,
+            "y": 0.838005,
+            "score": 0.755,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": true,
+            "x": 0.196669,
+            "y": 0.836627,
+            "score": 0.795,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 2.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.247801,
+            "y": 0.962127,
+            "radius": 5,
+            "time": 0.5
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.433,
+          "max_gap_seconds": 1.8,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.329,
+              "mean_score": 0.6783,
+              "scored_detections": 13,
+              "found_detections": 13,
+              "max_speed": 0.2333,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "a4d163a5bcc54b62d9d09926b56278677e06436c4e9d2b01bd0e137ef8cdf131",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "regression-futsal",
+      "kind": "old source regression: Indoor lighting, reflective wooden floor, static balls",
+      "window": [
+        57,
+        60
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 53%). Radius set to 12 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 8272,
+      "error": "",
+      "analysis": {
+        "id": "8f981b6c64be4e2ebb4a028d3ea46a78",
+        "created": "2026-10-14T11:04:23.222740+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "5b127b311c9445d8af4638505b420cb1",
+        "duration": 154.161,
+        "start": 57,
+        "end": 60,
+        "width": 1920,
+        "height": 1080,
+        "samples": [
+          {
+            "time": 57,
+            "found": true,
+            "x": 0.134966,
+            "y": 0.709317,
+            "score": 0.534,
+            "segment": 0
+          },
+          {
+            "time": 57.1,
+            "found": true,
+            "x": 0.134956,
+            "y": 0.709388,
+            "score": 0.535,
+            "segment": 0
+          },
+          {
+            "time": 57.2,
+            "found": true,
+            "x": 0.134993,
+            "y": 0.709527,
+            "score": 0.528,
+            "segment": 0
+          },
+          {
+            "time": 57.3,
+            "found": true,
+            "x": 0.135007,
+            "y": 0.709591,
+            "score": 0.528,
+            "segment": 0
+          },
+          {
+            "time": 57.4,
+            "found": true,
+            "x": 0.135039,
+            "y": 0.709845,
+            "score": 0.533,
+            "segment": 0
+          },
+          {
+            "time": 57.5,
+            "found": true,
+            "x": 0.135001,
+            "y": 0.709822,
+            "score": 0.55,
+            "segment": 0
+          },
+          {
+            "time": 57.6,
+            "found": true,
+            "x": 0.135009,
+            "y": 0.710059,
+            "score": 0.556,
+            "segment": 0
+          },
+          {
+            "time": 57.7,
+            "found": true,
+            "x": 0.135019,
+            "y": 0.709789,
+            "score": 0.527,
+            "segment": 0
+          },
+          {
+            "time": 57.8,
+            "found": true,
+            "x": 0.135063,
+            "y": 0.709687,
+            "score": 0.535,
+            "segment": 0
+          },
+          {
+            "time": 57.9,
+            "found": true,
+            "x": 0.13493,
+            "y": 0.709729,
+            "score": 0.54,
+            "segment": 0
+          },
+          {
+            "time": 58,
+            "found": true,
+            "x": 0.134915,
+            "y": 0.709666,
+            "score": 0.546,
+            "segment": 0
+          },
+          {
+            "time": 58.1,
+            "found": true,
+            "x": 0.13491,
+            "y": 0.709646,
+            "score": 0.547,
+            "segment": 0
+          },
+          {
+            "time": 58.2,
+            "found": true,
+            "x": 0.134882,
+            "y": 0.709585,
+            "score": 0.553,
+            "segment": 0
+          },
+          {
+            "time": 58.3,
+            "found": true,
+            "x": 0.134933,
+            "y": 0.709614,
+            "score": 0.546,
+            "segment": 0
+          },
+          {
+            "time": 58.4,
+            "found": true,
+            "x": 0.134889,
+            "y": 0.709906,
+            "score": 0.544,
+            "segment": 0
+          },
+          {
+            "time": 58.5,
+            "found": true,
+            "x": 0.134984,
+            "y": 0.709764,
+            "score": 0.556,
+            "segment": 0
+          },
+          {
+            "time": 58.6,
+            "found": true,
+            "x": 0.134988,
+            "y": 0.709564,
+            "score": 0.564,
+            "segment": 0
+          },
+          {
+            "time": 58.7,
+            "found": true,
+            "x": 0.13498,
+            "y": 0.709601,
+            "score": 0.578,
+            "segment": 0
+          },
+          {
+            "time": 58.8,
+            "found": true,
+            "x": 0.134996,
+            "y": 0.70962,
+            "score": 0.582,
+            "segment": 0
+          },
+          {
+            "time": 58.9,
+            "found": true,
+            "x": 0.134927,
+            "y": 0.709677,
+            "score": 0.589,
+            "segment": 0
+          },
+          {
+            "time": 59,
+            "found": true,
+            "x": 0.134918,
+            "y": 0.7095,
+            "score": 0.581,
+            "segment": 0
+          },
+          {
+            "time": 59.1,
+            "found": true,
+            "x": 0.13496,
+            "y": 0.709588,
+            "score": 0.557,
+            "segment": 0
+          },
+          {
+            "time": 59.2,
+            "found": true,
+            "x": 0.135031,
+            "y": 0.709567,
+            "score": 0.553,
+            "segment": 0
+          },
+          {
+            "time": 59.3,
+            "found": true,
+            "x": 0.135019,
+            "y": 0.709588,
+            "score": 0.554,
+            "segment": 0
+          },
+          {
+            "time": 59.4,
+            "found": true,
+            "x": 0.135037,
+            "y": 0.709535,
+            "score": 0.526,
+            "segment": 0
+          },
+          {
+            "time": 59.5,
+            "found": true,
+            "x": 0.135018,
+            "y": 0.709526,
+            "score": 0.54,
+            "segment": 0
+          },
+          {
+            "time": 59.6,
+            "found": true,
+            "x": 0.13502,
+            "y": 0.709529,
+            "score": 0.542,
+            "segment": 0
+          },
+          {
+            "time": 59.7,
+            "found": true,
+            "x": 0.135005,
+            "y": 0.709514,
+            "score": 0.535,
+            "segment": 0
+          },
+          {
+            "time": 59.8,
+            "found": true,
+            "x": 0.135005,
+            "y": 0.709498,
+            "score": 0.53,
+            "segment": 0
+          },
+          {
+            "time": 59.9,
+            "found": true,
+            "x": 0.135016,
+            "y": 0.709515,
+            "score": 0.519,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.134966,
+            "y": 0.709317,
+            "radius": 12,
+            "time": 57
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "SUSPECT",
+          "coverage": 1,
+          "max_gap_seconds": 0.1,
+          "reasons": [
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.519,
+              "mean_score": 0.5469,
+              "scored_detections": 30,
+              "found_detections": 30,
+              "max_speed": 0.0017,
+              "max_stationary_seconds": 2.9
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "982201e681df0673043ceddbd1e89e8cb7d0492639d56ce67f02675d95ea8788",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "regression-u17",
+      "kind": "old source regression: Daylight stadium, broadcast camera, small ball on grass",
+      "window": [
+        34,
+        37
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 36.40 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 36.4
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 81%). Radius set to 3 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 5352,
+      "error": "",
+      "analysis": {
+        "id": "ed3f7cab7e9149f287a35ae7f101e5dc",
+        "created": "2026-10-14T11:04:29.545510+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "706f95a57b074525a3ee39f87e330243",
+        "duration": 37.544,
+        "start": 34,
+        "end": 37,
+        "width": 1280,
+        "height": 720,
+        "samples": [
+          {
+            "time": 34,
+            "found": true,
+            "x": 0.540223,
+            "y": 0.623772,
+            "score": 0.775,
+            "segment": 0
+          },
+          {
+            "time": 34.1,
+            "found": true,
+            "x": 0.517475,
+            "y": 0.622508,
+            "score": 0.905,
+            "segment": 0
+          },
+          {
+            "time": 34.2,
+            "found": true,
+            "x": 0.499702,
+            "y": 0.630325,
+            "score": 0.886,
+            "segment": 0
+          },
+          {
+            "time": 34.3,
+            "found": true,
+            "x": 0.466627,
+            "y": 0.62676,
+            "score": 0.816,
+            "segment": 0
+          },
+          {
+            "time": 34.4,
+            "found": true,
+            "x": 0.454633,
+            "y": 0.634457,
+            "score": 0.689,
+            "segment": 0
+          },
+          {
+            "time": 34.5,
+            "found": true,
+            "x": 0.461898,
+            "y": 0.626252,
+            "score": 0.488,
+            "segment": 0
+          },
+          {
+            "time": 34.6,
+            "found": true,
+            "x": 0.487334,
+            "y": 0.628007,
+            "score": 0.615,
+            "segment": 0
+          },
+          {
+            "time": 34.7,
+            "found": true,
+            "x": 0.52446,
+            "y": 0.627764,
+            "score": 0.89,
+            "segment": 0
+          },
+          {
+            "time": 34.8,
+            "found": true,
+            "x": 0.574483,
+            "y": 0.621926,
+            "score": 0.87,
+            "segment": 0
+          },
+          {
+            "time": 34.9,
+            "found": true,
+            "x": 0.615716,
+            "y": 0.616389,
+            "score": 0.81,
+            "segment": 0
+          },
+          {
+            "time": 35,
+            "found": true,
+            "x": 0.631394,
+            "y": 0.611312,
+            "score": 0.679,
+            "segment": 0
+          },
+          {
+            "time": 35.1,
+            "found": true,
+            "x": 0.629212,
+            "y": 0.612686,
+            "score": 0.757,
+            "segment": 0
+          },
+          {
+            "time": 35.2,
+            "found": true,
+            "x": 0.620381,
+            "y": 0.609556,
+            "score": 0.887,
+            "segment": 0
+          },
+          {
+            "time": 35.3,
+            "found": true,
+            "x": 0.639325,
+            "y": 0.59855,
+            "score": 0.583,
+            "segment": 0
+          },
+          {
+            "time": 35.4,
+            "found": true,
+            "x": 0.687514,
+            "y": 0.580438,
+            "score": 0.88,
+            "segment": 0
+          },
+          {
+            "time": 35.5,
+            "found": true,
+            "x": 0.739747,
+            "y": 0.570968,
+            "score": 0.494,
+            "segment": 0
+          },
+          {
+            "time": 35.6,
+            "found": true,
+            "x": 0.775478,
+            "y": 0.567598,
+            "score": 0.802,
+            "segment": 0
+          },
+          {
+            "time": 35.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 35.8,
+            "found": true,
+            "x": 0.840744,
+            "y": 0.569048,
+            "score": 0.773,
+            "segment": 0
+          },
+          {
+            "time": 35.9,
+            "found": true,
+            "x": 0.876012,
+            "y": 0.573182,
+            "score": 0.714,
+            "segment": 0
+          },
+          {
+            "time": 36,
+            "found": true,
+            "x": 0.913694,
+            "y": 0.584898,
+            "score": 0.864,
+            "segment": 0
+          },
+          {
+            "time": 36.1,
+            "found": true,
+            "x": 0.960372,
+            "y": 0.604741,
+            "score": 0.533,
+            "segment": 0
+          },
+          {
+            "time": 36.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 36.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 36.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.540316,
+            "y": 0.624207,
+            "radius": 3,
+            "time": 34
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.7,
+          "max_gap_seconds": 0.9,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.488,
+              "mean_score": 0.7481,
+              "scored_detections": 21,
+              "found_detections": 21,
+              "max_speed": 0.525,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "regression-street",
+      "kind": "old source regression: Overcast dusty pitch, handheld phone video, motion blur",
+      "window": [
+        10,
+        13
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "regression-aerial",
+      "kind": "old source regression: Two players in red kit pass and juggle a white/orange ball in front of a plain wall; the ball colour is close to the kits and the ball moves between the players.",
+      "window": [
+        0.5,
+        3.5
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 2.10 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 2.1
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 23%). Radius set to 7 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 3455,
+      "error": "",
+      "analysis": {
+        "id": "d006afff14c44ddeaa212af47c146c43",
+        "created": "2026-10-14T11:04:35.421734+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "9e860f2b27d244cdb1dc5ad0f8076916",
+        "duration": 33.767,
+        "start": 0.5,
+        "end": 3.5,
+        "width": 1280,
+        "height": 720,
+        "samples": [
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.64708,
+            "y": 0.517491,
+            "score": 0.858,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.653728,
+            "y": 0.459192,
+            "score": 0.835,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.658679,
+            "y": 0.450543,
+            "score": 0.687,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.664279,
+            "y": 0.477349,
+            "score": 0.863,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.668267,
+            "y": 0.525524,
+            "score": 0.909,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.671111,
+            "y": 0.644174,
+            "score": 0.424,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.676692,
+            "y": 0.543014,
+            "score": 0.703,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.675307,
+            "y": 0.42548,
+            "score": 0.801,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.673764,
+            "y": 0.376121,
+            "score": 0.319,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.670194,
+            "y": 0.348745,
+            "score": 0.864,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.666953,
+            "y": 0.365152,
+            "score": 0.848,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.661848,
+            "y": 0.433015,
+            "score": 0.687,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": true,
+            "x": 0.658998,
+            "y": 0.512496,
+            "score": 0.736,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.652707,
+            "y": 0.677925,
+            "score": 0.585,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 2.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.646771,
+            "y": 0.518501,
+            "radius": 7,
+            "time": 0.5
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.467,
+          "max_gap_seconds": 1.7,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.319,
+              "mean_score": 0.7228,
+              "scored_detections": 14,
+              "found_detections": 14,
+              "max_speed": 0.9327,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "e72bd354cab2c9a5c0b290c1d8495c5c8f504333be9af1ca2d0c7b6b0334914d",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "aerial-30s",
+      "kind": "full 30-second real-football window on existing source; not a new independent source",
+      "window": [
+        0.5,
+        30.5
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 2.10 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 2.1
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 23%). Radius set to 7 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 3987,
+      "error": "",
+      "analysis": {
+        "id": "3fce622f0f8344ffa62c3ee4191b6db1",
+        "created": "2026-10-14T11:04:40.799414+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "9e860f2b27d244cdb1dc5ad0f8076916",
+        "duration": 33.767,
+        "start": 0.5,
+        "end": 30.5,
+        "width": 1280,
+        "height": 720,
+        "samples": [
+          {
+            "time": 0.5,
+            "found": true,
+            "x": 0.64708,
+            "y": 0.517491,
+            "score": 0.858,
+            "segment": 0
+          },
+          {
+            "time": 0.6,
+            "found": true,
+            "x": 0.653728,
+            "y": 0.459192,
+            "score": 0.835,
+            "segment": 0
+          },
+          {
+            "time": 0.7,
+            "found": true,
+            "x": 0.658679,
+            "y": 0.450543,
+            "score": 0.687,
+            "segment": 0
+          },
+          {
+            "time": 0.8,
+            "found": true,
+            "x": 0.664279,
+            "y": 0.477349,
+            "score": 0.863,
+            "segment": 0
+          },
+          {
+            "time": 0.9,
+            "found": true,
+            "x": 0.668267,
+            "y": 0.525524,
+            "score": 0.909,
+            "segment": 0
+          },
+          {
+            "time": 1,
+            "found": true,
+            "x": 0.671111,
+            "y": 0.644174,
+            "score": 0.424,
+            "segment": 0
+          },
+          {
+            "time": 1.1,
+            "found": true,
+            "x": 0.676692,
+            "y": 0.543014,
+            "score": 0.703,
+            "segment": 0
+          },
+          {
+            "time": 1.2,
+            "found": true,
+            "x": 0.675307,
+            "y": 0.42548,
+            "score": 0.801,
+            "segment": 0
+          },
+          {
+            "time": 1.3,
+            "found": true,
+            "x": 0.673764,
+            "y": 0.376121,
+            "score": 0.319,
+            "segment": 0
+          },
+          {
+            "time": 1.4,
+            "found": true,
+            "x": 0.670194,
+            "y": 0.348745,
+            "score": 0.864,
+            "segment": 0
+          },
+          {
+            "time": 1.5,
+            "found": true,
+            "x": 0.666953,
+            "y": 0.365152,
+            "score": 0.848,
+            "segment": 0
+          },
+          {
+            "time": 1.6,
+            "found": true,
+            "x": 0.661848,
+            "y": 0.433015,
+            "score": 0.687,
+            "segment": 0
+          },
+          {
+            "time": 1.7,
+            "found": true,
+            "x": 0.658998,
+            "y": 0.512496,
+            "score": 0.736,
+            "segment": 0
+          },
+          {
+            "time": 1.8,
+            "found": true,
+            "x": 0.652707,
+            "y": 0.677925,
+            "score": 0.585,
+            "segment": 0
+          },
+          {
+            "time": 1.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 2.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 2.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 3.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 4.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 8.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 9.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 10.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 11.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 12.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 13.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 14.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 15.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 16.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 17.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 18.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 19.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 20.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 21.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 22.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 23.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 24.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 25.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 26.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 27.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 28.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 29.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 30,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 30.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 30.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 30.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 30.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.646771,
+            "y": 0.518501,
+            "radius": 7,
+            "time": 0.5
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.047,
+          "max_gap_seconds": 28.7,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.319,
+              "mean_score": 0.7228,
+              "scored_detections": 14,
+              "found_detections": 14,
+              "max_speed": 0.9327,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 300
+        },
+        "candidates": [],
+        "media_sha256": "e72bd354cab2c9a5c0b290c1d8495c5c8f504333be9af1ca2d0c7b6b0334914d",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "regression-tennis",
+      "kind": "old source regression: Opening low-angle close-up with a large ball against the sky (frames 0-7), then a hard cut at frame 8 to a wide shot where the same ball is about 28 px across. The tracker should lose the track at the cut instead of picking up something else; post-cut detections are audited by overlay, not by spot checks.",
+      "window": [
+        5,
+        8
+      ],
+      "loss_prompts": [
+        {
+          "status": "Ball lost at 6.00 s (gap). Scrub to a visible ball in the remaining forward window and click to re-confirm, or skip this direction.",
+          "time": 6
+        }
+      ],
+      "selection": {
+        "status": "Ball found by the local detector (confidence 63%). Radius set to 6 tracking pixels. Start tracking when ready.",
+        "error": ""
+      },
+      "elapsed_ms": 6118,
+      "error": "",
+      "analysis": {
+        "id": "50ac013cc3f24092bf3ba684797f1910",
+        "created": "2026-10-14T11:04:48.580089+00:00",
+        "kind": "analysis",
+        "protocol": "juggling",
+        "media_id": "6e5914f6c7a84caabfbd747f1be8b2fd",
+        "duration": 200.295,
+        "start": 5,
+        "end": 8,
+        "width": 1920,
+        "height": 1080,
+        "samples": [
+          {
+            "time": 5,
+            "found": true,
+            "x": 0.658109,
+            "y": 0.325047,
+            "score": 0.677,
+            "segment": 0
+          },
+          {
+            "time": 5.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.2,
+            "found": true,
+            "x": 0.699407,
+            "y": 0.229313,
+            "score": 0.825,
+            "segment": 0
+          },
+          {
+            "time": 5.3,
+            "found": true,
+            "x": 0.730576,
+            "y": 0.214686,
+            "score": 0.807,
+            "segment": 0
+          },
+          {
+            "time": 5.4,
+            "found": true,
+            "x": 0.754511,
+            "y": 0.227298,
+            "score": 0.768,
+            "segment": 0
+          },
+          {
+            "time": 5.5,
+            "found": true,
+            "x": 0.815266,
+            "y": 0.30334,
+            "score": 0.89,
+            "segment": 0
+          },
+          {
+            "time": 5.6,
+            "found": true,
+            "x": 0.904367,
+            "y": 0.348712,
+            "score": 0.879,
+            "segment": 0
+          },
+          {
+            "time": 5.7,
+            "found": true,
+            "x": 0.945701,
+            "y": 0.164585,
+            "score": 0.833,
+            "segment": 0
+          },
+          {
+            "time": 5.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 5.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0,
+            "lost_reason": "gap"
+          },
+          {
+            "time": 6.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 6.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.1,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.2,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.3,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.4,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.5,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.6,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.7,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.8,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          },
+          {
+            "time": 7.9,
+            "found": false,
+            "x": null,
+            "y": null,
+            "segment": 0
+          }
+        ],
+        "version": "detector-ball-2",
+        "configuration": {
+          "seed": {
+            "x": 0.658115,
+            "y": 0.324825,
+            "radius": 6,
+            "time": 5
+          },
+          "reseeds": [],
+          "sample_interval_seconds": 0.1,
+          "method": "detector",
+          "max_missed_samples": 3,
+          "edge_loss_requires_confirmation": true,
+          "quality_limits": {},
+          "detector": {
+            "model": "yolox_nano",
+            "size": 416,
+            "score_threshold": 0.2
+          }
+        },
+        "report": {
+          "status": "UNMEASURABLE",
+          "coverage": 0.233,
+          "max_gap_seconds": 2.3,
+          "reasons": [
+            "The selected ball was missing or ambiguous in too many frames.",
+            "Track gaps are too long; review the clip manually.",
+            "Correctness limits are unset; confidence, motion and stationary tracks need independent calibration."
+          ],
+          "quality": {
+            "metrics": {
+              "min_score": 0.677,
+              "mean_score": 0.8113,
+              "scored_detections": 7,
+              "found_detections": 7,
+              "max_speed": 1.1151,
+              "max_stationary_seconds": 0
+            },
+            "limits": {},
+            "configured": false,
+            "validated": false,
+            "reasons": [],
+            "status": "SUSPECT"
+          },
+          "sample_count": 30
+        },
+        "candidates": [],
+        "media_sha256": "29a725e817e9a2ce70213c3a232b893a07dd0191a78446e2c16325452b76a680",
+        "annotation": null,
+        "feedback": []
+      },
+      "attempts": 0
+    },
+    {
+      "id": "regression-improvised",
+      "kind": "old source regression: Two children contest a ball among others on a dirt field; at this distance and with occlusion no ball can be located reliably by eye, so there is no reference position. Click is on the feet of the child in purple. Expectation: the app must not report a confident ball track.",
+      "window": [
+        50,
+        53
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "improvised-30s",
+      "kind": "full 30-second real-football window on existing source; not a new independent source",
+      "window": [
+        50,
+        80
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-football",
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-basket",
+      "kind": "CONTROLLED: basket; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-tennis",
+      "kind": "CONTROLLED: tennis; clear; radius 10px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-small",
+      "kind": "CONTROLLED: football; clear; radius 5px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-fast",
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 2.5; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-dark",
+      "kind": "CONTROLLED: football; dark; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-rain",
+      "kind": "CONTROLLED: football; rain-overlay; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-blur",
+      "kind": "CONTROLLED: football; blur; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-occlusion",
+      "kind": "CONTROLLED: football; occlusion; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-edge-decoy",
+      "kind": "CONTROLLED: football; edge-decoy; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-cut-decoy",
+      "kind": "CONTROLLED: football; cut-decoy; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        4
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    },
+    {
+      "id": "control-30s",
+      "kind": "CONTROLLED: football; clear; radius 16px; speed 1; exact generated ground truth; not real weather or contact evidence",
+      "window": [
+        0,
+        30
+      ],
+      "loss_prompts": [],
+      "selection": {
+        "status": "Select the ball in a paused frame to begin.",
+        "error": "The local ball detector found no ball at the clicked spot. Click the centre of the ball, adjust the radius, or use the manual timeline."
+      }
+    }
+  ]
+}
