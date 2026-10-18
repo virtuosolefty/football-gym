@@ -136,6 +136,30 @@ class VideoTests(unittest.TestCase):
         self.assertEqual(self.store.attempts()[0]["feedback"][0]["times"], [4])
         self.assertEqual(self.store.analyses()[0]["annotation"]["id"], next_labels["id"])
 
+    def test_confirmed_empty_review_persists_and_measures_zero_without_changing_tracking(self):
+        run = self.create()
+        for changes in ({"confirmed": False}, {"reviewer": ""}):
+            with self.assertRaises(domain.ValidationError):
+                self.annotate(run, [], **changes)
+        for invalid in (None, {}, ""):
+            with self.assertRaises(domain.ValidationError):
+                self.annotate(run, invalid)
+        labels = self.annotate(run, [])
+        saved = self.assessment(run, labels)
+        self.assertEqual(saved["metrics"]["contacts"], 0)
+        reopened = Store(self.tmp.name).analyses()[0]
+        self.assertEqual(reopened["annotation"]["events"], [])
+        self.assertTrue(reopened["annotation"]["confirmed"])
+        self.assertEqual(reopened["samples"], run["samples"])
+        self.assertEqual(reopened["candidates"], run["candidates"])
+        exported = [e for e in self.store.export()["events"] if e["kind"] == "video_annotation"]
+        self.assertEqual(len(exported), 1)
+        short = self.create(duration=4, end=3, samples=[])
+        with self.assertRaises(domain.ValidationError):
+            self.assessment(short, self.annotate(short, []))
+        with self.assertRaises(domain.ValidationError):
+            video.measurements("slalom", [])
+
     def test_short_window_can_be_reviewed_but_cannot_create_assessment(self):
         run = self.create(duration=4, end=3, samples=[])
         labels = self.annotate(run, [{"time": 1, "kind": "contact"}])

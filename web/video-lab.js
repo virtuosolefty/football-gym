@@ -1,6 +1,6 @@
 'use strict';
 const VideoLab = (() => {
-  let run=null, events=[], dirty=false, seedPoint=null, engine=null, controller=null, pendingTime=null, recovery=null, generation=0;
+  let run=null, events=[], dirty=false, seedPoint=null, engine=null, controller=null, selectionController=null, pendingTime=null, recovery=null, generation=0;
   const stamp=time=>Number(time).toFixed(2)+' s';
   function playbackError(video){
     if(!video.error)return '';
@@ -13,9 +13,9 @@ const VideoLab = (() => {
     video.onerror=update;video.onloadstart=update;video.onloadeddata=update;video.onemptied=()=>box.textContent='';update();
   }
   const kinds=id=>id==='juggling'?['contact','drop']:id==='slalom'?['start','finish','miss']:['pass'];
-  function teardown(){generation++;controller?.abort();controller=null;recovery=null;}
+  function teardown(){generation++;selectionController?.abort();controller?.abort();BallDetector.close?.();controller=null;recovery=null;}
   const statusOf=a=>a.samples.length && !a.report.quality && a.report.status!=='UNMEASURABLE'?'SUSPECT':a.report.status;
-  function runsView(s){return `<section class="card" id="lab-runs"><h2>Saved video runs</h2>${s.analyses?.length ? `<div class="table-wrap"><table><thead><tr><th>Assessment</th><th>Window</th><th>Track coverage</th><th>Reviewed events</th><th>Open</th></tr></thead><tbody>${[...s.analyses].reverse().map(a=>`<tr><td data-label="Assessment">${e(s.protocols.find(p=>p.id===a.protocol).name)}</td><td data-label="Window">${stamp(a.start)} – ${stamp(a.end)}</td><td data-label="Track coverage">${Math.round(a.report.coverage*100)}% · ${e(statusOf(a))}</td><td data-label="Reviewed events">${a.annotation?.events.length||0}</td><td data-label="Open"><button class="link-button" data-lab-open="${a.id}">Review clip ↗</button></td></tr>`).join('')}</tbody></table></div>` : '<p>Tracking reports and reviewed event timelines will appear here.</p>'}</section>`;}
+  function runsView(s){return `<section class="card" id="lab-runs"><h2>Saved video runs</h2>${s.analyses?.length ? `<div class="table-wrap"><table><thead><tr><th>Assessment</th><th>Window</th><th>Track coverage</th><th>Reviewed events</th><th>Open</th></tr></thead><tbody>${[...s.analyses].reverse().map(a=>`<tr><td data-label="Assessment">${e(s.protocols.find(p=>p.id===a.protocol).name)}</td><td data-label="Window">${stamp(a.start)} – ${stamp(a.end)}</td><td data-label="Track coverage">${Math.round(a.report.coverage*100)}% · ${e(statusOf(a))}</td><td data-label="Reviewed events">${a.annotation?`${a.annotation.events.length} (reviewed)`:'Not reviewed'}</td><td data-label="Open"><button class="link-button" data-lab-open="${a.id}">Review clip ↗</button></td></tr>`).join('')}</tbody></table></div>` : '<p>Tracking reports and reviewed event timelines will appear here.</p>'}</section>`;}
   function updateRuns(){const box=document.querySelector('#lab-runs');if(box)box.outerHTML=runsView(state);}
   function render(s) {
     return title('See what happened.', 'Review a clip, mark the evidence, and turn it into a useful next step.', 'VIDEO / FEEDBACK WORKSPACE') +
@@ -51,7 +51,7 @@ const VideoLab = (() => {
   function timeline(){
     const box=document.querySelector('#lab-events');if(!box)return;
     document.querySelector('#lab-event-count').textContent=events.length+' events';
-    box.innerHTML=events.map((event,i)=>`<div class="event-row"><button class="link-button" data-lab-seek="${event.time}">${stamp(event.time)}</button><span>${e(event.kind)} · ${e(event.foot)}${event.uncertain?' · uncertain trajectory':''}${event.kind==='pass'?(event.success?' · on target':' · off target'):''}</span><button class="link-button" data-lab-remove="${i}" aria-label="Remove event ${i+1}">Remove</button></div>`).join('') || '<p class="fine">Pause at a contact or pass outcome, choose the label, and mark it. Juggling track proposals appear here for correction.</p>';
+    box.innerHTML=events.map((event,i)=>`<div class="event-row"><button class="link-button" data-lab-seek="${event.time}">${stamp(event.time)}</button><span>${e(event.kind)} · ${e(event.foot)}${event.uncertain?' · uncertain trajectory':''}${event.kind==='pass'?(event.success?' · on target':' · off target'):''}</span><button class="link-button" data-lab-remove="${i}" aria-label="Remove event ${i+1}">Remove</button></div>`).join('') || (run?.annotation && !dirty ? '<p class="fine">Reviewed: no events in this window.</p>' : '<p class="fine">Pause at a contact or pass outcome, choose the label, and mark it. Juggling track proposals appear here for correction.</p>');
   }
   function markDirty(){dirty=true;document.querySelector('#lab-confirmed').checked=false;document.querySelector('#lab-feedback').textContent='Save a reviewed timeline to update feedback.';timeline();}
   function eventOptions(){document.querySelector('#lab-kind').innerHTML=kinds(document.querySelector('#lab-protocol').value).map(k=>`<option>${k}</option>`).join('');}
@@ -69,12 +69,12 @@ const VideoLab = (() => {
   }
   const sampleOf=(time,point,canvas)=>({time:Number(time.toFixed(3)),found:!!point,x:point?Number((point.x/canvas.width).toFixed(6)):null,y:point?Number((point.y/canvas.height).toFixed(6)):null,...(point?.score===undefined?{}:{score:Number(point.score.toFixed(3))})});
   const videoSize=v=>({width:v.videoWidth,height:v.videoHeight});
-  async function pickBall(v,canvas,centre,hint){
-    let detector=null,note='';try{detector=await BallDetector.load();}catch(error){note=error.message;}
+  async function pickBall(v,canvas,centre,hint,signal){
+    let detector=null,note='';try{detector=await BallDetector.load(signal);}catch(error){if(signal?.aborted)throw error;note=error.message;}
     if(detector){
       const first=BallTracker.begin(centre);
       for(const radius of new Set([hint,hint*4,Math.max(2,hint/4)])){
-        const found=await BallDetector.near(detector,v,videoSize(v),canvas,centre,{radius,gate:BallTracker.reach(first,radius,canvas.width)});
+        const found=await BallDetector.near(detector,v,videoSize(v),canvas,centre,{radius,gate:BallTracker.reach(first,radius,canvas.width),signal});
         const underClick=found.filter(box=>Math.abs(box.x-centre.x)<=box.w*.625 && Math.abs(box.y-centre.y)<=box.h*.625),point=BallTracker.advance(first,underClick,radius,canvas.width,canvas.height).point;
         if(!point)continue;
         const fitted=Math.min(40,Math.max(2,Math.round((point.w+point.h)/4)));
@@ -87,14 +87,14 @@ const VideoLab = (() => {
     if(!BallTracker.verify(image,colour,hint,centre))throw new Error(`No ball was found at the clicked spot. Click the ball centre, adjust the radius, or use the manual timeline. ${note}`.trim());
     return {centre,engine:{method:'colour',colour,radius:hint},note:`Colour patch selected. ${note} Review its size, then start tracking.`.replace('  ',' ')};
   }
-  function locator(v,canvas,{method,detector,colour,radius}){
+  function locator(v,canvas,{method,detector,colour,radius},signal){
     const thumbnail=document.createElement('canvas');thumbnail.width=32;thumbnail.height=18;
     const sceneContext=thumbnail.getContext('2d',{willReadFrequently:true}),ctx=canvas.getContext('2d',{willReadFrequently:true});
     return async state=>{
       sceneContext.drawImage(v,0,0,32,18);const scene=sceneContext.getImageData(0,0,32,18).data;
       if(!state.first && BallTracker.sceneChanged(state.scene,scene))return {point:null,state:{...state,lost:true,reason:'scene_change'}};
       let result;
-      if(method==='detector')result=BallTracker.advance(state,await BallDetector.near(detector,v,videoSize(v),canvas,state.first?state.anchor:BallTracker.expected(state),{radius:state.size?state.size/2:radius,gate:BallTracker.reach(state,radius,canvas.width),detail:!state.first,accept:boxes=>!!BallTracker.advance(state,boxes,radius,canvas.width,canvas.height).point}),radius,canvas.width,canvas.height);
+      if(method==='detector')result=BallTracker.advance(state,await BallDetector.near(detector,v,videoSize(v),canvas,state.first?state.anchor:BallTracker.expected(state),{radius:state.size?state.size/2:radius,gate:BallTracker.reach(state,radius,canvas.width),detail:!state.first,signal,accept:boxes=>!!BallTracker.advance(state,boxes,radius,canvas.width,canvas.height).point}),radius,canvas.width,canvas.height);
       else {ctx.drawImage(v,0,0,canvas.width,canvas.height);result=BallTracker.step(state,ctx.getImageData(0,0,canvas.width,canvas.height),colour,radius);}
       return {...result,radius:result.state.size?result.state.size/2:radius,state:{...result.state,scene}};
     };
@@ -153,26 +153,26 @@ const VideoLab = (() => {
     canvas.onclick=event=>{if(v.readyState<2 || (controller && !recovery) || locating)return;v.pause();const rect=canvas.getBoundingClientRect();document.querySelector('#lab-x').value=((event.clientX-rect.left)/rect.width).toFixed(3);document.querySelector('#lab-y').value=((event.clientY-rect.top)/rect.height).toFixed(3);selectBall();};
     async function selectBall(){
       if(locating || (controller && !recovery))return;
-      const token=generation,errorBox=document.querySelector('#lab-error'),status=document.querySelector('#lab-status'),locking=document.querySelectorAll('#lab-select,#lab-track,#lab-manual,#lab-media,#lab-protocol');locating=true;
+      const token=generation,errorBox=document.querySelector('#lab-error'),status=document.querySelector('#lab-status'),locking=document.querySelectorAll('#lab-select,#lab-track,#lab-manual,#lab-media,#lab-protocol');locating=true;const selection=new AbortController();selectionController=selection;
       try{
         v.pause();if(v.error || v.readyState<2)throw new Error(playbackError(v)||'Wait for the video to load.');seedPoint=engine=null;frame();
         if(!document.querySelector('#lab-x').value || !document.querySelector('#lab-y').value)throw new Error('Click the ball in the paused frame first.');
         const x=Number(document.querySelector('#lab-x').value),y=Number(document.querySelector('#lab-y').value),hint=Number(document.querySelector('#lab-radius').value);
         if(!(hint>=2 && hint<=40) || !(x>=0 && x<1) || !(y>=0 && y<1))throw new Error('Select a visible ball and a radius between 2 and 40 tracking pixels.');
         const time=Number(v.currentTime.toFixed(3));if(recovery && (recovery.direction*(time-recovery.time)<0 || recovery.direction*(time-recovery.bound)>0))throw new Error('Re-confirm the ball inside the remaining tracking direction.');
-        errorBox.textContent='';for(const button of locking)button.disabled=true;status.textContent='Looking for the ball…';const picked=await pickBall(v,canvas,{x:x*canvas.width,y:y*canvas.height},hint);
-        if(generation!==token || document.querySelector('#lab-video')!==v || controller?.signal.aborted)return;
+        errorBox.textContent='';for(const button of locking)button.disabled=true;status.textContent='Looking for the ball…';document.querySelector('#lab-cancel').hidden=false;const picked=await pickBall(v,canvas,{x:x*canvas.width,y:y*canvas.height},hint,selection.signal);
+        if(generation!==token || document.querySelector('#lab-video')!==v || controller?.signal.aborted || selection.signal.aborted)return;
         if(Math.abs(v.currentTime-time)>.001)throw new Error('The video moved while the ball was being located. Select the ball again.');
         engine=picked.engine;document.querySelector('#lab-radius').value=engine.radius;seedPoint={x:Number((picked.centre.x/canvas.width).toFixed(6)),y:Number((picked.centre.y/canvas.height).toFixed(6)),time};frame();status.textContent=picked.note;
-        if(recovery)recovery.finish({seed:{...seedPoint,radius:engine.radius},locate:locator(v,canvas,engine)});
-      }catch(error){if(generation===token && document.querySelector('#lab-video')===v){engine=null;frame();if(!recovery)status.textContent='Select the ball in a paused frame to begin.';errorBox.textContent=error.message;}}
-      finally{locating=false;for(const button of locking)button.disabled=!!controller;const select=document.querySelector('#lab-select');if(select && document.querySelector('#lab-video')===v)select.disabled=!!controller && !recovery;}
+        if(recovery)recovery.finish({seed:{...seedPoint,radius:engine.radius},locate:locator(v,canvas,engine,controller.signal)});
+      }catch(error){if(generation===token && document.querySelector('#lab-video')===v){engine=null;frame();if(!recovery)status.textContent='Select the ball in a paused frame to begin.';errorBox.textContent=selection.signal.aborted?'Analysis cancelled.':error.message;}}
+      finally{locating=false;if(selectionController===selection)selectionController=null;if(generation===token && document.querySelector('#lab-video')===v){document.querySelector('#lab-cancel').hidden=!controller;for(const button of locking)button.disabled=!!controller;const select=document.querySelector('#lab-select');if(select && document.querySelector('#lab-video')===v)select.disabled=!!controller && !recovery;}}
     }
     document.querySelector('#lab-select').onclick=selectBall;
     document.querySelector('#lab-export').onclick=()=>{if(!run){document.querySelector('#lab-error').textContent='Save a video run first.';return;}const url=URL.createObjectURL(new Blob([JSON.stringify(run,null,2)],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download='analysis-'+run.id+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
     document.querySelector('#lab-back').onclick=()=>{v.pause();v.currentTime=Math.max(0,v.currentTime-.1);};
     document.querySelector('#lab-forward').onclick=()=>{v.pause();v.currentTime=Math.min(Number.isFinite(v.duration)?v.duration:600,v.currentTime+.1);};
-    document.querySelector('#lab-cancel').onclick=()=>controller?.abort();document.querySelector('#lab-skip').onclick=()=>recovery?.finish(null);
+    document.querySelector('#lab-cancel').onclick=()=>{selectionController?.abort();controller?.abort();BallDetector.close?.();if(engine?.method==='detector'){engine=seedPoint=null;document.querySelector('#lab-status').textContent='Select the ball again to restart analysis.';}};document.querySelector('#lab-skip').onclick=()=>recovery?.finish(null);
     async function confirmLost(info){
       const status=document.querySelector('#lab-status'),select=document.querySelector('#lab-select'),skip=document.querySelector('#lab-skip');status.textContent=`Ball lost at ${stamp(info.time)} (${info.reason}). Scrub to a visible ball in the remaining ${info.direction>0?'forward':'backward'} window and click to re-confirm, or skip this direction.`;
       seedPoint=engine=null;v.controls=true;select.disabled=false;skip.hidden=false;for(const id of ['lab-back','lab-forward'])document.querySelector('#'+id).disabled=false;
@@ -199,7 +199,7 @@ const VideoLab = (() => {
         const showProgress=()=>{if(!recovery && token===generation)status.textContent=`${phase} · ${Math.round((performance.now()-began)/1000)} s elapsed`;};
         heartbeat=setInterval(showProgress,500);showProgress();
         if(track && document.querySelector('#lab-pose').checked){phase='Loading foot evidence';showProgress();pose=await FootPose.load(signal);tracking.pose_model=FootPose.MODEL;}
-        const tracked=track?await trackWindow(v,canvas,signal,{seed,locate:locator(v,canvas,engine),start,end,pose},(time,done,total,stage='Tracking')=>{phase=`${stage} · ${Math.min(done,total)}/${total} samples · ${Math.min(100,Math.round(done/total*100))}% · ${stamp(time)}`;showProgress();},confirmLost):{samples:[],reseeds:[]};
+        const tracked=track?await trackWindow(v,canvas,signal,{seed,locate:locator(v,canvas,engine,controller.signal),start,end,pose},(time,done,total,stage='Tracking')=>{phase=`${stage} · ${Math.min(done,total)}/${total} samples · ${Math.min(100,Math.round(done/total*100))}% · ${stamp(time)}`;showProgress();},confirmLost):{samples:[],reseeds:[]};
         if(signal.aborted)throw new Error('Analysis cancelled.');
         const result=await api('/api/analyses',{media_id,protocol,duration:v.duration,width:v.videoWidth,height:v.videoHeight,start,end,...tracked,seed,...tracking},{signal});
         const s=await api('/api/state',undefined,{signal});if(signal.aborted || token!==generation)return;
@@ -208,7 +208,7 @@ const VideoLab = (() => {
       finally{clearInterval(heartbeat);pose?.close();if(token===generation && document.querySelector('#lab-video')===v){controller=null;recovery=null;v.controls=true;document.querySelector('#lab-cancel').hidden=true;document.querySelector('#lab-skip').hidden=true;for(const element of document.querySelectorAll('#lab-track,#lab-manual,#lab-select,#lab-save,#lab-add,#lab-media,#lab-protocol,#lab-start,#lab-end,#lab-radius,#lab-back,#lab-forward,#lab-pose'))element.disabled=false;frame();}}
     }
     document.querySelector('#lab-add').onclick=()=>{const error=document.querySelector('#lab-save-error');error.textContent='';if(!run){error.textContent='Save a tracked run or use a manual timeline first.';return;}if(v.currentTime<run.start || v.currentTime>run.end){error.textContent='Move the playhead inside the saved window.';return;}const event={time:Number(v.currentTime.toFixed(3)),kind:document.querySelector('#lab-kind').value,foot:document.querySelector('#lab-foot').value,side:document.querySelector('#lab-side').value,success:document.querySelector('#lab-success').checked};if(events.some(e=>e.time===event.time && e.kind===event.kind)){error.textContent='An event already exists at this timestamp.';return;}events.push(event);events.sort((a,b)=>a.time-b.time);markDirty();};
-    document.querySelector('#lab-save').onclick=async()=>{const button=document.querySelector('#lab-save'),box=document.querySelector('#lab-save-error');box.textContent='';button.disabled=true;try{if(!run)throw new Error('Save a video run first.');await api('/api/video/annotations',{analysis_id:run.id,events,reviewer:document.querySelector('#lab-reviewer').value,confirmed:document.querySelector('#lab-confirmed').checked});state=await api('/api/state');run=state.analyses.find(a=>a.id===run.id);dirty=false;feedbackView();updateRuns();toast('Reviewed events saved. Original tracking preserved.');}catch(error){box.textContent=error.message;}finally{button.disabled=false;}};
+    document.querySelector('#lab-save').onclick=async()=>{const button=document.querySelector('#lab-save'),box=document.querySelector('#lab-save-error');box.textContent='';button.disabled=true;try{if(!run)throw new Error('Save a video run first.');await api('/api/video/annotations',{analysis_id:run.id,events,reviewer:document.querySelector('#lab-reviewer').value,confirmed:document.querySelector('#lab-confirmed').checked});state=await api('/api/state');run=state.analyses.find(a=>a.id===run.id);dirty=false;timeline();feedbackView();updateRuns();toast('Reviewed events saved. Original tracking preserved.');}catch(error){box.textContent=error.message;}finally{button.disabled=false;}};
     document.querySelector('#lab-events').onclick=async event=>{const button=event.target.closest('button');if(!button)return;if(button.dataset.labRemove!==undefined){events.splice(Number(button.dataset.labRemove),1);markDirty();}if(button.dataset.labSeek){v.pause();await seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
     document.querySelector('#lab-feedback').onclick=event=>{const button=event.target.closest('[data-lab-seek]');if(button){v.pause();seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
   }

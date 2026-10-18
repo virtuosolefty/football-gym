@@ -37,7 +37,7 @@ async (page) => {
     if(wrongWindow!==undefined && run.samples.some(s=>s.found && s.time>=wrongWindow))throw new Error(clip.id+' emitted points in the known decoy window.');
     if(!['SUSPECT','UNMEASURABLE'].includes(run.report.status) || run.report.quality.validated)throw new Error('Uncalibrated replay was treated as validated.');
     if(clip.pose && !run.samples.some(s=>s.pose?.left?.length===3))throw new Error('The installed pose model returned no foot evidence on the studio replay.');
-    const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#lab-export').click()]);await download.saveAs('test-results/priorities-2026-10-18/'+clip.id+'.json');
+    const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#lab-export').click()]);await download.saveAs((RESULTS_DIR||'test-results/priorities-2026-10-18')+'/'+clip.id+'.json');
     const item={id:clip.id,coverage:run.report.coverage,status:run.report.status,found:run.samples.filter(s=>s.found).length,losses,poseFrames:run.samples.filter(s=>s.pose?.status==='single').length,elapsed_ms:Date.now()-began};
     results.push(item);console.log('REPLAY',JSON.stringify(item));
   }

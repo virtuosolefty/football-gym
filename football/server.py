@@ -18,7 +18,7 @@ from .store import Store
 WEB = Path(__file__).resolve().parent.parent / "web"
 MAX_VIDEO = 64 * 1024 * 1024
 JS, CSS, SVG = "text/javascript; charset=utf-8", "text/css; charset=utf-8", "image/svg+xml"
-STATIC = {"/app.js": JS, "/tracker.js": JS, "/detector.js": JS, "/video-lab.js": JS, "/label.js": JS, "/pose.js": JS, "/pose-worker.js": JS,
+STATIC = {"/app.js": JS, "/tracker.js": JS, "/detector.js": JS, "/detector-worker.js": JS, "/video-lab.js": JS, "/label.js": JS, "/pose.js": JS, "/pose-worker.js": JS,
           "/label.html": "text/html; charset=utf-8", "/styles.css": CSS, "/video.css": CSS, "/favicon.svg": SVG}
 # Installed by tools/fetch_detector.py. Absent files are a plain 404 and the app falls back to colour tracking.
 DETECTOR_ASSETS = {"/vendor/ort/ort.wasm.min.js": JS, "/vendor/ort/ort-wasm-simd-threaded.mjs": JS,

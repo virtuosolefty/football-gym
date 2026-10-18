@@ -3,7 +3,7 @@
 // Pre/post-processing is pure and unit-tested. Inference runs locally through ONNX Runtime Web (wasm); nothing leaves this machine.
 const BallDetector = (() => {
   const BALL_CLASS=32, STRIDES=[8,16,32], ROW=85, MIN_SIDE=128, CONTEXT_BALLS=8, SCORE_MIN=.2, NMS_IOU=.45;
-  const MODEL={name:'yolox_nano',url:'/models/yolox_nano.onnx',size:416}, RUNTIME='/vendor/ort/';
+  const MODEL={name:'yolox_nano',url:'/models/yolox_nano.onnx',size:416};
   const NOT_INSTALLED='The local ball detector is not installed. Run: python tools/fetch_detector.py';
   const clamp=(value,low,high)=>Math.min(Math.max(value,low),high);
   // Square native-pixel window around the expected ball: wide enough for the whole search gate, and never so tight that a ball loses context.
@@ -55,11 +55,11 @@ const BallDetector = (() => {
     }};
   }
   // Confident detections around an anchor given in tracking-canvas pixels, returned in the same space.
-  async function near(detector, source, video, canvas, anchor, {radius,gate,threshold=SCORE_MIN,detail=false,accept=()=>true}) {
+  async function near(detector, source, video, canvas, anchor, {radius,gate,threshold=SCORE_MIN,detail=false,accept=()=>true,signal}) {
     const sx=video.width/canvas.width, centre={x:anchor.x*sx,y:anchor.y*sx},diameter=2*radius*sx;
     const rect=cropRect(centre,{gate:gate*sx,diameter},video);
     const inside=(value, limit) => Math.min(limit,Math.max(0,value));
-    const find=async rect=>(await detector.detect(source,rect)).filter(box=>box.score>=threshold).map(box=>({x:inside(box.x/sx,canvas.width),y:inside(box.y/sx,canvas.height),w:box.w/sx,h:box.h/sx,score:box.score}));
+    const find=async rect=>(await detector.detect(source,rect,signal)).filter(box=>box.score>=threshold).map(box=>({x:inside(box.x/sx,canvas.width),y:inside(box.y/sx,canvas.height),w:box.w/sx,h:box.h/sx,score:box.score}));
     // A small ball gets more model pixels in a tight native crop; fall back to the normal motion gate if absent.
     if(detail && diameter<25){
       const tight=cropRect(centre,{gate:0,diameter},video);
@@ -70,26 +70,45 @@ const BallDetector = (() => {
     }
     return find(rect);
   }
-  let pending=null;
-  const loadScript=src=>new Promise((resolve,reject)=>{const el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=()=>reject(new Error(NOT_INSTALLED));document.head.append(el);});
+  let client=null;
+  function close(){client?.close();}
   function drawOnCanvas() {
     const canvas=document.createElement('canvas'), ctx=canvas.getContext('2d',{willReadFrequently:true});
     canvas.width=canvas.height=MODEL.size;
     return (source, rect, size) => {ctx.drawImage(source,rect.x,rect.y,rect.side,rect.side,0,0,size,size);return ctx.getImageData(0,0,size,size).data;};
   }
-  // Loads the runtime and model once per page; a failed load can be retried after installing the files.
-  function load() {
-    pending ||= (async () => {
-      if(!globalThis.ort)await loadScript(RUNTIME+'ort.wasm.min.js');
-      Object.assign(ort.env.wasm,{wasmPaths:RUNTIME,numThreads:1,proxy:false});
-      const response=await fetch(MODEL.url);
-      if(!response.ok)throw new Error(NOT_INSTALLED);
-      return create(ort,await ort.InferenceSession.create(new Uint8Array(await response.arrayBuffer()),{executionProviders:['wasm']}),drawOnCanvas());
-    })();
-    pending.catch(() => {pending=null;});
-    return pending;
+  // A dedicated worker keeps synchronous WASM off the UI thread and can be terminated mid-inference.
+  async function load(signal) {
+    signal?.throwIfAborted();
+    if(client){const current=client;await current.ready;signal?.throwIfAborted();return current;}
+    const worker=new Worker('/detector-worker.js'),draw=drawOnCanvas();let waiting=null,closed=false;
+    const cancelled=()=>new DOMException('Analysis cancelled.','AbortError');
+    const api={model:MODEL,close(error=cancelled()){
+      if(closed)return;closed=true;worker.terminate();waiting?.(error);
+      if(client===api)client=null;
+    },async detect(source,rect,signal){
+      signal?.throwIfAborted();
+      const rgba=draw(source,rect,MODEL.size);
+      return (await request({type:'detect',rgba,rect},signal,[rgba.buffer])).boxes;
+    }};
+    function request(message,signal,transfer=[]){
+      signal?.throwIfAborted();
+      if(closed)return Promise.reject(new Error('Detector was closed. Select the ball again.'));
+      if(waiting)return Promise.reject(new Error('Detector is busy. Wait for the current operation.'));
+      return new Promise((resolve,reject)=>{
+        const aborted=()=>api.close(cancelled());
+        const timer=setTimeout(()=>api.close(new Error('Ball detector timed out. Retry selection or use a manual timeline.')),message.type==='load'?120000:60000);
+        waiting=(error,result)=>{clearTimeout(timer);signal?.removeEventListener('abort',aborted);waiting=null;error?reject(error):resolve(result);};
+        signal?.addEventListener('abort',aborted,{once:true});
+        try{worker.postMessage(message,transfer);}catch(error){api.close(error);}
+      });
+    }
+    worker.onmessage=({data})=>{if(data.error)api.close(new Error(data.error));else waiting?.(null,data);};
+    worker.onerror=()=>api.close(new Error(NOT_INSTALLED+' The detector worker could not start.'));
+    client=api;
+    try{api.ready=request({type:'load'},signal);await api.ready;return api;}catch(error){api.close(error);throw error;}
   }
-  return {MODEL,SCORE_MIN,cropRect,toTensor,decode,nms,toFrame,create,near,load};
+  return {MODEL,SCORE_MIN,cropRect,toTensor,decode,nms,toFrame,create,near,load,close};
 })();
 if(typeof module!=='undefined')module.exports=BallDetector;
 else globalThis.BallDetector=BallDetector;

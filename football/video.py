@@ -218,8 +218,8 @@ def annotations(data, run):
     if data.get("confirmed") is not True:
         raise domain.ValidationError("Review the entire selected window before confirming its events.")
     events = data.get("events")
-    if not isinstance(events, list) or not 1 <= len(events) <= 1000:
-        raise domain.ValidationError("Record 1–1,000 reviewed events.")
+    if not isinstance(events, list) or not 0 <= len(events) <= 1000:
+        raise domain.ValidationError("Record up to 1,000 reviewed events (zero is allowed after reviewing the full window).")
     kinds = {"juggling": ["contact", "drop"], "wall": ["pass"], "touch": ["pass"], "gates": ["pass"], "slalom": ["start", "finish", "miss"]}[run["protocol"]]
     normalized, seen = [], set()
     for event in events:

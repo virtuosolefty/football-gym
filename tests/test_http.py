@@ -190,7 +190,8 @@ class HTTPTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as web:
             root = Path(web)
             (root / "index.html").write_text("<!doctype html>")
-            (root / "detector.js").write_text("// detector")
+            for asset in ("detector.js", "detector-worker.js"):
+                (root / asset).write_text("// detector")
             (root / "models").mkdir()
             (root / "models" / "yolox_nano.onnx").write_bytes(b"onnx")
             (root / "models" / "other.onnx").write_bytes(b"x")
@@ -199,8 +200,9 @@ class HTTPTests(unittest.TestCase):
             with mock.patch.object(server, "WEB", root):
                 self.assertEqual(self.request("/models/yolox_nano.onnx")[0], 401)
                 self.login()
-                status, body, headers = self.request("/detector.js")
-                self.assertEqual((status, headers["Content-Type"]), (200, "text/javascript; charset=utf-8"))
+                for asset in ("/detector.js", "/detector-worker.js"):
+                    status, body, headers = self.request(asset)
+                    self.assertEqual((status, headers["Content-Type"]), (200, "text/javascript; charset=utf-8"))
                 status, body, headers = self.request("/models/yolox_nano.onnx")
                 self.assertEqual((status, body, headers["Content-Type"]), (200, b"onnx", "application/octet-stream"))
                 status, body, headers = self.request("/vendor/ort/ort-wasm-simd-threaded.wasm")
