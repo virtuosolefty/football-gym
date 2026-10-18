@@ -7,6 +7,7 @@ async (page) => {
   await page.getByRole('checkbox',{name:'I agree to store and process'}).check();
   await page.getByRole('button',{name:'Save my profile'}).click();await page.locator('dialog').waitFor({state:'hidden'});
   const clips=[
+    {id:'rain-context',file:'rain.mp4',start:4,end:7,time:4,x:.593,y:.537,radius:2},
     {id:'bottle',file:'u17.webm',directory:'conditions-footage',start:34,end:37,time:34,x:.5391,y:.6222,radius:3},
     {id:'cone',file:'tennis.webm',directory:'other-footage',start:5,end:8,time:5,x:.6583,y:.3241,radius:6},
     {id:'floor-ball',file:'tennis-dark.mp4',start:1,end:5,time:2,x:.6639,y:.5586,radius:8},
@@ -36,7 +37,7 @@ async (page) => {
     if(wrongWindow!==undefined && run.samples.some(s=>s.found && s.time>=wrongWindow))throw new Error(clip.id+' emitted points in the known decoy window.');
     if(!['SUSPECT','UNMEASURABLE'].includes(run.report.status) || run.report.quality.validated)throw new Error('Uncalibrated replay was treated as validated.');
     if(clip.pose && !run.samples.some(s=>s.pose?.left?.length===3))throw new Error('The installed pose model returned no foot evidence on the studio replay.');
-    const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#lab-export').click()]);await download.saveAs('test-results/revision-2026-10-17/'+clip.id+'.json');
+    const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#lab-export').click()]);await download.saveAs('test-results/priorities-2026-10-18/'+clip.id+'.json');
     const item={id:clip.id,coverage:run.report.coverage,status:run.report.status,found:run.samples.filter(s=>s.found).length,losses,poseFrames:run.samples.filter(s=>s.pose?.status==='single').length,elapsed_ms:Date.now()-began};
     results.push(item);console.log('REPLAY',JSON.stringify(item));
   }

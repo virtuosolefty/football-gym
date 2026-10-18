@@ -76,13 +76,24 @@ test('a box whose centre lies inside a stronger box is the same ball and is supp
 });
 
 test('small ball detail crops magnify native pixels and fall back when the tight crop is empty',async()=>{
-  const rects=[],fake={async detect(_,rect){rects.push(rect);return rect.side<=160?[]:[{x:640,y:360,w:20,h:20,score:.8}];}};
+  const rects=[],fake={async detect(_,rect){rects.push(rect);return rect.side<512?[]:[{x:640,y:360,w:20,h:20,score:.8}];}};
   const result=await detector.near(fake,'frame',{width:1280,height:720},{width:320,height:180},{x:160,y:90},{radius:2.5,gate:64,detail:true});
-  assert.deepEqual(rects.map(r=>r.side),[160,512]);assert.equal(result[0].w,5);
+  assert.deepEqual(rects.map(r=>r.side),[160,320,512]);assert.equal(result[0].w,5);
 });
 
 test('a rejected tight-crop distractor does not hide the moving ball in the wider crop',async()=>{
-  const rects=[],fake={async detect(_,rect){rects.push(rect);return [{x:rect.side<=160?640:800,y:360,w:20,h:20,score:.9}];}};
+  const rects=[],fake={async detect(_,rect){rects.push(rect);return [{x:rect.side<512?640:800,y:360,w:20,h:20,score:.9}];}};
   const found=await detector.near(fake,'frame',{width:1280,height:720},{width:320,height:180},{x:160,y:90},{radius:2.5,gate:64,detail:true,accept:boxes=>boxes.some(b=>b.x===200)});
-  assert.equal(rects.length,2);assert.equal(found[0].x,200);
+  assert.equal(rects.length,3);assert.equal(found[0].x,200);
+});
+
+test('small ball fallback uses one context crop without running the wider inference when accepted',async()=>{
+  const sizes=[],fake={async detect(_,rect){sizes.push(rect.side);return rect.side===256?[{x:640,y:360,w:12,h:12,score:.7}]:[];}};
+  const found=await detector.near(fake,'frame',{width:1280,height:720},{width:320,height:180},{x:160,y:90},{radius:1.5,gate:64,detail:true});
+  assert.deepEqual(sizes,[128,256]);assert.equal(found.length,1);
+});
+test('context fallback never duplicates or exceeds the normal search crop',async()=>{
+  const sizes=[],fake={async detect(_,r){sizes.push(r.side);return [];}};
+  await detector.near(fake,'frame',{width:1280,height:720},{width:320,height:180},{x:2,y:2},{radius:1.5,gate:32,detail:true});
+  assert.deepEqual(sizes,[128,256]);
 });

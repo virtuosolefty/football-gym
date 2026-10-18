@@ -74,7 +74,7 @@ class VideoTests(unittest.TestCase):
         detector = {"model": "yolox_nano", "size": 416, "score_threshold": .2}
         samples = [{"time": round(i / 10, 2), "found": True, "x": .5, "y": .4 + .15 * math.cos(i / 10 * 2 * math.pi), "score": .8} for i in range(300)]
         run = self.create(method="detector", detector=detector, samples=samples)
-        self.assertEqual(run["version"], "detector-ball-3")
+        self.assertEqual(run["version"], "detector-ball-4")
         self.assertEqual(run["configuration"]["method"], "detector")
         self.assertEqual(run["configuration"]["detector"], detector)
         self.assertEqual(run["samples"][0]["score"], .8)

@@ -64,6 +64,9 @@ const BallDetector = (() => {
     if(detail && diameter<25){
       const tight=cropRect(centre,{gate:0,diameter},video);
       if(tight.side<rect.side){const boxes=await find(tight);if(boxes.length && accept(boxes))return boxes;}
+      // A tiny crop can remove useful context. Try one intermediate scale, within the existing search area.
+      const context=cropRect(centre,{gate:tight.side,diameter},video);
+      if(context.side>tight.side && context.side<rect.side){const boxes=await find(context);if(boxes.length && accept(boxes))return boxes;}
     }
     return find(rect);
   }

@@ -54,3 +54,15 @@ test('saved legacy coverage-only reports are displayed as suspect without rewrit
   const old={samples:[{time:0,found:true}],candidates:[],report:{status:'REVIEW_REQUIRED',coverage:1,reasons:[]}};
   assert.match(lab.reportText(old),/Tracker SUSPECT/);assert.equal(old.report.status,'REVIEW_REQUIRED');
 });
+
+test('playback errors distinguish codec, network and interrupted loading',()=>{
+  assert.equal(lab.playbackError({error:null}),'');
+  for(const code of [3,4])assert.match(lab.playbackError({error:{code}}),/H\.264/);
+  assert.match(lab.playbackError({error:{code:2}}),/local server/);
+  assert.match(lab.playbackError({error:{code:1}}),/interrupted/);
+});
+
+test('a permanently failed decoder rejects immediately with specific guidance',async()=>{
+  const v=new Video();v.error={code:4};
+  await assert.rejects(lab.seek(v,1),/Changing the filename/);
+});

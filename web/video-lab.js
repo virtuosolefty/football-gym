@@ -2,10 +2,20 @@
 const VideoLab = (() => {
   let run=null, events=[], dirty=false, seedPoint=null, engine=null, controller=null, pendingTime=null, recovery=null, generation=0;
   const stamp=time=>Number(time).toFixed(2)+' s';
+  function playbackError(video){
+    if(!video.error)return '';
+    if(video.error.code===1)return 'Video loading was interrupted. Select the clip again to retry.';
+    if(video.error.code===2)return 'The video could not be loaded. Check that the local server is running, then select the clip again.';
+    return 'This browser cannot play this clip: its codec is unsupported or its video data cannot be decoded. Export a new MP4 using H.264 video, constant frame rate and frequent keyframes, then upload that copy. Changing the filename to .mp4 will not convert it.';
+  }
+  function bindPlayback(video,box){
+    const update=()=>box.textContent=video.getAttribute('src')?playbackError(video):'';
+    video.onerror=update;video.onloadstart=update;video.onloadeddata=update;video.onemptied=()=>box.textContent='';update();
+  }
   const kinds=id=>id==='juggling'?['contact','drop']:id==='slalom'?['start','finish','miss']:['pass'];
   function teardown(){generation++;controller?.abort();controller=null;recovery=null;}
   const statusOf=a=>a.samples.length && !a.report.quality && a.report.status!=='UNMEASURABLE'?'SUSPECT':a.report.status;
-  function runsView(s){return `<section class="card" id="lab-runs"><h2>Saved video runs</h2>${s.analyses?.length ? `<div class="table-wrap"><table><thead><tr><th>Assessment</th><th>Window</th><th>Track coverage</th><th>Reviewed events</th><th>Open</th></tr></thead><tbody>${[...s.analyses].reverse().map(a=>`<tr><td>${e(s.protocols.find(p=>p.id===a.protocol).name)}</td><td>${stamp(a.start)} – ${stamp(a.end)}</td><td>${Math.round(a.report.coverage*100)}% · ${e(statusOf(a))}</td><td>${a.annotation?.events.length||0}</td><td><button class="link-button" data-lab-open="${a.id}">Review clip ↗</button></td></tr>`).join('')}</tbody></table></div>` : '<p>Tracking reports and reviewed event timelines will appear here.</p>'}</section>`;}
+  function runsView(s){return `<section class="card" id="lab-runs"><h2>Saved video runs</h2>${s.analyses?.length ? `<div class="table-wrap"><table><thead><tr><th>Assessment</th><th>Window</th><th>Track coverage</th><th>Reviewed events</th><th>Open</th></tr></thead><tbody>${[...s.analyses].reverse().map(a=>`<tr><td data-label="Assessment">${e(s.protocols.find(p=>p.id===a.protocol).name)}</td><td data-label="Window">${stamp(a.start)} – ${stamp(a.end)}</td><td data-label="Track coverage">${Math.round(a.report.coverage*100)}% · ${e(statusOf(a))}</td><td data-label="Reviewed events">${a.annotation?.events.length||0}</td><td data-label="Open"><button class="link-button" data-lab-open="${a.id}">Review clip ↗</button></td></tr>`).join('')}</tbody></table></div>` : '<p>Tracking reports and reviewed event timelines will appear here.</p>'}</section>`;}
   function updateRuns(){const box=document.querySelector('#lab-runs');if(box)box.outerHTML=runsView(state);}
   function render(s) {
     return title('See what happened.', 'Review a clip, mark the evidence, and turn it into a useful next step.', 'VIDEO / FEEDBACK WORKSPACE') +
@@ -13,7 +23,7 @@ const VideoLab = (() => {
       <div class="lab-grid"><section class="card"><div class="card-head"><h2>Your evidence clip</h2><span class="pill">Processed on this machine</span></div>
       <div class="form-grid"><label>Saved video<select id="lab-media"><option value="">Choose a clip</option>${s.media.map(m=>`<option value="${m.id}" ${selected(run?.media_id,m.id)}>${e(m.name)}</option>`).join('')}</select></label><label>Assessment type<select id="lab-protocol">${s.protocols.map(p=>`<option value="${p.id}" ${selected(run?.protocol||s.profile.goal,p.id)}>${e(p.name)}</option>`).join('')}</select></label></div>
       <p class="fine">Upload evidence on the Record screen first. Short clips can be annotated; an assessment needs its complete protocol window.</p>
-      <div class="lab-player"><video id="lab-video" controls preload="metadata" playsinline ${run?`src="/api/media/${run.media_id}"`:''}></video><canvas id="lab-frame" width="320" height="180" aria-label="Paused video frame; click the ball to select or re-confirm it" tabindex="0"></canvas></div>
+      <p id="lab-playback-error" role="alert" class="form-error"></p><div class="lab-player"><video id="lab-video" controls preload="metadata" playsinline ${run?`src="/api/media/${run.media_id}"`:''}></video><canvas id="lab-frame" width="320" height="180" aria-label="Paused video frame; click the ball to select or re-confirm it" tabindex="0"></canvas></div>
       <div class="toolbar"><button id="lab-back" class="secondary" type="button">−0.1 sec</button><button id="lab-forward" class="secondary" type="button">+0.1 sec</button><label class="check">Playback speed<select id="lab-speed" aria-label="Video playback speed"><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1" selected>1×</option></select></label></div>
       <div class="form-grid subtitle-divider"><label>Window start (seconds)<input id="lab-start" type="number" min="0" max="600" step=".1" value="${run?.start||0}"></label><label>Window end (seconds)<input id="lab-end" type="number" min=".1" max="600" step=".1" value="${run?.end||30}"></label></div>
       <div class="form-grid"><label>Ball radius (tracking pixels)<input id="lab-radius" type="number" min="2" max="40" value="8"></label><label>Ball centre x / y (normalized)<div class="coordinate-pair"><input id="lab-x" aria-label="Ball centre x" type="number" min="0" max=".999" step=".001" placeholder="0–1"><input id="lab-y" aria-label="Ball centre y" type="number" min="0" max=".999" step=".001" placeholder="0–1"></div></label></div>
@@ -48,6 +58,7 @@ const VideoLab = (() => {
   function feedbackView(){document.querySelector('#lab-feedback').innerHTML=run?.feedback?.map(f=>`<div class="notice"><strong>${e(f.observation)}</strong><p>${e(f.cue)}</p><div class="actions">${f.times.map(time=>`<button class="link-button" data-lab-seek="${time}">Clip ${stamp(time)} ↗</button>`).join('')}</div><small>Guidance: ${e(drill(f.drill_id)?.name)} · ${e(reviewLabel(drill(f.drill_id)))}</small></div>`).join('') || '<p class="fine">Feedback uses your confirmed outcome and foot labels. It does not infer biomechanics or a cause.</p>';}
   async function seek(v,time,signal){
     if(signal?.aborted)throw new Error('Analysis cancelled.');
+    if(v.error)throw new Error(playbackError(v));
     if(Math.abs(v.currentTime-time)<.001 && v.readyState>=2 && !v.seeking)return;
     await new Promise((resolve,reject)=>{
       const done=()=>{if(v.readyState<2 || Math.abs(v.currentTime-time)>.06){failed();return;}cleanup();resolve();};
@@ -133,11 +144,10 @@ const VideoLab = (() => {
   function bind(){
     const v=document.querySelector('#lab-video'),canvas=document.querySelector('#lab-frame');if(!v)return;
     let locating=false;
-    eventOptions();timeline();feedbackView();if(v.getAttribute('src'))v.load();
+    eventOptions();timeline();feedbackView();bindPlayback(v,document.querySelector('#lab-playback-error'));if(v.getAttribute('src'))v.load();
     v.addEventListener('loadeddata',frame);v.addEventListener('seeked',frame);v.addEventListener('timeupdate',frame);
     v.addEventListener('loadedmetadata',()=>{const position=()=>{const time=pendingTime??0;pendingTime=null;v.currentTime=Math.min(v.duration,time);};if(v.duration===Infinity){const discovered=()=>{if(Number.isFinite(v.duration)){v.removeEventListener('durationchange',discovered);position();}};v.addEventListener('durationchange',discovered);v.currentTime=600;}else if(Number.isFinite(v.duration))position();});
-    v.addEventListener('error',()=>{if(document.querySelector('#lab-video')===v)document.querySelector('#lab-error').textContent='The browser could not decode this clip. Re-encode to MP4 (H.264, constant frame rate, frequent keyframes) and upload again.';});
-    document.querySelector('#lab-media').onchange=event=>{reset();v.src=event.target.value?'/api/media/'+event.target.value:'';eventOptions();timeline();feedbackView();document.querySelector('#lab-confirmed').checked=false;document.querySelector('#lab-status').textContent='New clip selected. Set a window and save a new video run.';document.querySelector('#lab-quality').textContent='';};
+    document.querySelector('#lab-media').onchange=event=>{reset();v.pause();canvas.getContext('2d').clearRect(0,0,canvas.width,canvas.height);document.querySelector('#lab-error').textContent='';document.querySelector('#lab-playback-error').textContent='';if(event.target.value)v.src='/api/media/'+event.target.value;else {v.removeAttribute('src');v.load();}eventOptions();timeline();feedbackView();document.querySelector('#lab-confirmed').checked=false;document.querySelector('#lab-status').textContent=event.target.value?'New clip selected. Set a window and save a new video run.':'Select a saved video to begin.';document.querySelector('#lab-quality').textContent='';};
     document.querySelector('#lab-protocol').onchange=()=>{reset();eventOptions();timeline();feedbackView();document.querySelector('#lab-confirmed').checked=false;document.querySelector('#lab-status').textContent='Assessment type changed. Save a new video run for its timeline.';};
     document.querySelector('#lab-speed').onchange=event=>v.playbackRate=Number(event.target.value);
     canvas.onclick=event=>{if(v.readyState<2 || (controller && !recovery) || locating)return;v.pause();const rect=canvas.getBoundingClientRect();document.querySelector('#lab-x').value=((event.clientX-rect.left)/rect.width).toFixed(3);document.querySelector('#lab-y').value=((event.clientY-rect.top)/rect.height).toFixed(3);selectBall();};
@@ -145,7 +155,7 @@ const VideoLab = (() => {
       if(locating || (controller && !recovery))return;
       const token=generation,errorBox=document.querySelector('#lab-error'),status=document.querySelector('#lab-status'),locking=document.querySelectorAll('#lab-select,#lab-track,#lab-manual,#lab-media,#lab-protocol');locating=true;
       try{
-        v.pause();if(v.readyState<2)throw new Error('Wait for the video to load.');seedPoint=engine=null;frame();
+        v.pause();if(v.error || v.readyState<2)throw new Error(playbackError(v)||'Wait for the video to load.');seedPoint=engine=null;frame();
         if(!document.querySelector('#lab-x').value || !document.querySelector('#lab-y').value)throw new Error('Click the ball in the paused frame first.');
         const x=Number(document.querySelector('#lab-x').value),y=Number(document.querySelector('#lab-y').value),hint=Number(document.querySelector('#lab-radius').value);
         if(!(hint>=2 && hint<=40) || !(x>=0 && x<1) || !(y>=0 && y<1))throw new Error('Select a visible ball and a radius between 2 and 40 tracking pixels.');
@@ -176,6 +186,7 @@ const VideoLab = (() => {
     async function process(track){
       if(controller || locating)return;const token=generation,errorBox=document.querySelector('#lab-error'),status=document.querySelector('#lab-status');errorBox.textContent='';let signal,pose,heartbeat;
       try{
+        if(v.error)throw new Error(playbackError(v));
         if(!document.querySelector('#lab-media').value || !Number.isFinite(v.duration) || v.readyState<2)throw new Error('Select a playable clip with a finite duration. If timestamps prevent this, re-encode to MP4 (H.264, constant frame rate) and upload again.');
         const start=Number(document.querySelector('#lab-start').value),end=Number(document.querySelector('#lab-end').value);if(!Number.isFinite(start) || !Number.isFinite(end) || start<0 || end<=start || end>v.duration+.01 || end-start>60)throw new Error('Choose a window within the clip, up to 60 seconds.');
         if(track && (!engine || !seedPoint))throw new Error('Select the ball in a clear paused frame first.');if(track && (seedPoint.time<start || seedPoint.time>=end))throw new Error('The ball was selected outside the analysis window. Move the window to include that frame, or select the ball again.');
@@ -201,6 +212,6 @@ const VideoLab = (() => {
     document.querySelector('#lab-events').onclick=async event=>{const button=event.target.closest('button');if(!button)return;if(button.dataset.labRemove!==undefined){events.splice(Number(button.dataset.labRemove),1);markDirty();}if(button.dataset.labSeek){v.pause();await seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
     document.querySelector('#lab-feedback').onclick=event=>{const button=event.target.closest('[data-lab-seek]');if(button){v.pause();seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
   }
-  return {render,bind,teardown,open,reset,assessmentData,trackWindow,seek,reportText};
+  return {render,bind,teardown,open,reset,assessmentData,trackWindow,seek,reportText,playbackError,bindPlayback};
 })();
 if(typeof module!=='undefined')module.exports=VideoLab;

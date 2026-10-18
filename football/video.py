@@ -3,7 +3,7 @@ import math
 from . import domain
 from .knowledge import PROTOCOL
 
-VERSIONS = {"colour": "contrast-ball-4", "detector": "detector-ball-3"}
+VERSIONS = {"colour": "contrast-ball-4", "detector": "detector-ball-4"}
 DETECTOR_MODELS = ["yolox_nano", "yolox_tiny", "yolox_s"]
 POSE_MODEL = "mediapipe-pose-lite-1"
 

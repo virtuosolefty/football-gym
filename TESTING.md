@@ -62,3 +62,15 @@ The installed MediaPipe model passed `browser_pose_model.js` on a blank frame wi
 The local checks passed: 73 Python tests, 47 JavaScript tests, all seven default browser workflows, 15 isolated SDLC tests, and `node sdlc/smoke.mjs`. The Python suite includes contact-matching counterexamples, side abstentions/body contacts, invalid and duplicate detections, corpus split leakage, review-hash invalidation and SDLC source/data isolation. Review also checked the existing label-tool schema and corrected compatibility issues before the final run.
 
 CI defines Linux and Windows jobs with separate browser artifacts. The October 18 SDLC validation record predates publication to GitHub; local results are not a hosted CI pass. The optional actual-model stage benchmark is outside default CI because its downloaded footage and model files are not committed. See [phase evidence](evaluation/phase-2026-10-18/README.md) and [SDLC validation](sdlc/VALIDATION.md).
+
+## Five-collection visual QA
+
+The [visual test plan](sdlc/VISUAL-TEST-PLAN.md) runs the original `D:\SDLC` visual QA stage against one public clip from each of five existing collections, with separate disposable app data. Use `node sdlc/visual-five.mjs`, `python sdlc/report-visual-five.py`, then `node sdlc/verify-visual-report.cjs`. The local report includes desktop/mobile screenshots, raw agent verdicts, saved-analysis checks and separate adjudication of tool failures and unsupported claims. Footage, transcripts and screenshots remain excluded from Git.
+
+## Playback, mobile review and context-crop follow-up
+
+The next-priority changes add persistent codec/network guidance beside the analysis video and local upload previews, clear stale warnings/frames on source changes, and stack saved-run fields at narrow widths. `browser_playback.js` is included in the default CI suite; it exercises actual decoder rejection, recovery to a playable clip, saved-run reload and all five mobile fields.
+
+Detector version `detector-ball-4` tries one intermediate native crop when a small ball is missing/rejected in the tight crop, before the existing wider motion crop. Candidate association and loss rules are unchanged. `TEST_DETECTOR=1` with Edge and `browser_real_regressions.js` replays rain plus bottle/cone/floor-ball/studio cases. `browser_crop_diagnostic.js` compares five fixed crop scales; it is an optional local diagnostic, not an accuracy test or a CI fixture.
+
+The pre-visual-review local checks passed: 73 Python tests, 51 JavaScript tests, and eight browser workflows. The real rain replay improved from two to three detections out of 30; its result remains UNMEASURABLE. Known distractor intervals still emitted no detections. The actual SDLC follow-up and final release-review evidence are recorded under `sdlc/priorities-2026-10-18/`.
