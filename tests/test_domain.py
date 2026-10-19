@@ -118,6 +118,28 @@ class DomainTests(unittest.TestCase):
         with self.assertRaises(domain.ValidationError):
             self.store.complete(data)
 
+    def test_explicit_practice_focus_respects_equipment_rest_budget_and_standard_scores(self):
+        from football.knowledge import DRILL
+        for identity in ("touch-directional", "wall-weaker-foot"):
+            plan = self.store.generate_plan({"readiness": "Ready", "focus_drill_id": identity})
+            self.assertEqual(plan["assignments"][0]["drill_id"], identity)
+            self.assertEqual(plan["focus_drill_id"], identity)
+            self.assertEqual(DRILL[identity]["version"], "practice-1")
+            self.store.complete({"assignment_id": plan["assignments"][0]["id"], "completed": True, "effort": 2, "note": "Left gate: 3/5; right gate: 4/5"})
+            self.assertEqual(self.store.attempts(), [])
+        tired = self.store.generate_plan({"readiness": "Tired", "focus_drill_id": "touch-directional"})
+        self.assertLessEqual(tired["minutes"], self.store.player()["minutes"]*.6)
+        rest = self.store.generate_plan({"readiness": "Rest", "focus_drill_id": "touch-directional"})
+        self.assertEqual(rest["assignments"], [])
+        for identity in ("not-a-drill", "wall-5", [], True):
+            with self.assertRaises(domain.ValidationError):
+                self.store.generate_plan({"readiness": "Ready", "focus_drill_id": identity})
+        limited = {**self.store.player(), "equipment": ["ball"]}
+        with self.assertRaises(domain.ValidationError):
+            domain.plan(limited, [], [], "Ready", "touch-directional")
+        automatic = domain.plan(self.store.player(), [], [], "Ready")
+        self.assertFalse(any(DRILL[a["drill_id"]].get("practice_only") for a in automatic["assignments"]))
+
     def test_persistence_and_erasure(self):
         self.store.add_attempt(attempt())
         self.assertEqual(len(Store(self.tmp.name).attempts()), 1)

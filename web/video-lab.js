@@ -1,6 +1,6 @@
 'use strict';
 const VideoLab = (() => {
-  let run=null, events=[], dirty=false, seedPoint=null, engine=null, controller=null, selectionController=null, pendingTime=null, recovery=null, generation=0;
+  let run=null, events=[], edits=[], dirty=false, seedPoint=null, engine=null, controller=null, selectionController=null, reviewController=null, pendingTime=null, recovery=null, generation=0;
   const stamp=time=>Number(time).toFixed(2)+' s';
   function playbackError(video){
     if(!video.error)return '';
@@ -13,7 +13,7 @@ const VideoLab = (() => {
     video.onerror=update;video.onloadstart=update;video.onloadeddata=update;video.onemptied=()=>box.textContent='';update();
   }
   const kinds=id=>id==='juggling'?['contact','drop']:id==='slalom'?['start','finish','miss']:['pass'];
-  function teardown(){generation++;selectionController?.abort();controller?.abort();BallDetector.close?.();controller=null;recovery=null;}
+  function teardown(){generation++;reviewController?.abort();selectionController?.abort();controller?.abort();BallDetector.close?.();controller=null;recovery=null;}
   const statusOf=a=>a.samples.length && !a.report.quality && a.report.status!=='UNMEASURABLE'?'SUSPECT':a.report.status;
   function runsView(s){return `<section class="card" id="lab-runs"><h2>Saved video runs</h2>${s.analyses?.length ? `<div class="table-wrap"><table><thead><tr><th>Assessment</th><th>Window</th><th>Track coverage</th><th>Reviewed events</th><th>Open</th></tr></thead><tbody>${[...s.analyses].reverse().map(a=>`<tr><td data-label="Assessment">${e(s.protocols.find(p=>p.id===a.protocol).name)}</td><td data-label="Window">${stamp(a.start)} – ${stamp(a.end)}</td><td data-label="Track coverage">${Math.round(a.report.coverage*100)}% · ${e(statusOf(a))}</td><td data-label="Reviewed events">${a.annotation?`${a.annotation.events.length} (reviewed)`:'Not reviewed'}</td><td data-label="Open"><button class="link-button" data-lab-open="${a.id}">Review clip ↗</button></td></tr>`).join('')}</tbody></table></div>` : '<p>Tracking reports and reviewed event timelines will appear here.</p>'}</section>`;}
   function updateRuns(){const box=document.querySelector('#lab-runs');if(box)box.outerHTML=runsView(state);}
@@ -31,7 +31,9 @@ const VideoLab = (() => {
       <label class="check"><input id="lab-pose" type="checkbox">Add experimental foot evidence (slower; optional local pose model)</label><p class="fine">Install once: python tools/fetch_pose.py. A nearby foot supports a possible contact; you still confirm it.</p>
       <div class="actions"><button id="lab-select" class="secondary" type="button">Select ball</button><button id="lab-track" class="primary" type="button">Track selected ball ↗</button><button id="lab-manual" class="secondary" type="button">Use manual timeline</button><button id="lab-skip" class="secondary" type="button" hidden>Skip remaining track in this direction</button><button id="lab-cancel" class="secondary" type="button" hidden>Cancel analysis</button></div>
       <p id="lab-status" role="status" aria-live="polite" class="fine subtitle-divider">${run?reportText(run):'Select a saved video to begin.'}</p><p id="lab-quality" class="fine">${run?qualityText(run):''}</p><button id="lab-export" class="secondary" type="button">Export analysis JSON</button><p id="lab-error" role="alert" class="form-error"></p></section>
-      <section class="card"><div class="card-head"><h2>Review the event timeline</h2><span id="lab-event-count" class="pill">0 events</span></div>
+      <section class="card" id="lab-review" tabindex="0"><div class="card-head"><h2>Review the event timeline</h2><span id="lab-event-count" class="pill">0 events</span></div>
+      <div id="lab-review-navigation"></div><div class="actions"><button id="lab-next-issue" class="secondary" type="button">Next uncertain moment</button><button id="lab-undo" class="secondary" type="button" disabled>Undo event edit</button></div>
+      <p class="fine">Focus this panel or the video frame: left/right arrows step 0.1 s, M marks an event, N jumps to the next issue (wrapping to the start), Ctrl/Cmd+Z undoes an edit. Shortcuts leave form fields alone. Undo changes the draft; save again to update reviewed events.</p>
       <div class="form-grid"><label>Event type<select id="lab-kind"></select></label><label>Foot side<select id="lab-side"><option value="unknown">Not labelled</option><option value="left">Left foot</option><option value="right">Right foot</option></select></label><label>Foot used<select id="lab-foot"><option value="unknown">Not labelled</option><option value="strong">Stronger foot</option><option value="weak">Weaker foot</option></select></label></div>
       <label class="check"><input id="lab-success" type="checkbox" checked>Pass met the target outcome</label><button id="lab-add" class="secondary" type="button">Mark event at playhead</button><div id="lab-events" class="event-list subtitle-divider"></div>
       <label class="subtitle-divider">Timeline reviewer<input id="lab-reviewer" maxlength="80" value="${e(run?.annotation?.reviewer||s.profile.name)}"></label><label class="check"><input id="lab-confirmed" type="checkbox">I checked the full window, removed false contacts and added missed events.</label><button id="lab-save" class="primary" type="button">Save reviewed timeline</button><p id="lab-save-error" class="form-error" role="alert"></p><div id="lab-feedback" class="subtitle-divider"></div>
@@ -48,9 +50,27 @@ const VideoLab = (() => {
     const point=seedPoint || (!recovery && run?.samples?.filter(s=>s.found && Math.abs(s.time-v.currentTime)<=.06).reduce((best,s)=>!best || Math.abs(s.time-v.currentTime)<Math.abs(best.time-v.currentTime)?s:best,null));
     if(point){ctx.strokeStyle='#d0ec8a';ctx.lineWidth=2;ctx.beginPath();ctx.arc(point.x*canvas.width,point.y*canvas.height,Number(document.querySelector('#lab-radius').value),0,Math.PI*2);ctx.stroke();}
   }
+  function reviewMoments(analysis, draft=[]){
+    if(!analysis)return [];
+    const moments=draft.map(event=>({time:event.time,end:event.time,kind:event.kind,issue:!!event.uncertain,label:`${event.kind}${event.uncertain?' (uncertain)':''}`}));
+    let gap=null;
+    for(const sample of analysis.samples||[]){
+      if(sample.found){gap=null;continue;}
+      if(!gap || sample.time-gap.end>.151){gap={time:sample.time,end:sample.time,kind:'gap',issue:true,label:'Missing detections'};moments.push(gap);}
+      else gap.end=sample.time;
+    }
+    for(const seed of analysis.configuration?.reseeds||[])moments.push({time:seed.time,end:seed.time,kind:'reseed',issue:true,label:'Re-confirmed ball'});
+    return moments.sort((a,b)=>a.time-b.time);
+  }
+  function nextIssue(moments,time){const issues=moments.filter(m=>m.issue);return (issues.find(m=>m.time>time+.005)||issues[0])?.time;}
+  function rememberEdit(){edits.push(structuredClone(events));if(edits.length>50)edits.shift();}
   function timeline(){
     const box=document.querySelector('#lab-events');if(!box)return;
     document.querySelector('#lab-event-count').textContent=events.length+' events';
+    const moments=reviewMoments(run,events),navigation=document.querySelector('#lab-review-navigation');
+    navigation.innerHTML=run?`<label>Review playhead<input id="lab-playhead" type="range" min="${run.start}" max="${run.end}" step=".01" value="${Math.max(run.start,Math.min(run.end,document.querySelector('#lab-video')?.currentTime??run.start))}"></label><output id="lab-playhead-time">${stamp(document.querySelector('#lab-video')?.currentTime??run.start)}</output><p class="fine">Events / missing detections / re-confirmations. These are review prompts, not verified errors.</p><div class="review-moments">${moments.map(m=>`<button type="button" class="secondary review-${m.kind==='gap'?'gap':m.kind==='reseed'?'reseed':'event'}" data-review-time="${m.time}">${stamp(m.time)}${m.end>m.time?' - '+stamp(m.end):''} ${e(m.label)}</button>`).join('')||'<p class="fine">No automatic review markers. Check the entire window.</p>'}</div>`:'<p class="fine">Save a video run to navigate its review moments.</p>';
+    document.querySelector('#lab-next-issue').disabled=!moments.some(m=>m.issue);
+    document.querySelector('#lab-undo').disabled=!edits.length;
     box.innerHTML=events.map((event,i)=>`<div class="event-row"><button class="link-button" data-lab-seek="${event.time}">${stamp(event.time)}</button><span>${e(event.kind)} · ${e(event.foot)}${event.uncertain?' · uncertain trajectory':''}${event.kind==='pass'?(event.success?' · on target':' · off target'):''}</span><button class="link-button" data-lab-remove="${i}" aria-label="Remove event ${i+1}">Remove</button></div>`).join('') || (run?.annotation && !dirty ? '<p class="fine">Reviewed: no events in this window.</p>' : '<p class="fine">Pause at a contact or pass outcome, choose the label, and mark it. Juggling track proposals appear here for correction.</p>');
   }
   function markDirty(){dirty=true;document.querySelector('#lab-confirmed').checked=false;document.querySelector('#lab-feedback').textContent='Save a reviewed timeline to update feedback.';timeline();}
@@ -139,8 +159,8 @@ const VideoLab = (() => {
     if(!run?.annotation || dirty)throw new Error('Save the current reviewed timeline before creating an assessment.');
     const f=new FormData(form);return {analysis_id:run.id,annotation_id:run.annotation.id,conditions:{distance:Number(f.get('distance')),width:Number(f.get('width')),surface:f.get('surface'),duration:protocol(run.protocol).duration},quality:{visible:f.has('visible'),fixed_camera:f.has('fixed_camera'),setup_valid:f.has('setup_valid')},notes:f.get('notes')};
   }
-  function open(id,time,annotationId){run=structuredClone(state.analyses.find(a=>a.id===id)||null);if(run && annotationId){run.annotation=state.video_annotations.find(a=>a.id===annotationId)||run.annotation;run.feedback=state.attempts.find(a=>a.evidence?.annotation_id===annotationId)?.feedback||[];}events=structuredClone(run?.annotation?.events||run?.candidates||[]);dirty=false;seedPoint=engine=null;pendingTime=time??run?.start??0;}
-  function reset(){generation++;run=null;events=[];dirty=false;seedPoint=engine=null;pendingTime=null;}
+  function open(id,time,annotationId){run=structuredClone(state.analyses.find(a=>a.id===id)||null);if(run && annotationId){run.annotation=state.video_annotations.find(a=>a.id===annotationId)||run.annotation;run.feedback=state.attempts.find(a=>a.evidence?.annotation_id===annotationId)?.feedback||[];}events=structuredClone(run?.annotation?.events||run?.candidates||[]);dirty=false;edits=[];seedPoint=engine=null;pendingTime=time??run?.start??0;}
+  function reset(){generation++;run=null;events=[];edits=[];dirty=false;edits=[];seedPoint=engine=null;pendingTime=null;}
   function bind(){
     const v=document.querySelector('#lab-video'),canvas=document.querySelector('#lab-frame');if(!v)return;
     let locating=false;
@@ -168,6 +188,24 @@ const VideoLab = (() => {
       }catch(error){if(generation===token && document.querySelector('#lab-video')===v){engine=null;frame();if(!recovery)status.textContent='Select the ball in a paused frame to begin.';errorBox.textContent=selection.signal.aborted?'Analysis cancelled.':error.message;}}
       finally{locating=false;if(selectionController===selection)selectionController=null;if(generation===token && document.querySelector('#lab-video')===v){document.querySelector('#lab-cancel').hidden=!controller;for(const button of locking)button.disabled=!!controller;const select=document.querySelector('#lab-select');if(select && document.querySelector('#lab-video')===v)select.disabled=!!controller && !recovery;}}
     }
+    async function reviewSeek(time){
+      if(controller || locating || !run)return;
+      reviewController?.abort();const request=new AbortController();reviewController=request;v.pause();
+      await seek(v,Math.max(run.start,Math.min(run.end,time)),request.signal).catch(error=>{if(!request.signal.aborted && document.querySelector('#lab-video')===v)document.querySelector('#lab-error').textContent=error.message;});
+    }
+    const updatePlayhead=()=>{const slider=document.querySelector('#lab-playhead');if(slider && run){slider.value=v.currentTime;document.querySelector('#lab-playhead-time').textContent=stamp(v.currentTime);}};
+    v.addEventListener('timeupdate',updatePlayhead);
+    document.querySelector('#lab-review-navigation').onclick=event=>{const button=event.target.closest('[data-review-time]');if(button)reviewSeek(Number(button.dataset.reviewTime));};
+    document.querySelector('#lab-review-navigation').onchange=event=>{if(event.target.id==='lab-playhead')reviewSeek(Number(event.target.value));};
+    document.querySelector('#lab-next-issue').onclick=()=>{const time=nextIssue(reviewMoments(run,events),v.currentTime);if(time!==undefined)reviewSeek(time);};
+    document.querySelector('#lab-undo').onclick=()=>{if(controller || locating || !edits.length)return;events=edits.pop();markDirty();updatePlayhead();};
+    v.closest('.lab-grid').addEventListener('keydown',event=>{
+      if(event.altKey || event.target.closest('input,textarea,select,button,video') || controller || locating)return;
+      let action;
+      if(event.ctrlKey || event.metaKey){if(event.key.toLowerCase()==='z' && !event.shiftKey)action=()=>document.querySelector('#lab-undo').click();}
+      else action={arrowleft:()=>reviewSeek(v.currentTime-.1),arrowright:()=>reviewSeek(v.currentTime+.1),m:()=>document.querySelector('#lab-add').click(),n:()=>document.querySelector('#lab-next-issue').click()}[event.key.toLowerCase()];
+      if(action){event.preventDefault();action();}
+    });
     document.querySelector('#lab-select').onclick=selectBall;
     document.querySelector('#lab-export').onclick=()=>{if(!run){document.querySelector('#lab-error').textContent='Save a video run first.';return;}const url=URL.createObjectURL(new Blob([JSON.stringify(run,null,2)],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download='analysis-'+run.id+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
     document.querySelector('#lab-back').onclick=()=>{v.pause();v.currentTime=Math.max(0,v.currentTime-.1);};
@@ -203,15 +241,15 @@ const VideoLab = (() => {
         if(signal.aborted)throw new Error('Analysis cancelled.');
         const result=await api('/api/analyses',{media_id,protocol,duration:v.duration,width:v.videoWidth,height:v.videoHeight,start,end,...tracked,seed,...tracking},{signal});
         const s=await api('/api/state',undefined,{signal});if(signal.aborted || token!==generation)return;
-        clearInterval(heartbeat);state=s;run=s.analyses.find(a=>a.id===result.id);events=structuredClone(run.candidates);dirty=false;seedPoint=null;status.textContent=reportText(run);document.querySelector('#lab-quality').textContent=qualityText(run);document.querySelector('#lab-confirmed').checked=false;timeline();feedbackView();updateRuns();await seek(v,start,signal);toast('Video run saved locally. Review its timeline.');
+        clearInterval(heartbeat);state=s;run=s.analyses.find(a=>a.id===result.id);events=structuredClone(run.candidates);edits=[];dirty=false;seedPoint=null;status.textContent=reportText(run);document.querySelector('#lab-quality').textContent=qualityText(run);document.querySelector('#lab-confirmed').checked=false;timeline();feedbackView();updateRuns();await seek(v,start,signal);toast('Video run saved locally. Review its timeline.');
       }catch(error){if(token===generation && document.querySelector('#lab-video')===v)errorBox.textContent=signal?.aborted?'Analysis cancelled.':error.message;}
       finally{clearInterval(heartbeat);pose?.close();if(token===generation && document.querySelector('#lab-video')===v){controller=null;recovery=null;v.controls=true;document.querySelector('#lab-cancel').hidden=true;document.querySelector('#lab-skip').hidden=true;for(const element of document.querySelectorAll('#lab-track,#lab-manual,#lab-select,#lab-save,#lab-add,#lab-media,#lab-protocol,#lab-start,#lab-end,#lab-radius,#lab-back,#lab-forward,#lab-pose'))element.disabled=false;frame();}}
     }
-    document.querySelector('#lab-add').onclick=()=>{const error=document.querySelector('#lab-save-error');error.textContent='';if(!run){error.textContent='Save a tracked run or use a manual timeline first.';return;}if(v.currentTime<run.start || v.currentTime>run.end){error.textContent='Move the playhead inside the saved window.';return;}const event={time:Number(v.currentTime.toFixed(3)),kind:document.querySelector('#lab-kind').value,foot:document.querySelector('#lab-foot').value,side:document.querySelector('#lab-side').value,success:document.querySelector('#lab-success').checked};if(events.some(e=>e.time===event.time && e.kind===event.kind)){error.textContent='An event already exists at this timestamp.';return;}events.push(event);events.sort((a,b)=>a.time-b.time);markDirty();};
+    document.querySelector('#lab-add').onclick=()=>{const error=document.querySelector('#lab-save-error');error.textContent='';if(!run){error.textContent='Save a tracked run or use a manual timeline first.';return;}if(v.currentTime<run.start || v.currentTime>run.end){error.textContent='Move the playhead inside the saved window.';return;}const event={time:Number(v.currentTime.toFixed(3)),kind:document.querySelector('#lab-kind').value,foot:document.querySelector('#lab-foot').value,side:document.querySelector('#lab-side').value,success:document.querySelector('#lab-success').checked};if(events.some(e=>e.time===event.time && e.kind===event.kind)){error.textContent='An event already exists at this timestamp.';return;}rememberEdit();events.push(event);events.sort((a,b)=>a.time-b.time);markDirty();};
     document.querySelector('#lab-save').onclick=async()=>{const button=document.querySelector('#lab-save'),box=document.querySelector('#lab-save-error');box.textContent='';button.disabled=true;try{if(!run)throw new Error('Save a video run first.');await api('/api/video/annotations',{analysis_id:run.id,events,reviewer:document.querySelector('#lab-reviewer').value,confirmed:document.querySelector('#lab-confirmed').checked});state=await api('/api/state');run=state.analyses.find(a=>a.id===run.id);dirty=false;timeline();feedbackView();updateRuns();toast('Reviewed events saved. Original tracking preserved.');}catch(error){box.textContent=error.message;}finally{button.disabled=false;}};
-    document.querySelector('#lab-events').onclick=async event=>{const button=event.target.closest('button');if(!button)return;if(button.dataset.labRemove!==undefined){events.splice(Number(button.dataset.labRemove),1);markDirty();}if(button.dataset.labSeek){v.pause();await seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
+    document.querySelector('#lab-events').onclick=async event=>{const button=event.target.closest('button');if(!button)return;if(button.dataset.labRemove!==undefined){if(controller || locating)return;rememberEdit();events.splice(Number(button.dataset.labRemove),1);markDirty();}if(button.dataset.labSeek)await reviewSeek(Number(button.dataset.labSeek));};
     document.querySelector('#lab-feedback').onclick=event=>{const button=event.target.closest('[data-lab-seek]');if(button){v.pause();seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};
   }
-  return {render,bind,teardown,open,reset,assessmentData,trackWindow,seek,reportText,playbackError,bindPlayback};
+  return {render,bind,teardown,open,reset,assessmentData,trackWindow,seek,reportText,playbackError,bindPlayback,reviewMoments,nextIssue};
 })();
 if(typeof module!=='undefined')module.exports=VideoLab;

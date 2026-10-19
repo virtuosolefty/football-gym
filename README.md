@@ -17,7 +17,7 @@ Open **http://127.0.0.1:8765**. The server must use this address, not `localhost
 - Local video uploads (MP4/WebM/MOV, up to 64 MB), phone capture through the file chooser where supported, playback, seeking, and side-by-side reference previews. Reference clips are not saved; evidence clips are.
 - A skill passport with raw metrics, measurement provenance, all original observations, and comparisons restricted to matching setup and protocol versions. These are personal trends, not calibrated ratings or statistical claims about ability.
 - An adaptive planner prioritizing goals and position, filtering equipment, recording session completion and effort, and reducing workload for tiredness or hard recent sessions. Rest generates no assignments. Progression requires comparable reviewed evidence and comfortable completed practice.
-- Twenty-five original starter drills with objectives, equipment, instructions, observable outcomes, cues, progressions, regressions and versioned source metadata. They are labelled **draft**, not expert-approved. Local qualified-coach reviews change the label for that version.
+- Twenty-seven original starter drills (including directional first touch and weaker-foot passing practice) with objectives, equipment, instructions, observable outcomes, cues, progressions, regressions and versioned source metadata. They are labelled **draft**, not expert-approved. Local qualified-coach reviews change the label for that version.
 - A trusted local review workspace with reviewer notes, clip timestamps and optional metric corrections. Append-only corrections preserve original measurements. Reviewer identity/qualification is self-declared, not verified by an account system.
 - Offline rule-based coaching and optional Gemma 4 via local Ollama. Retrieval supplies eligible starter guidance; LLM responses cannot modify scores or plans. Only referenced local drills are accepted.
 - Local AI availability, installed-model checks, RAM detection and a conservative starting-model suggestion; no automatic downloads or performance guarantees.
@@ -100,3 +100,9 @@ FIFA and England Football links in the knowledge pack are research references on
 ## Development lifecycle
 
 The project-specific [SDLC integration](sdlc/README.md) uses an isolated copy of `D:\SDLC`. Its records, preview data and worktrees stay separate from the original tool and the player's workspace. See the [validation readiness workflow](evaluation/phase-2026-10-18/README.md) before calibrating correctness thresholds.
+
+## Current improvement checklist
+
+See [TODO.md](TODO.md) for the full roadmap, completion criteria and human-review dependencies. The current review/practice phase adds event undo, missing-detection and re-seed navigation, keyboard shortcuts, two selectable practice focuses and blind task import. Practice observations remain session notes, separate from standardized assessment scores.
+
+Prepare a fresh unlabelled batch with `python tools/prepare_blind_batch.py --output test-results/my-blind-batch`. The output refuses overwrites and verifies source hashes. Hand the `annotator` folder to an independent reviewer; the command does not obtain human labels or establish calibration readiness.

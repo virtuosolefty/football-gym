@@ -66,3 +66,13 @@ test('a permanently failed decoder rejects immediately with specific guidance',a
   const v=new Video();v.error={code:4};
   await assert.rejects(lab.seek(v,1),/Changing the filename/);
 });
+
+
+test('review moments group contiguous misses, retain re-seeds and leave original evidence unchanged',()=>{
+  const analysis={samples:[{time:0,found:true},{time:.1,found:false},{time:.2,found:false},{time:.3,found:true},{time:.4,found:false},{time:1,found:false}],configuration:{reseeds:[{time:.3}]}},before=JSON.stringify(analysis);
+  const moments=lab.reviewMoments(analysis,[{time:.05,kind:'contact',uncertain:true},{time:.9,kind:'drop'}]);
+  assert.deepEqual(moments.filter(m=>m.kind==='gap').map(m=>[m.time,m.end]),[[.1,.2],[.4,.4],[1,1]]);
+  assert.equal(lab.nextIssue(moments,.2),.3);assert.equal(lab.nextIssue(moments,1),.05);
+  assert.equal(lab.nextIssue(lab.reviewMoments({samples:[]},[{time:1,kind:'contact'}]),0),undefined);
+  assert.equal(JSON.stringify(analysis),before);assert.deepEqual(lab.reviewMoments(null),[]);
+});

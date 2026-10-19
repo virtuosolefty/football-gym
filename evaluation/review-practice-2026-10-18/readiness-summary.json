@@ -1,0 +1,22 @@
+{
+  "ready_for_calibration_and_validation": false,
+  "coverage": {
+    "calibration": {
+      "night": 0,
+      "rain": 0,
+      "small": 0,
+      "fast": 0,
+      "juggling-30s": 0
+    },
+    "held-out": {
+      "night": 0,
+      "rain": 0,
+      "small": 0,
+      "fast": 0,
+      "juggling-30s": 0
+    }
+  },
+  "blocker_count": 10,
+  "diagnostic_clip_count": 12,
+  "note": "No independent human labels were obtained. Full audit is in the separate local test-results folder."
+}

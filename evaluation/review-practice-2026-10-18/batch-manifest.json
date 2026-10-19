@@ -1,0 +1,57 @@
+[
+  {
+    "task": "review-001",
+    "collection": "real-footage",
+    "original_file": "test-results/real-footage/footage/indoor.mp4",
+    "sha256": "4d75a3f076128807fe2245f7db4cc15a218ba41d91c5391696788d1b08d9ea37",
+    "source": "https://www.pexels.com/video/football-player-juggling-with-ball-6078265/",
+    "license": "Pexels License",
+    "split": "diagnostic",
+    "player_ids": [],
+    "independent_labels_received": false
+  },
+  {
+    "task": "review-002",
+    "collection": "other-footage",
+    "original_file": "test-results/other-footage/footage/tennis.webm",
+    "sha256": "29a725e817e9a2ce70213c3a232b893a07dd0191a78446e2c16325452b76a680",
+    "source": "https://commons.wikimedia.org/wiki/File:Football_Tennis.webm",
+    "license": "CC BY 3.0 \u2014 PK17 Football",
+    "split": "diagnostic",
+    "player_ids": [],
+    "independent_labels_received": false
+  },
+  {
+    "task": "review-003",
+    "collection": "conditions-footage",
+    "original_file": "test-results/conditions-footage/footage/u17.webm",
+    "sha256": "89d219e12cd6b4996c02bc1954705219c7923d19d7694fedc0b90c35401a3679",
+    "source": "https://commons.wikimedia.org/wiki/File:2018_FIFA_U-17_Women%27s_World_Cup_-_New_Zealand_vs_Canada_-_20.webm",
+    "license": "CC BY-SA 4.0 \u2014 NaBUru38",
+    "split": "diagnostic",
+    "player_ids": [],
+    "independent_labels_received": false
+  },
+  {
+    "task": "review-004",
+    "collection": "validation-2026-10-14",
+    "original_file": "test-results/validation-2026-10-14/footage/rain.mp4",
+    "sha256": "30783a1392fcc554eb459bfa0ff2556cce44de4fd4c6a2298daa144eb1b0f969",
+    "source": "https://www.pexels.com/video/boys-playing-soccer-in-the-rain-14109233/",
+    "license": "Pexels License \u2014 As hik",
+    "split": "diagnostic",
+    "player_ids": [],
+    "independent_labels_received": false
+  },
+  {
+    "task": "review-005",
+    "collection": "public-football-2026-10-17",
+    "original_file": "test-results/public-football-2026-10-17/footBall/Videos/Game_1_1.mp4",
+    "sha256": "cd66421dd4108502c07d927fdf9ec9abb3cfcec9416b1fc2a0bd9fac9d0e2017",
+    "source": "https://github.com/Zoutianjian/Videos-For-Sport-Ball-Detection-Dataset/tree/7981dcadb2c268808413f5f4d6bdbc25dbfbae75/footBall",
+    "license": "CC BY-NC-ND 4.0 \u2014 published dataset, original video unchanged",
+    "split": "diagnostic",
+    "player_ids": [],
+    "independent_labels_received": false
+  }
+]

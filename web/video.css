@@ -11,3 +11,7 @@
   #lab-runs td::before{content:attr(data-label);font-weight:600}
   #lab-runs td button{justify-self:start;text-align:left}
 }
+
+.review-moments{display:flex;flex-wrap:wrap;gap:8px;max-height:180px;overflow:auto;margin:12px 0}.review-moments button{font-size:11px;white-space:normal;text-align:left}.review-gap{border-left:4px solid #bd7930}.review-reseed{border-left:4px solid #4c75a3}.review-event{border-left:4px solid var(--green)}#lab-playhead{width:100%}#lab-review:focus-visible{outline:3px solid var(--green)}
+
+.drill-setup{margin:16px 0}.drill-setup svg{width:100%;max-width:400px;height:auto;background:#f4f7ef;border-radius:8px}.drill-setup text{font:11px system-ui;fill:#183e32}.drill-setup figcaption{font-size:11px}.inline-form label{min-width:0}.inline-form select{max-width:100%}

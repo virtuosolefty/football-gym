@@ -28,7 +28,7 @@
   video.addEventListener('seeked',draw);video.addEventListener('loadeddata',draw);video.addEventListener('timeupdate',draw);
   $('file').onchange=async()=>{
     const file=$('file').files[0];if(!file)return;
-    const token=++loadGeneration;clip=null;labels.clear();contacts=[];dirty=false;$('contacts-reviewed').checked=false;if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(file);video.src=url;error('');
+    const token=++loadGeneration;$('task-status').textContent='';$('task').value='';clip=null;labels.clear();contacts=[];dirty=false;$('contacts-reviewed').checked=false;if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(file);video.src=url;error('');
     try{if(file.size>512*1024*1024)throw new Error('Use an evaluation clip under 512 MB.');const digest=await crypto.subtle.digest('SHA-256',await file.arrayBuffer());if(token!==loadGeneration)return;clip={filename:file.name,sha256:Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,'0')).join('')};$('id').value=file.name.replace(/\.[^.]+$/,'');draw();}catch(e){error(e.message);}
   };
   $('begin').onclick=()=>{try{move(windowBounds().start);}catch(e){error(e.message);}};
@@ -40,6 +40,21 @@
       const conditions=Array.from(document.querySelectorAll('[name=condition]:checked'),x=>x.value);if(!conditions.length)throw new Error('Select the recorded conditions.');
       const data={format:'football-evaluation-1',clip:{...clip,id,width:video.videoWidth,height:video.videoHeight,start,end},annotator:{id:reviewer,role:$('role').value,independent:$('independent').checked && ['coach','second-annotator'].includes($('role').value)},conditions,notes:$('notes').value,sample_interval:.1,frames:[...labels.values()].filter(s=>s.time>=start && s.time<end).sort((a,b)=>a.time-b.time),contacts_reviewed:$('contacts-reviewed').checked,contacts:contacts.filter(c=>c.time>=start && c.time<=end)};
       const link=document.createElement('a'),download=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));link.href=download;link.download=id.replace(/[^a-z0-9_-]/gi,'_')+'-'+reviewer.replace(/[^a-z0-9_-]/gi,'_')+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(download),1000);dirty=false;
+    }catch(e){error(e.message);}
+  };
+  $('task').onchange=async()=>{
+    const token=loadGeneration;
+    try{
+      const file=$('task').files[0];if(!file || file.size>100000)throw new Error('Choose a task JSON under 100 KB.');
+      const task=JSON.parse(await file.text());if(token!==loadGeneration)return;
+      if(task.format!=='football-labelling-task-1' || !clip || task.clip?.sha256!==clip.sha256)throw new Error('Load the matching video before its blind task.');
+      if(labels.size || contacts.length)throw new Error('Export your current labels and reload the video before loading a new task.');
+      const {start,end,id}=task.clip;
+      const allowed=Array.from(document.querySelectorAll('[name=condition]'),input=>input.value);
+      if(typeof id!=='string' || !id.trim() || id.length>100 || !Number.isFinite(start) || !Number.isFinite(end) || !(start>=0 && end>start && end-start<=60 && end<=video.duration+.01) || !Array.isArray(task.conditions) || task.conditions.some(c=>!allowed.includes(c)) || task.frames!==undefined || task.contacts!==undefined || task.annotator!==undefined)throw new Error('Invalid blind task: use a playable window and metadata without labels or reviewer claims.');
+      $('id').value=id;$('start').value=start;$('end').value=end;$('reviewer').value='';$('role').value='second-annotator';$('independent').checked=false;$('contacts-reviewed').checked=false;
+      for(const input of document.querySelectorAll('[name=condition]'))input.checked=task.conditions.includes(input.value);
+      $('task-status').textContent='Blind task loaded. Add your own labels and reviewer details.';error('');await move(start);
     }catch(e){error(e.message);}
   };
   $('import').onchange=async()=>{

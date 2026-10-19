@@ -135,11 +135,11 @@ class Store:
                                       "original_metrics": attempt["metrics"], "version": "manual-review-1"})
 
     def generate_plan(self, data):
-        result = domain.plan(self.player(), self.attempts(), self.events("completion"), data.get("readiness"))
+        result = domain.plan(self.player(), self.attempts(), self.events("completion"), data.get("readiness"), data.get("focus_drill_id"))
         for assignment in result["assignments"]:
             assignment["id"] = uuid.uuid4().hex
         result["readiness"] = data["readiness"]
-        result["engine_version"] = "adaptive-rules-1"
+        result["engine_version"] = "adaptive-rules-2"
         event = self.append("plan", result)
         self.set("active_plan", event)
         return event

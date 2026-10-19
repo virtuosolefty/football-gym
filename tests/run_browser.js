@@ -2,7 +2,7 @@
 // Each callback gets a fresh server and browser context; never touches the player's .data workspace.
 const {chromium}=require('playwright'),{spawn}=require('node:child_process'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
-const callbacks=process.argv.slice(2).length?process.argv.slice(2):['browser_startup_race.js','browser_workflow.js','browser_video_workflow.js','browser_tracking_safety.js','browser_label_workflow.js','browser_scene_cut.js','browser_pose_workflow.js','browser_playback.js','browser_detector_worker.js'];
+const callbacks=process.argv.slice(2).length?process.argv.slice(2):['browser_startup_race.js','browser_workflow.js','browser_video_workflow.js','browser_tracking_safety.js','browser_label_workflow.js','browser_scene_cut.js','browser_pose_workflow.js','browser_playback.js','browser_detector_worker.js','browser_review_practice.js','browser_blind_task.js'];
 async function main(){
   const browser=await chromium.launch({headless:true,...(process.env.BROWSER_CHANNEL?{channel:process.env.BROWSER_CHANNEL}:{})});
   try{

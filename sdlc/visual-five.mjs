@@ -18,7 +18,8 @@ const cases=JSON.parse(readFileSync(path.join(here,'visual-five.json'),'utf8'));
 assert.equal(new Set(cases.map(c=>c.collection)).size,5);
 assert.equal(new Set(cases.map(c=>c.sha256)).size,5);
 const selected=process.argv.slice(2);
-const focused=process.env.SDLC_VISUAL_SCENARIO==='responsive-review';
+const scenario=process.env.SDLC_VISUAL_SCENARIO;
+const focused=['responsive-review','review-practice'].includes(scenario);
 if(process.env.SDLC_VISUAL_SCENARIO)assert.ok(focused && selected.length===1 && selected[0]==='indoor','The responsive review scenario uses only the indoor fixture');
 assert.ok(selected.every(id=>cases.some(c=>c.id===id)),'Unknown visual test case');
 const suite=process.env.SDLC_VISUAL_SUITE || 'sdlc-visual-five-2026-10-18';assert.ok(/^[a-z0-9-]+$/.test(suite),'Invalid suite folder');
@@ -26,14 +27,14 @@ const outputs=path.join(root,'test-results',suite);mkdirSync(outputs,{recursive:
 const dataDir=path.join(here,'runtime/data'),store=createStore(dataDir);
 const config=JSON.parse(readFileSync(path.join(here,'runtime/sdlc.config.json'),'utf8'));
 const referenceHash=createHash('sha256').update(readFileSync(path.join(reference,'src/stages/qa.js'))).digest('hex');
-const sourceFiles=Object.fromEntries(['web/app.js','web/video-lab.js','web/detector.js','web/detector-worker.js','web/video.css','football/video.py'].map(file=>[file,createHash('sha256').update(readFileSync(path.join(root,file))).digest('hex')]));
+const sourceFiles=Object.fromEntries(['web/app.js','web/video-lab.js','web/detector.js','web/detector-worker.js','web/video.css','web/label.js','football/video.py','football/knowledge.py','football/domain.py'].map(file=>[file,createHash('sha256').update(readFileSync(path.join(root,file))).digest('hex')]));
 const sourceCommit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 bus.on('log',({scope,line})=>console.log(scope,line));
 let server;
 const stop=()=>{for(const child of activeChildren)killTree(child);killTree(server);};
 process.on('SIGINT',()=>{stop();process.exit(130);});process.on('SIGTERM',()=>{stop();process.exit(143);});
 
-function instructions(c){if(focused)return readFileSync(path.join(here,'reliability-2026-10-18/VISUAL.md'),'utf8');return `Run this complete VISUAL regression through the app UI using Playwright browser tools. Use a 1440x1000 desktop viewport initially. Screenshots must show the actual application, not a fabricated report. Work efficiently: after inspecting the UI, batch related Playwright locator fills/clicks with browser_run_code. Avoid repeated unchanged snapshots and stale element refs. Relevant UI IDs include lab-video, lab-start, lab-end, lab-x, lab-y, lab-radius, lab-select, lab-track, lab-status, lab-skip and lab-export; verify the page before using them. Use browser tools for all app interactions.
+function instructions(c){if(focused)return readFileSync(path.join(here,scenario==='review-practice'?'review-practice-2026-10-18/VISUAL.md':'reliability-2026-10-18/VISUAL.md'),'utf8');return `Run this complete VISUAL regression through the app UI using Playwright browser tools. Use a 1440x1000 desktop viewport initially. Screenshots must show the actual application, not a fabricated report. Work efficiently: after inspecting the UI, batch related Playwright locator fills/clicks with browser_run_code. Avoid repeated unchanged snapshots and stale element refs. Relevant UI IDs include lab-video, lab-start, lab-end, lab-x, lab-y, lab-radius, lab-select, lab-track, lab-status, lab-skip and lab-export; verify the page before using them. Use browser tools for all app interactions.
 Dataset collection: ${c.collection}; case: ${c.id}. Focus: ${c.focus}
 One representative clip is sampled from this collection; do not claim the whole dataset was tested or that labels are independent.
 The unmodified video is in your working directory as QA_INPUT${path.extname(c.file)} (use its absolute path under the current working directory when the upload tool requests one).
@@ -56,18 +57,19 @@ for(const c of cases.filter(c=>!selected.length || selected.includes(c.id))){
   try{
     const url=await new Promise((resolve,reject)=>{let output='';const timer=setTimeout(()=>reject(new Error('QA app startup timeout')),15000);server.once('error',error=>{clearTimeout(timer);reject(error);});server.once('exit',()=>{clearTimeout(timer);reject(new Error('QA app exited: '+stderr));});server.stdout.on('data',chunk=>{output+=chunk;const match=output.match(/Football Helper is running at (http:\/\/127\.0\.0\.1:\d+)/);if(match){clearTimeout(timer);resolve(match[1]);}});});
     await waitForUrl(url,10000);
-    const title=focused?'Responsive cancellation and empty review':`Five datasets / ${c.collection} / ${c.id}`;
+    const title=focused?(scenario==='review-practice'?'Review tools and distinct practice':'Responsive cancellation and empty review'):`Five datasets / ${c.collection} / ${c.id}`;
     const script=instructions(c);
     const previous=store.tests.findAll(t=>t.title===title)[0];
     const test=previous?store.tests.update(previous.id,{instructions:script}):store.tests.create({title,instructions:script,source:'five-dataset-visual-qa'});
     const ctx={cfg:config,store,dataDir,runDir:id=>{
       const directory=path.join(dataDir,'runs',id);mkdirSync(directory,{recursive:true});
       const target=path.join(directory,`QA_INPUT${path.extname(source)}`);if(!existsSync(target))copyFileSync(source,target);
+      if(scenario==='review-practice')writeFileSync(path.join(directory,'QA_TASK.json'),JSON.stringify({format:'football-labelling-task-1',clip:{id:'blind-visual-001',sha256:c.sha256,start:0,end:3},conditions:[]}));
       return directory;
     }};
     console.log('START',c.id,url);
     const result=await runQa(ctx,{title,instructions:script,url,testId:test.id,environment:'isolated-public-footage'});
-    const record={case:c,scenario:focused?'responsive-review':'five-datasets',sourceCommit,sourceFiles,sdlcSource:reference,sdlcQaSha256:referenceHash,appData,result};
+    const record={case:c,scenario:focused?scenario:'five-datasets',sourceCommit,sourceFiles,sdlcSource:reference,sdlcQaSha256:referenceHash,appData,result};
     writeFileSync(path.join(outputs,`${c.id}-${result.id}.json`),JSON.stringify(record,null,2)+'\n');
     writeFileSync(path.join(outputs,`${c.id}-${result.id}-server.log`),stderr);
     console.log('RESULT',JSON.stringify({case:c.id,id:result.id,status:result.status,verdict:result.verdict,reason:result.couldntRunReason,screenshots:result.screenshots,costUsd:result.costUsd}));

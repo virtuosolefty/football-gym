@@ -114,10 +114,17 @@ def passport(records):
     return result
 
 
-def plan(player, records, completions, readiness):
+def plan(player, records, completions, readiness, focus_drill_id=None):
     choice(readiness, ["Ready", "Tired", "Rest"], "readiness")
     if readiness == "Rest":
         return {"reason": "You chose rest. Recover today and return when ready.", "minutes": 0, "assignments": []}
+    focus = None
+    if focus_drill_id is not None and focus_drill_id != "":
+        focus = next((d for d in DRILLS if d["id"] == focus_drill_id and d.get("practice_only")), None)
+        if focus is None:
+            raise ValidationError("Choose an available practice drill.")
+        if not set(focus["equipment"]) <= set(player["equipment"]):
+            raise ValidationError("Update your equipment or choose a drill your equipment supports.")
     recent = completions[-2:]
     reduced = readiness == "Tired" or any(c["effort"] >= 4 for c in recent)
     budget = max(5, int(player["minutes"] * .6)) if reduced else player["minutes"]
@@ -129,9 +136,9 @@ def plan(player, records, completions, readiness):
         p = priority[drill["protocol"]]
         latest = p["latest"]
         gap = (100 - latest["value"]) / 100 if latest and drill["protocol"] not in ("juggling", "slalom") else .5
-        return (drill["protocol"] != goal, drill["protocol"] != secondary, -gap, drill["difficulty"])
+        return (bool(focus) and drill["protocol"] != focus["protocol"], drill["protocol"] != goal, drill["protocol"] != secondary, -gap, drill["difficulty"])
 
-    eligible = [d for d in DRILLS if set(d["equipment"]) <= set(player["equipment"])]
+    eligible = [d for d in DRILLS if set(d["equipment"]) <= set(player["equipment"]) and (not d.get("practice_only") or d is focus)]
     eligible.sort(key=rank)
     selected, seen = [], set()
     for d in eligible:
@@ -144,14 +151,16 @@ def plan(player, records, completions, readiness):
             all(r["value"] >= 85 for r in history[-2:]) if d["protocol"] not in ("juggling", "slalom") else p["improved"])
         progress = progress and len(practiced) >= 2 and all(c["effort"] <= 2 and c["completed"] for c in practiced)
         selected_drill = next((x for x in eligible if x["protocol"] == d["protocol"] and x["difficulty"] == (2 if progress else 1)), d)
+        if focus and d["protocol"] == focus["protocol"]:
+            selected_drill = focus
         if (len(selected) + 1) * 5 > budget:
             break
         selected.append({"drill_id": selected_drill["id"], "protocol": d["protocol"], "minutes": 5,
-                         "reason": "Goal priority" if d["protocol"] == goal else "Position relevance" if d["protocol"] == secondary else "Build a repeatable baseline",
+                         "reason": "Chosen practice focus" if selected_drill is focus else "Goal priority" if d["protocol"] == goal else "Position relevance" if d["protocol"] == secondary else "Build a repeatable baseline",
                          "adaptation": "Progress one practice constraint" if progress else "Reduce pace and take longer breaks" if reduced else "Build consistency"})
         seen.add(d["protocol"])
     return {"reason": "Reduced workload based on readiness or recent effort." if reduced else "Chosen for your goals, position, equipment and comparable evidence.",
-            "minutes": len(selected) * 5, "assignments": selected}
+            "minutes": len(selected) * 5, "assignments": selected, "focus_drill_id": focus["id"] if focus else None}
 
 
 def retrieve(question, player):
