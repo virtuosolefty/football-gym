@@ -35,6 +35,8 @@ async(page)=>{
   await page.locator('#readiness').selectOption('Rest');await page.getByRole('button',{name:'Adapt my session'}).click();
   await page.getByText('No training prescribed today.',{exact:false}).waitFor();
   check((await snapshot()).plan.assignments.length===0,'Practice focus bypassed rest');
+  await page.reload();await page.locator('#readiness').waitFor();check(await page.locator('#readiness').inputValue()==='Rest','Readiness reset after reload');
+  await page.screenshot({path:folder+'06-rest-preserved.png'});
   await page.getByRole('navigation',{name:'Main navigation'}).getByRole('button',{name:'Record',exact:false}).click();
   await page.locator('#evidence-file').setInputFiles('tests/fixtures/contrast-ball.webm');await page.getByRole('spinbutton',{name:'Best consecutive contacts'}).fill('0');
   await page.getByRole('button',{name:'Save assessment'}).click();await page.getByRole('heading',{name:'Progress you can trace.'}).waitFor();
@@ -53,6 +55,9 @@ async(page)=>{
   const at=async t=>page.waitForFunction(t=>Math.abs(document.querySelector('#lab-video').currentTime-t)<.02 && !document.querySelector('#lab-video').seeking,t);
   await page.locator('#lab-review').focus();await page.keyboard.press('ArrowRight');await page.keyboard.press('ArrowRight');await at(.2);
   check(!(await page.locator('#lab-error').textContent()),'Rapid review seeking reported a stale decode failure');
+  await page.evaluate(()=>{document.querySelector('#lab-video').currentTime=.6;document.querySelector('#lab-add').click();});
+  await page.getByText('Wait for the requested frame before marking an event.',{exact:true}).waitFor();await at(.6);
+  check(await page.locator('#lab-event-count').textContent()==='0 events','Marked an undecoded frame');
   await page.locator('#lab-playhead').focus();await page.keyboard.press('End');await at(1);await page.keyboard.press('Home');await at(0);
   await page.locator('#lab-next-issue').click();await at(.2);
   await page.locator('#lab-review').focus();await page.keyboard.press('n');await at(.5);

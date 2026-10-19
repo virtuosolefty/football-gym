@@ -81,10 +81,10 @@ const VideoLab = (() => {
     if(v.error)throw new Error(playbackError(v));
     if(Math.abs(v.currentTime-time)<.001 && v.readyState>=2 && !v.seeking)return;
     await new Promise((resolve,reject)=>{
-      const done=()=>{if(v.readyState<2 || Math.abs(v.currentTime-time)>.06){failed();return;}cleanup();resolve();};
+      const done=()=>{if(v.seeking)return;if(v.readyState<2 || Math.abs(v.currentTime-time)>.06){failed();return;}cleanup();resolve();};
       const failed=()=>{cleanup();reject(new Error(signal?.aborted?'Analysis cancelled.':'The requested frame could not be decoded reliably. The clip may have irregular timestamps or sparse keyframes. Re-encode to MP4 (H.264, constant frame rate, frequent keyframes) and upload again.'));};
       const timer=setTimeout(failed,15000);function cleanup(){clearTimeout(timer);v.removeEventListener('seeked',done);v.removeEventListener('error',failed);signal?.removeEventListener('abort',failed);}
-      v.addEventListener('seeked',done,{once:true});v.addEventListener('error',failed,{once:true});signal?.addEventListener('abort',failed,{once:true});try{v.currentTime=time;}catch{failed();}
+      v.addEventListener('seeked',done);v.addEventListener('error',failed,{once:true});signal?.addEventListener('abort',failed,{once:true});try{v.currentTime=time;}catch{failed();}
     });
   }
   const sampleOf=(time,point,canvas)=>({time:Number(time.toFixed(3)),found:!!point,x:point?Number((point.x/canvas.width).toFixed(6)):null,y:point?Number((point.y/canvas.height).toFixed(6)):null,...(point?.score===undefined?{}:{score:Number(point.score.toFixed(3))})});
@@ -160,7 +160,7 @@ const VideoLab = (() => {
     const f=new FormData(form);return {analysis_id:run.id,annotation_id:run.annotation.id,conditions:{distance:Number(f.get('distance')),width:Number(f.get('width')),surface:f.get('surface'),duration:protocol(run.protocol).duration},quality:{visible:f.has('visible'),fixed_camera:f.has('fixed_camera'),setup_valid:f.has('setup_valid')},notes:f.get('notes')};
   }
   function open(id,time,annotationId){run=structuredClone(state.analyses.find(a=>a.id===id)||null);if(run && annotationId){run.annotation=state.video_annotations.find(a=>a.id===annotationId)||run.annotation;run.feedback=state.attempts.find(a=>a.evidence?.annotation_id===annotationId)?.feedback||[];}events=structuredClone(run?.annotation?.events||run?.candidates||[]);dirty=false;edits=[];seedPoint=engine=null;pendingTime=time??run?.start??0;}
-  function reset(){generation++;run=null;events=[];edits=[];dirty=false;edits=[];seedPoint=engine=null;pendingTime=null;}
+  function reset(){reviewController?.abort();generation++;run=null;events=[];edits=[];dirty=false;edits=[];seedPoint=engine=null;pendingTime=null;}
   function bind(){
     const v=document.querySelector('#lab-video'),canvas=document.querySelector('#lab-frame');if(!v)return;
     let locating=false;
@@ -188,22 +188,28 @@ const VideoLab = (() => {
       }catch(error){if(generation===token && document.querySelector('#lab-video')===v){engine=null;frame();if(!recovery)status.textContent='Select the ball in a paused frame to begin.';errorBox.textContent=selection.signal.aborted?'Analysis cancelled.':error.message;}}
       finally{locating=false;if(selectionController===selection)selectionController=null;if(generation===token && document.querySelector('#lab-video')===v){document.querySelector('#lab-cancel').hidden=!controller;for(const button of locking)button.disabled=!!controller;const select=document.querySelector('#lab-select');if(select && document.querySelector('#lab-video')===v)select.disabled=!!controller && !recovery;}}
     }
+    let reviewTarget=null,reviewSeeking=false;
     async function reviewSeek(time){
       if(controller || locating || !run)return;
-      reviewController?.abort();const request=new AbortController();reviewController=request;v.pause();
-      await seek(v,Math.max(run.start,Math.min(run.end,time)),request.signal).catch(error=>{if(!request.signal.aborted && document.querySelector('#lab-video')===v)document.querySelector('#lab-error').textContent=error.message;});
+      reviewTarget=Math.max(run.start,Math.min(run.end,time));v.pause();
+      if(reviewSeeking)return;
+      reviewSeeking=true;const request=new AbortController();reviewController=request;
+      try{
+        while(reviewTarget!==null){const target=reviewTarget;reviewTarget=null;await seek(v,target,request.signal);}
+      }catch(error){if(!request.signal.aborted && document.querySelector('#lab-video')===v)document.querySelector('#lab-error').textContent=error.message;}
+      finally{reviewSeeking=false;reviewTarget=null;}
     }
     const updatePlayhead=()=>{const slider=document.querySelector('#lab-playhead');if(slider && run){slider.value=v.currentTime;document.querySelector('#lab-playhead-time').textContent=stamp(v.currentTime);}};
     v.addEventListener('timeupdate',updatePlayhead);
     document.querySelector('#lab-review-navigation').onclick=event=>{const button=event.target.closest('[data-review-time]');if(button)reviewSeek(Number(button.dataset.reviewTime));};
     document.querySelector('#lab-review-navigation').onchange=event=>{if(event.target.id==='lab-playhead')reviewSeek(Number(event.target.value));};
-    document.querySelector('#lab-next-issue').onclick=()=>{const time=nextIssue(reviewMoments(run,events),v.currentTime);if(time!==undefined)reviewSeek(time);};
+    document.querySelector('#lab-next-issue').onclick=()=>{const time=nextIssue(reviewMoments(run,events),reviewTarget??v.currentTime);if(time!==undefined)reviewSeek(time);};
     document.querySelector('#lab-undo').onclick=()=>{if(controller || locating || !edits.length)return;events=edits.pop();markDirty();updatePlayhead();};
     v.closest('.lab-grid').addEventListener('keydown',event=>{
       if(event.altKey || event.target.closest('input,textarea,select,button,video') || controller || locating)return;
       let action;
       if(event.ctrlKey || event.metaKey){if(event.key.toLowerCase()==='z' && !event.shiftKey)action=()=>document.querySelector('#lab-undo').click();}
-      else action={arrowleft:()=>reviewSeek(v.currentTime-.1),arrowright:()=>reviewSeek(v.currentTime+.1),m:()=>document.querySelector('#lab-add').click(),n:()=>document.querySelector('#lab-next-issue').click()}[event.key.toLowerCase()];
+      else action={arrowleft:()=>reviewSeek((reviewTarget??v.currentTime)-.1),arrowright:()=>reviewSeek((reviewTarget??v.currentTime)+.1),m:()=>document.querySelector('#lab-add').click(),n:()=>document.querySelector('#lab-next-issue').click()}[event.key.toLowerCase()];
       if(action){event.preventDefault();action();}
     });
     document.querySelector('#lab-select').onclick=selectBall;
@@ -245,7 +251,7 @@ const VideoLab = (() => {
       }catch(error){if(token===generation && document.querySelector('#lab-video')===v)errorBox.textContent=signal?.aborted?'Analysis cancelled.':error.message;}
       finally{clearInterval(heartbeat);pose?.close();if(token===generation && document.querySelector('#lab-video')===v){controller=null;recovery=null;v.controls=true;document.querySelector('#lab-cancel').hidden=true;document.querySelector('#lab-skip').hidden=true;for(const element of document.querySelectorAll('#lab-track,#lab-manual,#lab-select,#lab-save,#lab-add,#lab-media,#lab-protocol,#lab-start,#lab-end,#lab-radius,#lab-back,#lab-forward,#lab-pose'))element.disabled=false;frame();}}
     }
-    document.querySelector('#lab-add').onclick=()=>{const error=document.querySelector('#lab-save-error');error.textContent='';if(!run){error.textContent='Save a tracked run or use a manual timeline first.';return;}if(v.currentTime<run.start || v.currentTime>run.end){error.textContent='Move the playhead inside the saved window.';return;}const event={time:Number(v.currentTime.toFixed(3)),kind:document.querySelector('#lab-kind').value,foot:document.querySelector('#lab-foot').value,side:document.querySelector('#lab-side').value,success:document.querySelector('#lab-success').checked};if(events.some(e=>e.time===event.time && e.kind===event.kind)){error.textContent='An event already exists at this timestamp.';return;}rememberEdit();events.push(event);events.sort((a,b)=>a.time-b.time);markDirty();};
+    document.querySelector('#lab-add').onclick=()=>{const error=document.querySelector('#lab-save-error');error.textContent='';if(!run){error.textContent='Save a tracked run or use a manual timeline first.';return;}v.pause();if(v.seeking || v.readyState<2){error.textContent='Wait for the requested frame before marking an event.';return;}if(v.currentTime<run.start || v.currentTime>run.end){error.textContent='Move the playhead inside the saved window.';return;}const event={time:Number(v.currentTime.toFixed(3)),kind:document.querySelector('#lab-kind').value,foot:document.querySelector('#lab-foot').value,side:document.querySelector('#lab-side').value,success:document.querySelector('#lab-success').checked};if(events.some(e=>e.time===event.time && e.kind===event.kind)){error.textContent='An event already exists at this timestamp.';return;}rememberEdit();events.push(event);events.sort((a,b)=>a.time-b.time);markDirty();};
     document.querySelector('#lab-save').onclick=async()=>{const button=document.querySelector('#lab-save'),box=document.querySelector('#lab-save-error');box.textContent='';button.disabled=true;try{if(!run)throw new Error('Save a video run first.');await api('/api/video/annotations',{analysis_id:run.id,events,reviewer:document.querySelector('#lab-reviewer').value,confirmed:document.querySelector('#lab-confirmed').checked});state=await api('/api/state');run=state.analyses.find(a=>a.id===run.id);dirty=false;timeline();feedbackView();updateRuns();toast('Reviewed events saved. Original tracking preserved.');}catch(error){box.textContent=error.message;}finally{button.disabled=false;}};
     document.querySelector('#lab-events').onclick=async event=>{const button=event.target.closest('button');if(!button)return;if(button.dataset.labRemove!==undefined){if(controller || locating)return;rememberEdit();events.splice(Number(button.dataset.labRemove),1);markDirty();}if(button.dataset.labSeek)await reviewSeek(Number(button.dataset.labSeek));};
     document.querySelector('#lab-feedback').onclick=event=>{const button=event.target.closest('[data-lab-seek]');if(button){v.pause();seek(v,Number(button.dataset.labSeek)).catch(error=>document.querySelector('#lab-error').textContent=error.message);}};

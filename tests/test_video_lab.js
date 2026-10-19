@@ -76,3 +76,13 @@ test('review moments group contiguous misses, retain re-seeds and leave original
   assert.equal(lab.nextIssue(lab.reviewMoments({samples:[]},[{time:1,kind:'contact'}]),0),undefined);
   assert.equal(JSON.stringify(analysis),before);assert.deepEqual(lab.reviewMoments(null),[]);
 });
+
+
+test('a stale seeked event during a newer decode does not report a corrupt clip',async()=>{
+  const v=new Video();
+  Object.defineProperty(v,'currentTime',{get(){return this.position;},set(value){
+    this.position=value;this.seeking=true;this.readyState=1;
+    queueMicrotask(()=>{this.dispatchEvent(new Event('seeked'));setTimeout(()=>{this.seeking=false;this.readyState=2;this.dispatchEvent(new Event('seeked'));},5);});
+  }});
+  await lab.seek(v,.3);assert.equal(v.currentTime,.3);assert.equal(v.seeking,false);assert.equal(v.readyState,2);
+});

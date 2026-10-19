@@ -34,7 +34,8 @@
 - [ ] D8 Qualified coach review of new content and workload; guidance remains draft until its version is reviewed.
 
 ## Release discipline
-- [ ] Q2 Run the original D:/SDLC visual stage when the model account allows it; preserve couldn't-run results separately from direct browser evidence.
+- [x] Q2 Run the original D:/SDLC visual stage; preserve its raw findings separately from direct browser evidence. Run 3dc16417 completed with a warning; its readiness finding is fixed and regression-tested.
 - [ ] Q3 Human release review before merge/deployment. Current work stays on the development branch.
+- [ ] Q4 Remove the cosmetic missing-favicon request on the label page reported by SDLC.
 
-Current evidence: [annotation handoff](evaluation/review-practice-2026-10-18/ANNOTATION_HANDOFF.md). Unit checks: 76 Python, 52 JavaScript. All 11 browser workflows passed across the full suite and targeted reruns. Final seek changes are verified. Hosted CI and the original SDLC visual report are in progress.
+Current evidence: [phase report](evaluation/review-practice-2026-10-18/REPORT.md) and [annotation handoff](evaluation/review-practice-2026-10-18/ANNOTATION_HANDOFF.md). Unit checks: 76 Python, 53 JavaScript. All 11 browser workflows passed across the full suite and targeted reruns. Final seek changes are verified. The original SDLC visual report is complete; hosted CI for the follow-up fixes is pending.
