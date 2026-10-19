@@ -1,0 +1,48 @@
+{
+  "implementationCommit": "e9be20498434649a168bb58609f5c1b2fd7d5f67",
+  "ciRun": "https://github.com/virtuosolefty/football-gym/actions/runs/39185833237",
+  "linux": "success",
+  "windows": "success",
+  "sourceFiles": {
+    "web/app.js": "011919005dc3a4f35fc43770c810fa8ba4d2ac3acf6681edad677d2e2845e600",
+    "web/video-lab.js": "6c2df0fa1702cfdb010a20437debc9ad0ec0b0f185e66254944d707a563a9a41",
+    "web/video.css": "06e7c0fd3965956f7ac0f9c6e931f6eaf6ddcc4641b707fed4ac9fc0d588f74c",
+    "web/label.js": "bc1814a37efe40fcb39ff06e8b1bd19da6e1ab71cd6109c7b3655c4466469ca8",
+    "web/label.html": "7966c8e4761d945d9b35fea36664a8069f63bb771e7c8aeddabec8151f9d00b2",
+    "football/domain.py": "6ded49f283e3d8547162a866a07b023a52e9defb65537eeeccc7d1ac9ffb4c21",
+    "football/knowledge.py": "e80a2f024b4e7a4d3fdd67672bdff5f0f421e33ad70457af6bf557087c333624",
+    "football/store.py": "cf6c01ac3be75669a2e9d4f86166435e20d0727b1e2b6c1690000d2435f6755a",
+    "tools/prepare_blind_batch.py": "9dfeff99ecc5181749f4675fcf7d3de15ae886042f44303d654093c0ae76d44a"
+  },
+  "sdlc": {
+    "id": "3dc16417",
+    "verdict": "warning",
+    "engineSha256": "3721210f3b0915e736ad4c56852e69077e2e99594144d5ae67a21e0d0d315382",
+    "snapshotBaseCommit": "d06903feb714e06c3a840de02a0faf673ccf5a7f",
+    "snapshotSourceFiles": {
+      "web/app.js": "f2451e10a73b93dc6badb81e2011fdbd143afcb5721bdd0da51b014bcdc61287",
+      "web/video-lab.js": "70001c3784a0daae5136703e73a2aee35760d7e24210cc907211f63b81722b73",
+      "web/detector.js": "d593c24560f253909a7e5cc60901ec8e471c3cb6e1a05bf1cf5057eefacbf9b5",
+      "web/detector-worker.js": "f29fcf43b020ee541130350f7236a2c32a11fba65da963f8dbf112ad49cb6ac9",
+      "web/video.css": "06e7c0fd3965956f7ac0f9c6e931f6eaf6ddcc4641b707fed4ac9fc0d588f74c",
+      "web/label.js": "bc1814a37efe40fcb39ff06e8b1bd19da6e1ab71cd6109c7b3655c4466469ca8",
+      "football/video.py": "9500ac98f8cdbbd1db7427a602d8ba830ba3468d49d66816ba55bff3266e4a17",
+      "football/knowledge.py": "e80a2f024b4e7a4d3fdd67672bdff5f0f421e33ad70457af6bf557087c333624",
+      "football/domain.py": "6ded49f283e3d8547162a866a07b023a52e9defb65537eeeccc7d1ac9ffb4c21"
+    },
+    "note": "Original visual run preceded final readiness, rapid-seek, undecoded-frame and saved-note refinements. Direct browser regressions cover follow-up changes; raw agent findings are preserved."
+  },
+  "localChecks": {
+    "pythonTests": 76,
+    "javascriptTests": 53,
+    "browserWorkflows": 11,
+    "reportViewports": [
+      1440,
+      390
+    ],
+    "reportImages": 21
+  },
+  "independentLabelsObtained": false,
+  "coachApprovalObtained": false,
+  "visualReport": "test-results/review-practice-2026-10-18/report/report.html"
+}

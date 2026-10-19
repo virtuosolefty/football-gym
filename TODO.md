@@ -10,7 +10,7 @@
 - [x] D3 Select either drill in a session while preserving equipment, rest and workload controls; keep practice notes separate from assessments.
 - [x] E1 Prepare a hash-verified, unlabelled batch from the five source collections, without tracker output or expected contact counts.
 - [x] E2 Import blind task metadata into the label tool; document annotator handoff and disagreement review.
-- [ ] Q1 Unit, API and browser regression checks; desktop/mobile visual evidence in a separate SDLC report; hosted CI.
+- [x] Q1 Unit, API and browser regression checks; desktop/mobile visual evidence in a separate SDLC report; hosted CI on Linux and Windows.
 
 ## Accuracy and independent evidence
 - [ ] E3 Obtain independent coach/second-annotator labels and resolve disagreements. A real independent person is required; generated labels cannot satisfy this.
@@ -38,4 +38,4 @@
 - [ ] Q3 Human release review before merge/deployment. Current work stays on the development branch.
 - [ ] Q4 Remove the cosmetic missing-favicon request on the label page reported by SDLC.
 
-Current evidence: [phase report](evaluation/review-practice-2026-10-18/REPORT.md) and [annotation handoff](evaluation/review-practice-2026-10-18/ANNOTATION_HANDOFF.md). Unit checks: 76 Python, 53 JavaScript. All 11 browser workflows passed across the full suite and targeted reruns. Final seek changes are verified. The original SDLC visual report is complete; hosted CI for the follow-up fixes is pending.
+Current evidence: [phase report](evaluation/review-practice-2026-10-18/REPORT.md) and [annotation handoff](evaluation/review-practice-2026-10-18/ANNOTATION_HANDOFF.md). Unit checks: 76 Python, 53 JavaScript. All 11 browser workflows passed on Linux and Windows in [final implementation CI](https://github.com/virtuosolefty/football-gym/actions/runs/39185833237). The original SDLC visual report is complete. The current increment is finished; unchecked roadmap items remain open.

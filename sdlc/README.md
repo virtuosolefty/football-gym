@@ -2,7 +2,9 @@
 
 This project follows the plan → review → build → regression QA → release-review workflow in `D:\SDLC`. The initial October 18 integration phase was implemented and reviewed in this coding session; it did **not** run the SDLC tool's automated Claude planning/build/browser-QA agents. Those remain available in the isolated dashboard, with their existing approval gates.
 
-Latest follow-up: [responsive analysis and empty reviews](../evaluation/reliability-2026-10-18/REPORT.md), with its [scoped plan](reliability-2026-10-18/PLAN.md). The original SDLC QA stage was invoked for this follow-up but could not run because its account reached the spending limit; direct browser visual fallback evidence is identified separately. Earlier successful original-engine visual runs are recorded in the [priorities report](../evaluation/priorities-2026-10-18/REPORT.md).
+Latest follow-up: [review tools, two practice drills and blind-label preparation](../evaluation/review-practice-2026-10-18/REPORT.md), with its [scoped plan](review-practice-2026-10-18/PLAN.md) and the complete [improvement checklist](../TODO.md). The original SDLC QA stage completed all five visual flows with a warning; the readiness finding is fixed and directly regression-tested. Raw findings, follow-up screenshots and accuracy limitations remain distinct in the report.
+
+The preceding [responsive analysis phase](../evaluation/reliability-2026-10-18/REPORT.md) could not complete its original SDLC run because of an account spending limit; its fallback evidence remains identified separately. Earlier successful original-engine visual runs are recorded in the [priorities report](../evaluation/priorities-2026-10-18/REPORT.md).
 
 ## Separate folders
 
